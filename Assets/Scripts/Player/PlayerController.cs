@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
 
     public void OnFire1()
     {
-
+        ActiveWeapon.Instance.Attack();
     }
 
     public void OnFire2()

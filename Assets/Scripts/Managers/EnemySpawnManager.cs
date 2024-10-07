@@ -4,15 +4,6 @@ using UnityEngine;
 
 public class EnemySpawnManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    //list of potential spawns
+    //spawn rates 
 }

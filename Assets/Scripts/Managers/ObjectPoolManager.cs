@@ -24,24 +24,12 @@ public class PoolInfo
     public List<GameObject> pool = new List<GameObject>();
 }
 
-public class ObjectPoolManager : MonoBehaviour
+public class ObjectPoolManager : Singleton<ObjectPoolManager>
 {
-    public static ObjectPoolManager instance;
     [SerializeField]
     public List<PoolInfo> listOfPools;
     private Vector3 defaultPos = new Vector3(0,0,0);
 
-    private void Awake()
-    {
-        if (instance == null)
-        {
-            instance = this;
-        }
-        else
-        {
-            Destroy(this);
-        }
-    }
 
     private void Start()
     {
