@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Gun : GunBase
+public class Sword : Weapon, IWeapon
 {
     public override void UseWeapon()
     {
-        
+        Debug.Log("sword used");
     }
 }
