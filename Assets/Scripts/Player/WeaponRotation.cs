@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class WeaponRotation : MonoBehaviour
@@ -21,20 +23,28 @@ public class WeaponRotation : MonoBehaviour
 
     void RotateWeapon()
     {
-        float angle = Mathf.Atan2(CursorManager.Instance.mouseWorldPos.y, CursorManager.Instance.mouseWorldPos.x) * Mathf.Rad2Deg;
-        gameObject.transform.rotation = Quaternion.Euler(0, 0, angle);
+        Vector2 direction = CursorManager.Instance.mouseWorldPos - (Vector2)playerTransform.position;
 
-        if (CursorManager.Instance.mouseWorldPos.x < playerTransform.transform.position.x)
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        
+        transform.rotation = Quaternion.Euler(0, 0, angle);
+
+        if (CursorManager.Instance.mouseWorldPos.x < playerTransform.position.x)
         {
-            weaponPos.x = -Mathf.Abs(gameObject.transform.position.x);
             sr.flipY = true;
+            transform.localPosition = new Vector3(-Mathf.Abs(transform.localPosition.x), transform.localPosition.y, transform.localPosition.z);
         }
         else
         {
             sr.flipY = false;
-            weaponPos.x = Mathf.Abs(gameObject.transform.position.x);
+            transform.localPosition = new Vector3(Mathf.Abs(transform.localPosition.x), transform.localPosition.y, transform.localPosition.z);
         }
-
-        gameObject.transform.position = new Vector2(weaponPos.x, weaponPos.y);
     }
 }
+
+
+//bool mouseLeft = CursorManager.Instance.mouseWorldPos.x < playerTransform.position.x;
+//bool mouseAbove = CursorManager.Instance.mouseWorldPos.y > playerTransform.position.y;
+
+//sr.flipX = mouseLeft;
+//sr.flipY = !mouseAbove;

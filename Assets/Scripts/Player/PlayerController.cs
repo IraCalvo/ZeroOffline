@@ -3,14 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerController : Singleton<PlayerController>
+public class PlayerController : MonoBehaviour
 {
+    public static PlayerController instance;
     public float playerMS;
     Vector2 playerMovement;
     Rigidbody2D rb;
 
     private void Awake()
     {
+        if (instance != null)
+        {
+            Destroy(instance);
+        }
+        else
+        {
+            instance = this;
+        }
+
         rb = GetComponent<Rigidbody2D>();
     }
 

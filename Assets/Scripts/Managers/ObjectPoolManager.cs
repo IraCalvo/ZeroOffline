@@ -51,6 +51,42 @@ public class ObjectPoolManager : Singleton<ObjectPoolManager>
         }
     }
 
+    public GameObject GetPoolObject(GameObject obj)
+    {
+        PoolInfo selected = null;
+        GameObject objInstance = null;
+
+        if (obj.TryGetComponent<Projectile>(out Projectile proj))
+        {
+            selected = GetPoolByProjectileSprite(proj.GetComponent<SpriteRenderer>().sprite);
+        }
+
+        List<GameObject> pool = selected.pool;
+        List<GameObject> nonActiveObjectsInPool = new();
+
+        for (int i = 0; i < pool.Count; i++)
+        {
+            if (pool[i].activeInHierarchy == false)
+            {
+                nonActiveObjectsInPool.Add(pool[i]);
+            }
+        }
+
+        if (nonActiveObjectsInPool.Count > 0)
+        {
+            int randomIndex = UnityEngine.Random.Range(0, nonActiveObjectsInPool.Count);
+            objInstance = nonActiveObjectsInPool[randomIndex];
+            objInstance.SetActive(true);
+        }
+        else if (nonActiveObjectsInPool.Count == 0 && selected.poolCanGrow)
+        {
+            objInstance = Instantiate(selected.prefabToPool, selected.objectContainer.transform);
+            objInstance.SetActive(true);
+        }
+
+        return objInstance;
+    }
+
     public GameObject GetPoolObject(PoolObjectType type)
     {
         PoolInfo selected = GetPoolByType(type);
@@ -97,6 +133,22 @@ public class ObjectPoolManager : Singleton<ObjectPoolManager>
             }
         }
 
+        return null;
+    }
+
+    public PoolInfo GetPoolByProjectileSprite(Sprite projSprite)
+    {
+        foreach (PoolInfo poolInfo in listOfPools)
+        {
+            if (poolInfo.type == PoolObjectType.Projectile)
+            {
+                Sprite tempSprite = poolInfo.prefabToPool.GetComponent<SpriteRenderer>().sprite;
+                if (projSprite == tempSprite)
+                {
+                    return poolInfo;
+                }
+            }
+        }
         return null;
     }
 }

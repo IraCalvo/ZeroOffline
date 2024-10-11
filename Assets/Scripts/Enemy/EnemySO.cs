@@ -9,5 +9,5 @@ public class EnemySO : ScriptableObject
     public float enemyBaseMaxHP;
     public float enemyBaseMS;
     public float enemyBaseDamage;
-    //public List<GameObject> enemyDrops;
+    public float enemyBaseRange;
 }

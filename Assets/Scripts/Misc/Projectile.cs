@@ -43,15 +43,15 @@ public class Projectile : MonoBehaviour
         this.projPierceAmount = pierceAmount;
     }
 
-    public void UpdateProjOwner()
+    public void UpdateProjOwner(ProjectileOwner proj)
     {
-        if (this.projOwner == ProjectileOwner.Enemy)
+        if (proj == ProjectileOwner.Player)
         {
-            this.projOwner = ProjectileOwner.Player;
+            projOwner = ProjectileOwner.Player;
         }
         else 
         {
-            this.projOwner = ProjectileOwner.Enemy;
+            projOwner = ProjectileOwner.Enemy;
         }
     }
 
