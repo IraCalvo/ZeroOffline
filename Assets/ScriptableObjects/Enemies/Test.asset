@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyName: Test
   enemyBaseMaxHP: 10
-  enemyBaseMS: 300
+  enemyBaseMS: 15
   enemyBaseDamage: 5
-  enemyBaseRange: 5
+  enemyBaseRange: 15

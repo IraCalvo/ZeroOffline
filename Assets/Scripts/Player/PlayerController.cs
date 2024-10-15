@@ -49,6 +49,14 @@ public class PlayerController : MonoBehaviour
     
     }
 
+    public void OnInteract()
+    {
+        if (PlayerInteract.instance.interablesInRange.Count > 0)
+        { 
+            PlayerInteract.instance.GetClosestInteractable().Interact();
+        }
+    }
+
     void MovePlayer()
     {
         rb.velocity = playerMovement * playerMS;

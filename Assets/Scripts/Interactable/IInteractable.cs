@@ -4,15 +4,11 @@ using UnityEngine;
 
 public interface IInteractable
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    Collider2D InteractableCollider { get; }
+    string InteractDescription { get; }
+    Material OriginalMaterial { get; }
+    Material WhiteHighlightMaterial { get; }
+    void Interact();
+    void OnTriggerEnter2D(Collider2D otherCollider);
+    void OnTriggerExit2D(Collider2D otherCollider);
 }
