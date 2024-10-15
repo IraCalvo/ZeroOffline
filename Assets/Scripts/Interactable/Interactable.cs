@@ -9,6 +9,7 @@ public abstract class Interactable : MonoBehaviour, IInteractable
     [SerializeField] Collider2D _collider;
     public Material _originalMaterial;
     public Material _whiteHighlightMaterial;
+    public SpriteRenderer sr;
 
     public string InteractDescription
     {
@@ -34,7 +35,39 @@ public abstract class Interactable : MonoBehaviour, IInteractable
         set { _whiteHighlightMaterial = value; }
     }
 
-    public abstract void Interact();
-    public abstract void OnTriggerEnter2D(Collider2D otherCollider);
-    public abstract void OnTriggerExit2D(Collider2D otherCollider);
+
+
+    private void Awake()
+    {
+        sr = GetComponent<SpriteRenderer>();
+    }
+
+    public virtual void Interact()
+    {
+        print("Description: " + _interactDescription);
+    }
+
+    public virtual void OnTriggerEnter2D(Collider2D otherCollider)
+    {
+        if (otherCollider.CompareTag("Player"))
+        {
+            PlayerInteract.instance.interablesInRange.Add(this);
+            if (PlayerInteract.instance.GetClosestInteractable() == this)
+            {
+                sr.material = _whiteHighlightMaterial;
+            }
+        }
+    }
+    public virtual void OnTriggerExit2D(Collider2D otherCollider)
+    {
+        if (otherCollider.CompareTag("Player"))
+        {
+            sr.material = _originalMaterial;
+            PlayerInteract.instance.interablesInRange.Remove(this);
+            if (PlayerInteract.instance.interablesInRange.Count > 0)
+            {
+                PlayerInteract.instance.GetClosestInteractable().GetComponent<SpriteRenderer>().material = _whiteHighlightMaterial;
+            }
+        }
+    }
 }
