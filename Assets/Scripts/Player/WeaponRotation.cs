@@ -23,13 +23,13 @@ public class WeaponRotation : MonoBehaviour
 
     void RotateWeapon()
     {
-        Vector2 direction = CursorManager.Instance.mouseWorldPos - (Vector2)playerTransform.position;
+        Vector2 direction = CursorManager.instance.mouseWorldPos - (Vector2)playerTransform.position;
 
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         
         transform.rotation = Quaternion.Euler(0, 0, angle);
 
-        if (CursorManager.Instance.mouseWorldPos.x < playerTransform.position.x)
+        if (CursorManager.instance.mouseWorldPos.x < playerTransform.position.x)
         {
             sr.flipY = true;
             transform.localPosition = new Vector3(-Mathf.Abs(transform.localPosition.x), transform.localPosition.y, transform.localPosition.z);

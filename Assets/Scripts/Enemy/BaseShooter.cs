@@ -112,6 +112,7 @@ public abstract class BaseShooter : Enemy, IEnemy
         float timeBetweenProjectiles = 0f;
 
         GetTargetToShootAt(out startAngle, out currentAngle, out angleStep, out endAngle);
+
         if (staggerBullets)
         {
             timeBetweenProjectiles = timeBetweenBursts / projPerBurst;

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 
@@ -11,5 +12,6 @@ public class WeaponSO : ScriptableObject
     public float weaponCDBase;
     public float weaponDamageBase;
     public float weaponKnockbackBase;
+    public float projectileMS;
     public WeaponRarity weaponRarityBase;
 }

@@ -17,4 +17,5 @@ MonoBehaviour:
   weaponCDBase: 0
   weaponDamageBase: 0
   weaponKnockbackBase: 0
+  projectileMS: 25
   weaponRarityBase: 0

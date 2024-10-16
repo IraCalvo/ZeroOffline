@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour
     public float playerMS;
     Vector2 playerMovement;
     Rigidbody2D rb;
+    public bool canAttack;
+    float attackCD;
 
     private void Awake()
     {
@@ -26,7 +28,14 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        
+        if (attackCD > 0)
+        {
+            attackCD -= Time.deltaTime;
+        }
+        else
+        {
+            canAttack = true;
+        }
     }
 
     private void FixedUpdate()
@@ -39,9 +48,16 @@ public class PlayerController : MonoBehaviour
         playerMovement = value.Get<Vector2>().normalized;
     }
 
-    public void OnFire1()
+    public void OnFire1(InputValue value)
     {
-        ActiveWeapon.Instance.Attack();
+        if (canAttack)
+        {
+            if (value.Get<float>() > 0) //is pressed or held down
+            {
+                ActiveWeapon.Instance.Attack();
+                canAttack = false;
+            }
+        }
     }
 
     public void OnFire2()
@@ -60,5 +76,10 @@ public class PlayerController : MonoBehaviour
     void MovePlayer()
     {
         rb.velocity = playerMovement * playerMS;
+    }
+
+    public void SetAttackCD(float attackCD)
+    {
+        this.attackCD = attackCD;
     }
 }

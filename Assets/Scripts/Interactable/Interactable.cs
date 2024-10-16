@@ -35,8 +35,6 @@ public abstract class Interactable : MonoBehaviour, IInteractable
         set { _whiteHighlightMaterial = value; }
     }
 
-
-
     private void Awake()
     {
         sr = GetComponent<SpriteRenderer>();

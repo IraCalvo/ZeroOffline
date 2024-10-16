@@ -6,6 +6,7 @@ public abstract class Weapon : MonoBehaviour, IWeapon
 {
     [SerializeField] string _itemName;
     [SerializeField] string _itemDesc;
+    [SerializeField] public WeaponSO _weaponSO;
     int _itemStackAmount = 1;
     public string ItemName 
     {
@@ -23,6 +24,12 @@ public abstract class Weapon : MonoBehaviour, IWeapon
     {
         get { return _itemStackAmount; }
         set {_itemStackAmount = value; }
+    }
+
+    public WeaponSO WeaponSO
+    {
+        get { return _weaponSO; }
+        set { _weaponSO = value; }
     }
 
     public abstract void UseWeapon();
