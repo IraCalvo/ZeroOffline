@@ -6,7 +6,7 @@ using UnityEngine;
 public class EnemySO : ScriptableObject
 {
     public string enemyName;
-    public float enemyBaseMaxHP;
+    public int enemyBaseMaxHP;
     public float enemyBaseMS;
     public float enemyBaseDamage;
     public float enemyBaseRange;

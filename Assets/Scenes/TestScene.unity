@@ -135,6 +135,8 @@ GameObject:
   - component: {fileID: 62774802}
   - component: {fileID: 62774805}
   - component: {fileID: 62774804}
+  - component: {fileID: 62774808}
+  - component: {fileID: 62774807}
   - component: {fileID: 62774806}
   m_Layer: 0
   m_Name: TestEnemy
@@ -142,7 +144,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &62774802
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -281,24 +283,48 @@ MonoBehaviour:
   m_GameObject: {fileID: 62774800}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b706a7694f63ec040a242bd4da4814d0, type: 3}
+  m_Script: {fileID: 11500000, guid: f8edbb0527b42024bb01c26b363c4c92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemySO: {fileID: 11400000, guid: 725fab7114b01c443974e805aa26d2b4, type: 2}
+--- !u!114 &62774807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 62774800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8098fb7d24fab0b498ce847e33a24371, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectileToShoot: {fileID: 0}
+  projMoveSpeed: 0.1
+  burstCount: 1
+  projPerBurst: 1
+  angleSpread: 0
+  startingDistance: 0
+  timeBetweenBursts: 0.1
+  restTime: 0.1
+  staggerBullets: 0
+  oscillate: 0
+--- !u!114 &62774808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 62774800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b523d6a41f61fae47ba7c4baf569e91b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemySO: {fileID: 0}
   currentHP: 0
   currentEnemyMS: 0
   currentAttackRange: 0
   enemyState: 0
-  projectileToShoot: {fileID: 4777508140183594442, guid: 90fb1c1c9ef841d469de7ab5ba95788e, type: 3}
-  projMoveSpeed: 5
-  burstCount: 1
-  projPerBurst: 1
-  angleSpread: 0
-  startingDistance: 1
-  timeBetweenBursts: 0.75
-  restTime: 2.5
-  staggerBullets: 0
-  oscillate: 0
 --- !u!1 &239483671
 GameObject:
   m_ObjectHideFlags: 0
@@ -3466,6 +3492,8 @@ GameObject:
   - component: {fileID: 700690532}
   - component: {fileID: 700690538}
   - component: {fileID: 700690535}
+  - component: {fileID: 700690539}
+  - component: {fileID: 700690540}
   - component: {fileID: 700690536}
   - component: {fileID: 700690537}
   m_Layer: 0
@@ -3557,6 +3585,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerMS: 10
   canAttack: 0
+  playerCanBeHit: 0
 --- !u!114 &700690533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3691,6 +3720,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interablesInRange: []
+--- !u!114 &700690539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 700690529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47fc11455d634c548ac6e73fd969868f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dashSpeed: 5
+  dashDuration: 0.2
+  dashCD: 1
+--- !u!114 &700690540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 700690529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 755c99e7436b51e429d6e380b6534a70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 0
+  currentHealth: 0
 --- !u!1 &753498279
 GameObject:
   m_ObjectHideFlags: 0
@@ -4309,7 +4367,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1029661363
 Transform:
   m_ObjectHideFlags: 0

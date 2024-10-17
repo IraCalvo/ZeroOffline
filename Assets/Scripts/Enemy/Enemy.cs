@@ -10,7 +10,7 @@ public enum EnemyState
     Death
 }
 
-public abstract class Enemy : MonoBehaviour
+public class Enemy : MonoBehaviour
 {
     public EnemySO enemySO;
     public float currentHP;

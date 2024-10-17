@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rb;
     public bool canAttack;
     float attackCD;
+    PlayerDash playerDash;
+    [HideInInspector] public bool playerCanBeHit;
 
     private void Awake()
     {
@@ -24,6 +26,7 @@ public class PlayerController : MonoBehaviour
         }
 
         rb = GetComponent<Rigidbody2D>();
+        playerDash = GetComponent<PlayerDash>();
     }
 
     private void Update()
@@ -71,6 +74,11 @@ public class PlayerController : MonoBehaviour
         { 
             PlayerInteract.instance.GetClosestInteractable().Interact();
         }
+    }
+
+    public void OnDash()
+    {
+        playerDash.Dash();
     }
 
     void MovePlayer()
