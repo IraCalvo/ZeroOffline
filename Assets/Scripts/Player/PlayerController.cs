@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using static UnityEngine.InputSystem.InputAction;
 
 public class PlayerController : MonoBehaviour
 {
@@ -9,10 +10,11 @@ public class PlayerController : MonoBehaviour
     public float playerMS;
     Vector2 playerMovement;
     Rigidbody2D rb;
-    public bool canAttack;
+    [HideInInspector] public bool canAttack;
     float attackCD;
     PlayerDash playerDash;
     [HideInInspector] public bool playerCanBeHit;
+    bool isAttacking = false;
 
     private void Awake()
     {
@@ -55,7 +57,7 @@ public class PlayerController : MonoBehaviour
     {
         if (canAttack)
         {
-            if (value.Get<float>() > 0) //is pressed or held down
+            if (value.isPressed)
             {
                 ActiveWeapon.Instance.Attack();
                 canAttack = false;

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -10,6 +11,7 @@ public abstract class Interactable : MonoBehaviour, IInteractable
     public Material _originalMaterial;
     public Material _whiteHighlightMaterial;
     public SpriteRenderer sr;
+    public TextMeshPro _interactionText;
 
     public string InteractDescription
     {
@@ -35,6 +37,12 @@ public abstract class Interactable : MonoBehaviour, IInteractable
         set { _whiteHighlightMaterial = value; }
     }
 
+    public TextMeshPro InteractText
+    {
+        get { return _interactionText; }
+        set { _interactionText = value; }
+    }
+
     private void Awake()
     {
         sr = GetComponent<SpriteRenderer>();
@@ -53,6 +61,7 @@ public abstract class Interactable : MonoBehaviour, IInteractable
             if (PlayerInteract.instance.GetClosestInteractable() == this)
             {
                 sr.material = _whiteHighlightMaterial;
+                _interactionText.gameObject.SetActive(true);
             }
         }
     }
@@ -62,9 +71,11 @@ public abstract class Interactable : MonoBehaviour, IInteractable
         {
             sr.material = _originalMaterial;
             PlayerInteract.instance.interablesInRange.Remove(this);
+            _interactionText.gameObject.SetActive(false);
             if (PlayerInteract.instance.interablesInRange.Count > 0)
             {
                 PlayerInteract.instance.GetClosestInteractable().GetComponent<SpriteRenderer>().material = _whiteHighlightMaterial;
+                PlayerInteract.instance.GetClosestInteractable()._interactionText.gameObject.SetActive(true);
             }
         }
     }
