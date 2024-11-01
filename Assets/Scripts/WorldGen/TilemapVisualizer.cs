@@ -7,22 +7,25 @@ using UnityEngine.Tilemaps;
 
 public class TilemapVisualizer : MonoBehaviour
 {
-    [SerializeField] private Tilemap floorTilemap;
-    [SerializeField] private Tilemap wallTilemap;
+    [SerializeField] public Tilemap floorTilemap;
+    [SerializeField] public Tilemap wallTilemap;
 
     //can make these an array to choose a random one
-    [SerializeField] private TileBase floorTile;
+    [SerializeField] public TileBase floorTile;
     [SerializeField] private TileBase wallTop;
     [SerializeField] private TileBase wallBottom;
     [SerializeField] private TileBase wallLeft;
     [SerializeField] private TileBase wallRight;
-    [SerializeField] private TileBase wallFull;
+    [SerializeField] public TileBase wallFull;
     [SerializeField] private TileBase wallInnerCornerDownLeft;
     [SerializeField] private TileBase wallInnerCornerDownRight;
     [SerializeField] private TileBase wallDiagonalCornerDownRight;
     [SerializeField] private TileBase wallDiagonalCornerDownLeft;
     [SerializeField] private TileBase wallDiagonalCornerUpRight;
     [SerializeField] private TileBase wallDiagonalCornerUpLeft;
+    [SerializeField] private TileBase wallDiagonalBottomRight;
+    [SerializeField] private TileBase wallDiagonalBottomLeft;
+    //[SerializeField] private RuleTile tile;
 
     public void PaintFloorTiles(IEnumerable<Vector2Int> floorPositions)
     {
@@ -59,6 +62,8 @@ public class TilemapVisualizer : MonoBehaviour
         }
         else if (WallTypesHelper.wallFull.Contains(typeAsInt))
         {
+            //PaintFloorTiles(new HashSet<Vector2Int>{pos});
+            //return;
             tile = wallFull;
         }
 
@@ -70,6 +75,7 @@ public class TilemapVisualizer : MonoBehaviour
 
     internal void PaintSingleCornerWall(Vector2Int pos, string binaryType)
     {
+        Debug.Log(pos + " type: " + binaryType);
         int typeAsInt = Convert.ToInt32(binaryType, 2);
         TileBase tile  = null;
 
@@ -97,6 +103,14 @@ public class TilemapVisualizer : MonoBehaviour
         {
             tile = wallDiagonalCornerUpLeft;
         }
+        else if (WallTypesHelper.wallDiagonalBottomRight.Contains(typeAsInt))
+        {
+            tile = wallDiagonalBottomRight;
+        }
+        else if (WallTypesHelper.wallDiagonalBottomLeft.Contains(typeAsInt))
+        {
+            tile = wallDiagonalBottomLeft;
+        }
         else if (WallTypesHelper.wallFullEightDirections.Contains(typeAsInt))
         {
             tile = wallFull;
@@ -105,7 +119,6 @@ public class TilemapVisualizer : MonoBehaviour
         {
             tile = wallBottom;
         }
-
 
         if (tile != null)
         {

@@ -5720,7 +5720,7 @@ TextureImporter:
       name: RA_Cavern_267
       rect:
         serializedVersion: 2
-        x: 192
+        x: 144
         y: 352
         width: 16
         height: 16
@@ -5741,7 +5741,7 @@ TextureImporter:
       name: RA_Cavern_268
       rect:
         serializedVersion: 2
-        x: 208
+        x: 160
         y: 352
         width: 16
         height: 16
@@ -5762,7 +5762,7 @@ TextureImporter:
       name: RA_Cavern_269
       rect:
         serializedVersion: 2
-        x: 224
+        x: 176
         y: 352
         width: 16
         height: 16
@@ -5783,7 +5783,7 @@ TextureImporter:
       name: RA_Cavern_270
       rect:
         serializedVersion: 2
-        x: 240
+        x: 192
         y: 352
         width: 16
         height: 16
@@ -5804,7 +5804,7 @@ TextureImporter:
       name: RA_Cavern_271
       rect:
         serializedVersion: 2
-        x: 256
+        x: 208
         y: 352
         width: 16
         height: 16
@@ -5825,7 +5825,7 @@ TextureImporter:
       name: RA_Cavern_272
       rect:
         serializedVersion: 2
-        x: 272
+        x: 224
         y: 352
         width: 16
         height: 16
@@ -5846,7 +5846,7 @@ TextureImporter:
       name: RA_Cavern_273
       rect:
         serializedVersion: 2
-        x: 288
+        x: 240
         y: 352
         width: 16
         height: 16
@@ -5867,7 +5867,7 @@ TextureImporter:
       name: RA_Cavern_274
       rect:
         serializedVersion: 2
-        x: 304
+        x: 256
         y: 352
         width: 16
         height: 16
@@ -5888,7 +5888,7 @@ TextureImporter:
       name: RA_Cavern_275
       rect:
         serializedVersion: 2
-        x: 320
+        x: 272
         y: 352
         width: 16
         height: 16
@@ -5909,7 +5909,7 @@ TextureImporter:
       name: RA_Cavern_276
       rect:
         serializedVersion: 2
-        x: 336
+        x: 288
         y: 352
         width: 16
         height: 16
@@ -5930,7 +5930,7 @@ TextureImporter:
       name: RA_Cavern_277
       rect:
         serializedVersion: 2
-        x: 352
+        x: 304
         y: 352
         width: 16
         height: 16
@@ -5951,7 +5951,7 @@ TextureImporter:
       name: RA_Cavern_278
       rect:
         serializedVersion: 2
-        x: 368
+        x: 320
         y: 352
         width: 16
         height: 16
@@ -5972,7 +5972,7 @@ TextureImporter:
       name: RA_Cavern_279
       rect:
         serializedVersion: 2
-        x: 384
+        x: 336
         y: 352
         width: 16
         height: 16
@@ -5993,7 +5993,7 @@ TextureImporter:
       name: RA_Cavern_280
       rect:
         serializedVersion: 2
-        x: 400
+        x: 352
         y: 352
         width: 16
         height: 16
@@ -6014,7 +6014,7 @@ TextureImporter:
       name: RA_Cavern_281
       rect:
         serializedVersion: 2
-        x: 416
+        x: 368
         y: 352
         width: 16
         height: 16
@@ -6035,7 +6035,7 @@ TextureImporter:
       name: RA_Cavern_282
       rect:
         serializedVersion: 2
-        x: 432
+        x: 384
         y: 352
         width: 16
         height: 16
@@ -6056,7 +6056,7 @@ TextureImporter:
       name: RA_Cavern_283
       rect:
         serializedVersion: 2
-        x: 448
+        x: 400
         y: 352
         width: 16
         height: 16
@@ -6077,7 +6077,7 @@ TextureImporter:
       name: RA_Cavern_284
       rect:
         serializedVersion: 2
-        x: 464
+        x: 416
         y: 352
         width: 16
         height: 16
@@ -6098,8 +6098,8 @@ TextureImporter:
       name: RA_Cavern_285
       rect:
         serializedVersion: 2
-        x: 0
-        y: 336
+        x: 432
+        y: 352
         width: 16
         height: 16
       alignment: 0
@@ -6119,8 +6119,8 @@ TextureImporter:
       name: RA_Cavern_286
       rect:
         serializedVersion: 2
-        x: 16
-        y: 336
+        x: 448
+        y: 352
         width: 16
         height: 16
       alignment: 0
@@ -6140,8 +6140,8 @@ TextureImporter:
       name: RA_Cavern_287
       rect:
         serializedVersion: 2
-        x: 32
-        y: 336
+        x: 464
+        y: 352
         width: 16
         height: 16
       alignment: 0
@@ -6161,7 +6161,7 @@ TextureImporter:
       name: RA_Cavern_288
       rect:
         serializedVersion: 2
-        x: 48
+        x: 0
         y: 336
         width: 16
         height: 16
@@ -6182,7 +6182,7 @@ TextureImporter:
       name: RA_Cavern_289
       rect:
         serializedVersion: 2
-        x: 64
+        x: 16
         y: 336
         width: 16
         height: 16
@@ -6203,7 +6203,7 @@ TextureImporter:
       name: RA_Cavern_290
       rect:
         serializedVersion: 2
-        x: 80
+        x: 32
         y: 336
         width: 16
         height: 16
@@ -6224,7 +6224,7 @@ TextureImporter:
       name: RA_Cavern_291
       rect:
         serializedVersion: 2
-        x: 96
+        x: 48
         y: 336
         width: 16
         height: 16
@@ -6245,7 +6245,7 @@ TextureImporter:
       name: RA_Cavern_292
       rect:
         serializedVersion: 2
-        x: 112
+        x: 64
         y: 336
         width: 16
         height: 16
@@ -6266,7 +6266,7 @@ TextureImporter:
       name: RA_Cavern_293
       rect:
         serializedVersion: 2
-        x: 128
+        x: 80
         y: 336
         width: 16
         height: 16
@@ -6287,7 +6287,7 @@ TextureImporter:
       name: RA_Cavern_294
       rect:
         serializedVersion: 2
-        x: 144
+        x: 96
         y: 336
         width: 16
         height: 16
@@ -6308,7 +6308,7 @@ TextureImporter:
       name: RA_Cavern_295
       rect:
         serializedVersion: 2
-        x: 160
+        x: 112
         y: 336
         width: 16
         height: 16
@@ -6329,7 +6329,7 @@ TextureImporter:
       name: RA_Cavern_296
       rect:
         serializedVersion: 2
-        x: 176
+        x: 128
         y: 336
         width: 16
         height: 16
@@ -6350,7 +6350,7 @@ TextureImporter:
       name: RA_Cavern_297
       rect:
         serializedVersion: 2
-        x: 192
+        x: 144
         y: 336
         width: 16
         height: 16
@@ -6371,7 +6371,7 @@ TextureImporter:
       name: RA_Cavern_298
       rect:
         serializedVersion: 2
-        x: 208
+        x: 160
         y: 336
         width: 16
         height: 16
@@ -6392,7 +6392,7 @@ TextureImporter:
       name: RA_Cavern_299
       rect:
         serializedVersion: 2
-        x: 224
+        x: 176
         y: 336
         width: 16
         height: 16
@@ -6413,7 +6413,7 @@ TextureImporter:
       name: RA_Cavern_300
       rect:
         serializedVersion: 2
-        x: 240
+        x: 192
         y: 336
         width: 16
         height: 16
@@ -6434,7 +6434,7 @@ TextureImporter:
       name: RA_Cavern_301
       rect:
         serializedVersion: 2
-        x: 256
+        x: 208
         y: 336
         width: 16
         height: 16
@@ -6455,7 +6455,7 @@ TextureImporter:
       name: RA_Cavern_302
       rect:
         serializedVersion: 2
-        x: 272
+        x: 224
         y: 336
         width: 16
         height: 16
@@ -6476,7 +6476,7 @@ TextureImporter:
       name: RA_Cavern_303
       rect:
         serializedVersion: 2
-        x: 288
+        x: 240
         y: 336
         width: 16
         height: 16
@@ -6497,7 +6497,7 @@ TextureImporter:
       name: RA_Cavern_304
       rect:
         serializedVersion: 2
-        x: 304
+        x: 256
         y: 336
         width: 16
         height: 16
@@ -6518,7 +6518,7 @@ TextureImporter:
       name: RA_Cavern_305
       rect:
         serializedVersion: 2
-        x: 336
+        x: 272
         y: 336
         width: 16
         height: 16
@@ -6539,7 +6539,7 @@ TextureImporter:
       name: RA_Cavern_306
       rect:
         serializedVersion: 2
-        x: 352
+        x: 288
         y: 336
         width: 16
         height: 16
@@ -6560,7 +6560,7 @@ TextureImporter:
       name: RA_Cavern_307
       rect:
         serializedVersion: 2
-        x: 368
+        x: 304
         y: 336
         width: 16
         height: 16
@@ -6581,7 +6581,7 @@ TextureImporter:
       name: RA_Cavern_308
       rect:
         serializedVersion: 2
-        x: 384
+        x: 336
         y: 336
         width: 16
         height: 16
@@ -6602,7 +6602,7 @@ TextureImporter:
       name: RA_Cavern_309
       rect:
         serializedVersion: 2
-        x: 400
+        x: 352
         y: 336
         width: 16
         height: 16
@@ -6623,7 +6623,7 @@ TextureImporter:
       name: RA_Cavern_310
       rect:
         serializedVersion: 2
-        x: 416
+        x: 368
         y: 336
         width: 16
         height: 16
@@ -6644,7 +6644,7 @@ TextureImporter:
       name: RA_Cavern_311
       rect:
         serializedVersion: 2
-        x: 432
+        x: 384
         y: 336
         width: 16
         height: 16
@@ -6665,7 +6665,7 @@ TextureImporter:
       name: RA_Cavern_312
       rect:
         serializedVersion: 2
-        x: 448
+        x: 400
         y: 336
         width: 16
         height: 16
@@ -6686,7 +6686,7 @@ TextureImporter:
       name: RA_Cavern_313
       rect:
         serializedVersion: 2
-        x: 464
+        x: 416
         y: 336
         width: 16
         height: 16
@@ -6707,7 +6707,7 @@ TextureImporter:
       name: RA_Cavern_314
       rect:
         serializedVersion: 2
-        x: 480
+        x: 432
         y: 336
         width: 16
         height: 16
@@ -6728,7 +6728,7 @@ TextureImporter:
       name: RA_Cavern_315
       rect:
         serializedVersion: 2
-        x: 496
+        x: 448
         y: 336
         width: 16
         height: 16
@@ -6749,8 +6749,8 @@ TextureImporter:
       name: RA_Cavern_316
       rect:
         serializedVersion: 2
-        x: 0
-        y: 320
+        x: 464
+        y: 336
         width: 16
         height: 16
       alignment: 0
@@ -6770,8 +6770,8 @@ TextureImporter:
       name: RA_Cavern_317
       rect:
         serializedVersion: 2
-        x: 32
-        y: 320
+        x: 480
+        y: 336
         width: 16
         height: 16
       alignment: 0
@@ -6791,8 +6791,8 @@ TextureImporter:
       name: RA_Cavern_318
       rect:
         serializedVersion: 2
-        x: 48
-        y: 320
+        x: 496
+        y: 336
         width: 16
         height: 16
       alignment: 0
@@ -6812,7 +6812,7 @@ TextureImporter:
       name: RA_Cavern_319
       rect:
         serializedVersion: 2
-        x: 64
+        x: 0
         y: 320
         width: 16
         height: 16
@@ -6833,7 +6833,7 @@ TextureImporter:
       name: RA_Cavern_320
       rect:
         serializedVersion: 2
-        x: 80
+        x: 32
         y: 320
         width: 16
         height: 16
@@ -6854,7 +6854,7 @@ TextureImporter:
       name: RA_Cavern_321
       rect:
         serializedVersion: 2
-        x: 96
+        x: 48
         y: 320
         width: 16
         height: 16
@@ -6875,7 +6875,7 @@ TextureImporter:
       name: RA_Cavern_322
       rect:
         serializedVersion: 2
-        x: 128
+        x: 64
         y: 320
         width: 16
         height: 16
@@ -6896,7 +6896,7 @@ TextureImporter:
       name: RA_Cavern_323
       rect:
         serializedVersion: 2
-        x: 144
+        x: 80
         y: 320
         width: 16
         height: 16
@@ -6917,7 +6917,7 @@ TextureImporter:
       name: RA_Cavern_324
       rect:
         serializedVersion: 2
-        x: 160
+        x: 96
         y: 320
         width: 16
         height: 16
@@ -6938,7 +6938,7 @@ TextureImporter:
       name: RA_Cavern_325
       rect:
         serializedVersion: 2
-        x: 176
+        x: 128
         y: 320
         width: 16
         height: 16
@@ -6959,7 +6959,7 @@ TextureImporter:
       name: RA_Cavern_326
       rect:
         serializedVersion: 2
-        x: 192
+        x: 144
         y: 320
         width: 16
         height: 16
@@ -6980,7 +6980,7 @@ TextureImporter:
       name: RA_Cavern_327
       rect:
         serializedVersion: 2
-        x: 208
+        x: 160
         y: 320
         width: 16
         height: 16
@@ -7001,7 +7001,7 @@ TextureImporter:
       name: RA_Cavern_328
       rect:
         serializedVersion: 2
-        x: 256
+        x: 176
         y: 320
         width: 16
         height: 16
@@ -7022,7 +7022,7 @@ TextureImporter:
       name: RA_Cavern_329
       rect:
         serializedVersion: 2
-        x: 272
+        x: 192
         y: 320
         width: 16
         height: 16
@@ -7043,7 +7043,7 @@ TextureImporter:
       name: RA_Cavern_330
       rect:
         serializedVersion: 2
-        x: 288
+        x: 208
         y: 320
         width: 16
         height: 16
@@ -7064,7 +7064,7 @@ TextureImporter:
       name: RA_Cavern_331
       rect:
         serializedVersion: 2
-        x: 304
+        x: 256
         y: 320
         width: 16
         height: 16
@@ -7085,7 +7085,7 @@ TextureImporter:
       name: RA_Cavern_332
       rect:
         serializedVersion: 2
-        x: 320
+        x: 272
         y: 320
         width: 16
         height: 16
@@ -7106,7 +7106,7 @@ TextureImporter:
       name: RA_Cavern_333
       rect:
         serializedVersion: 2
-        x: 336
+        x: 288
         y: 320
         width: 16
         height: 16
@@ -7127,7 +7127,7 @@ TextureImporter:
       name: RA_Cavern_334
       rect:
         serializedVersion: 2
-        x: 352
+        x: 304
         y: 320
         width: 16
         height: 16
@@ -7148,7 +7148,7 @@ TextureImporter:
       name: RA_Cavern_335
       rect:
         serializedVersion: 2
-        x: 368
+        x: 320
         y: 320
         width: 16
         height: 16
@@ -7169,7 +7169,7 @@ TextureImporter:
       name: RA_Cavern_336
       rect:
         serializedVersion: 2
-        x: 384
+        x: 336
         y: 320
         width: 16
         height: 16
@@ -7190,7 +7190,7 @@ TextureImporter:
       name: RA_Cavern_337
       rect:
         serializedVersion: 2
-        x: 400
+        x: 352
         y: 320
         width: 16
         height: 16
@@ -7211,7 +7211,7 @@ TextureImporter:
       name: RA_Cavern_338
       rect:
         serializedVersion: 2
-        x: 416
+        x: 368
         y: 320
         width: 16
         height: 16
@@ -7232,7 +7232,7 @@ TextureImporter:
       name: RA_Cavern_339
       rect:
         serializedVersion: 2
-        x: 432
+        x: 384
         y: 320
         width: 16
         height: 16
@@ -7253,7 +7253,7 @@ TextureImporter:
       name: RA_Cavern_340
       rect:
         serializedVersion: 2
-        x: 448
+        x: 400
         y: 320
         width: 16
         height: 16
@@ -7274,7 +7274,7 @@ TextureImporter:
       name: RA_Cavern_341
       rect:
         serializedVersion: 2
-        x: 464
+        x: 416
         y: 320
         width: 16
         height: 16
@@ -7295,8 +7295,8 @@ TextureImporter:
       name: RA_Cavern_342
       rect:
         serializedVersion: 2
-        x: 0
-        y: 304
+        x: 432
+        y: 320
         width: 16
         height: 16
       alignment: 0
@@ -7316,8 +7316,8 @@ TextureImporter:
       name: RA_Cavern_343
       rect:
         serializedVersion: 2
-        x: 16
-        y: 304
+        x: 448
+        y: 320
         width: 16
         height: 16
       alignment: 0
@@ -7337,8 +7337,8 @@ TextureImporter:
       name: RA_Cavern_344
       rect:
         serializedVersion: 2
-        x: 32
-        y: 304
+        x: 464
+        y: 320
         width: 16
         height: 16
       alignment: 0
@@ -7358,7 +7358,7 @@ TextureImporter:
       name: RA_Cavern_345
       rect:
         serializedVersion: 2
-        x: 48
+        x: 0
         y: 304
         width: 16
         height: 16
@@ -7379,7 +7379,7 @@ TextureImporter:
       name: RA_Cavern_346
       rect:
         serializedVersion: 2
-        x: 64
+        x: 16
         y: 304
         width: 16
         height: 16
@@ -7400,7 +7400,7 @@ TextureImporter:
       name: RA_Cavern_347
       rect:
         serializedVersion: 2
-        x: 80
+        x: 32
         y: 304
         width: 16
         height: 16
@@ -7421,7 +7421,7 @@ TextureImporter:
       name: RA_Cavern_348
       rect:
         serializedVersion: 2
-        x: 96
+        x: 48
         y: 304
         width: 16
         height: 16
@@ -7442,7 +7442,7 @@ TextureImporter:
       name: RA_Cavern_349
       rect:
         serializedVersion: 2
-        x: 112
+        x: 64
         y: 304
         width: 16
         height: 16
@@ -7463,7 +7463,7 @@ TextureImporter:
       name: RA_Cavern_350
       rect:
         serializedVersion: 2
-        x: 128
+        x: 80
         y: 304
         width: 16
         height: 16
@@ -7484,7 +7484,7 @@ TextureImporter:
       name: RA_Cavern_351
       rect:
         serializedVersion: 2
-        x: 144
+        x: 96
         y: 304
         width: 16
         height: 16
@@ -7505,7 +7505,7 @@ TextureImporter:
       name: RA_Cavern_352
       rect:
         serializedVersion: 2
-        x: 160
+        x: 112
         y: 304
         width: 16
         height: 16
@@ -7526,7 +7526,7 @@ TextureImporter:
       name: RA_Cavern_353
       rect:
         serializedVersion: 2
-        x: 176
+        x: 128
         y: 304
         width: 16
         height: 16
@@ -7547,7 +7547,7 @@ TextureImporter:
       name: RA_Cavern_354
       rect:
         serializedVersion: 2
-        x: 256
+        x: 144
         y: 304
         width: 16
         height: 16
@@ -7568,7 +7568,7 @@ TextureImporter:
       name: RA_Cavern_355
       rect:
         serializedVersion: 2
-        x: 272
+        x: 160
         y: 304
         width: 16
         height: 16
@@ -7589,7 +7589,7 @@ TextureImporter:
       name: RA_Cavern_356
       rect:
         serializedVersion: 2
-        x: 288
+        x: 176
         y: 304
         width: 16
         height: 16
@@ -7610,7 +7610,7 @@ TextureImporter:
       name: RA_Cavern_357
       rect:
         serializedVersion: 2
-        x: 304
+        x: 208
         y: 304
         width: 16
         height: 16
@@ -7631,7 +7631,7 @@ TextureImporter:
       name: RA_Cavern_358
       rect:
         serializedVersion: 2
-        x: 320
+        x: 224
         y: 304
         width: 16
         height: 16
@@ -7652,7 +7652,7 @@ TextureImporter:
       name: RA_Cavern_359
       rect:
         serializedVersion: 2
-        x: 336
+        x: 240
         y: 304
         width: 16
         height: 16
@@ -7673,7 +7673,7 @@ TextureImporter:
       name: RA_Cavern_360
       rect:
         serializedVersion: 2
-        x: 352
+        x: 256
         y: 304
         width: 16
         height: 16
@@ -7694,7 +7694,7 @@ TextureImporter:
       name: RA_Cavern_361
       rect:
         serializedVersion: 2
-        x: 368
+        x: 272
         y: 304
         width: 16
         height: 16
@@ -7715,7 +7715,7 @@ TextureImporter:
       name: RA_Cavern_362
       rect:
         serializedVersion: 2
-        x: 384
+        x: 288
         y: 304
         width: 16
         height: 16
@@ -7736,7 +7736,7 @@ TextureImporter:
       name: RA_Cavern_363
       rect:
         serializedVersion: 2
-        x: 400
+        x: 304
         y: 304
         width: 16
         height: 16
@@ -7757,7 +7757,7 @@ TextureImporter:
       name: RA_Cavern_364
       rect:
         serializedVersion: 2
-        x: 416
+        x: 320
         y: 304
         width: 16
         height: 16
@@ -7778,7 +7778,7 @@ TextureImporter:
       name: RA_Cavern_365
       rect:
         serializedVersion: 2
-        x: 432
+        x: 336
         y: 304
         width: 16
         height: 16
@@ -7799,7 +7799,7 @@ TextureImporter:
       name: RA_Cavern_366
       rect:
         serializedVersion: 2
-        x: 448
+        x: 352
         y: 304
         width: 16
         height: 16
@@ -7820,7 +7820,7 @@ TextureImporter:
       name: RA_Cavern_367
       rect:
         serializedVersion: 2
-        x: 464
+        x: 368
         y: 304
         width: 16
         height: 16
@@ -7841,8 +7841,8 @@ TextureImporter:
       name: RA_Cavern_368
       rect:
         serializedVersion: 2
-        x: 0
-        y: 288
+        x: 384
+        y: 304
         width: 16
         height: 16
       alignment: 0
@@ -7862,8 +7862,8 @@ TextureImporter:
       name: RA_Cavern_369
       rect:
         serializedVersion: 2
-        x: 16
-        y: 288
+        x: 400
+        y: 304
         width: 16
         height: 16
       alignment: 0
@@ -7883,8 +7883,8 @@ TextureImporter:
       name: RA_Cavern_370
       rect:
         serializedVersion: 2
-        x: 32
-        y: 288
+        x: 416
+        y: 304
         width: 16
         height: 16
       alignment: 0
@@ -7904,8 +7904,8 @@ TextureImporter:
       name: RA_Cavern_371
       rect:
         serializedVersion: 2
-        x: 48
-        y: 288
+        x: 432
+        y: 304
         width: 16
         height: 16
       alignment: 0
@@ -7925,8 +7925,8 @@ TextureImporter:
       name: RA_Cavern_372
       rect:
         serializedVersion: 2
-        x: 64
-        y: 288
+        x: 448
+        y: 304
         width: 16
         height: 16
       alignment: 0
@@ -7946,8 +7946,8 @@ TextureImporter:
       name: RA_Cavern_373
       rect:
         serializedVersion: 2
-        x: 80
-        y: 288
+        x: 464
+        y: 304
         width: 16
         height: 16
       alignment: 0
@@ -7967,7 +7967,7 @@ TextureImporter:
       name: RA_Cavern_374
       rect:
         serializedVersion: 2
-        x: 96
+        x: 0
         y: 288
         width: 16
         height: 16
@@ -7988,7 +7988,7 @@ TextureImporter:
       name: RA_Cavern_375
       rect:
         serializedVersion: 2
-        x: 112
+        x: 16
         y: 288
         width: 16
         height: 16
@@ -8009,7 +8009,7 @@ TextureImporter:
       name: RA_Cavern_376
       rect:
         serializedVersion: 2
-        x: 128
+        x: 32
         y: 288
         width: 16
         height: 16
@@ -8030,7 +8030,7 @@ TextureImporter:
       name: RA_Cavern_377
       rect:
         serializedVersion: 2
-        x: 144
+        x: 48
         y: 288
         width: 16
         height: 16
@@ -8051,7 +8051,7 @@ TextureImporter:
       name: RA_Cavern_378
       rect:
         serializedVersion: 2
-        x: 160
+        x: 64
         y: 288
         width: 16
         height: 16
@@ -8072,7 +8072,7 @@ TextureImporter:
       name: RA_Cavern_379
       rect:
         serializedVersion: 2
-        x: 176
+        x: 80
         y: 288
         width: 16
         height: 16
@@ -8093,7 +8093,7 @@ TextureImporter:
       name: RA_Cavern_380
       rect:
         serializedVersion: 2
-        x: 256
+        x: 96
         y: 288
         width: 16
         height: 16
@@ -8114,7 +8114,7 @@ TextureImporter:
       name: RA_Cavern_381
       rect:
         serializedVersion: 2
-        x: 272
+        x: 112
         y: 288
         width: 16
         height: 16
@@ -8135,7 +8135,7 @@ TextureImporter:
       name: RA_Cavern_382
       rect:
         serializedVersion: 2
-        x: 288
+        x: 128
         y: 288
         width: 16
         height: 16
@@ -8156,7 +8156,7 @@ TextureImporter:
       name: RA_Cavern_383
       rect:
         serializedVersion: 2
-        x: 304
+        x: 144
         y: 288
         width: 16
         height: 16
@@ -8177,7 +8177,7 @@ TextureImporter:
       name: RA_Cavern_384
       rect:
         serializedVersion: 2
-        x: 336
+        x: 160
         y: 288
         width: 16
         height: 16
@@ -8198,7 +8198,7 @@ TextureImporter:
       name: RA_Cavern_385
       rect:
         serializedVersion: 2
-        x: 352
+        x: 176
         y: 288
         width: 16
         height: 16
@@ -8219,7 +8219,7 @@ TextureImporter:
       name: RA_Cavern_386
       rect:
         serializedVersion: 2
-        x: 368
+        x: 256
         y: 288
         width: 16
         height: 16
@@ -8240,7 +8240,7 @@ TextureImporter:
       name: RA_Cavern_387
       rect:
         serializedVersion: 2
-        x: 384
+        x: 272
         y: 288
         width: 16
         height: 16
@@ -8261,7 +8261,7 @@ TextureImporter:
       name: RA_Cavern_388
       rect:
         serializedVersion: 2
-        x: 400
+        x: 288
         y: 288
         width: 16
         height: 16
@@ -8282,7 +8282,7 @@ TextureImporter:
       name: RA_Cavern_389
       rect:
         serializedVersion: 2
-        x: 416
+        x: 304
         y: 288
         width: 16
         height: 16
@@ -8303,7 +8303,7 @@ TextureImporter:
       name: RA_Cavern_390
       rect:
         serializedVersion: 2
-        x: 432
+        x: 336
         y: 288
         width: 16
         height: 16
@@ -8324,7 +8324,7 @@ TextureImporter:
       name: RA_Cavern_391
       rect:
         serializedVersion: 2
-        x: 448
+        x: 352
         y: 288
         width: 16
         height: 16
@@ -8345,7 +8345,7 @@ TextureImporter:
       name: RA_Cavern_392
       rect:
         serializedVersion: 2
-        x: 464
+        x: 368
         y: 288
         width: 16
         height: 16
@@ -8366,8 +8366,8 @@ TextureImporter:
       name: RA_Cavern_393
       rect:
         serializedVersion: 2
-        x: 0
-        y: 272
+        x: 384
+        y: 288
         width: 16
         height: 16
       alignment: 0
@@ -8387,8 +8387,8 @@ TextureImporter:
       name: RA_Cavern_394
       rect:
         serializedVersion: 2
-        x: 16
-        y: 272
+        x: 400
+        y: 288
         width: 16
         height: 16
       alignment: 0
@@ -8408,8 +8408,8 @@ TextureImporter:
       name: RA_Cavern_395
       rect:
         serializedVersion: 2
-        x: 32
-        y: 272
+        x: 416
+        y: 288
         width: 16
         height: 16
       alignment: 0
@@ -8429,8 +8429,8 @@ TextureImporter:
       name: RA_Cavern_396
       rect:
         serializedVersion: 2
-        x: 48
-        y: 272
+        x: 432
+        y: 288
         width: 16
         height: 16
       alignment: 0
@@ -8450,8 +8450,8 @@ TextureImporter:
       name: RA_Cavern_397
       rect:
         serializedVersion: 2
-        x: 64
-        y: 272
+        x: 448
+        y: 288
         width: 16
         height: 16
       alignment: 0
@@ -8471,8 +8471,8 @@ TextureImporter:
       name: RA_Cavern_398
       rect:
         serializedVersion: 2
-        x: 80
-        y: 272
+        x: 464
+        y: 288
         width: 16
         height: 16
       alignment: 0
@@ -8492,7 +8492,7 @@ TextureImporter:
       name: RA_Cavern_399
       rect:
         serializedVersion: 2
-        x: 96
+        x: 0
         y: 272
         width: 16
         height: 16
@@ -8513,7 +8513,7 @@ TextureImporter:
       name: RA_Cavern_400
       rect:
         serializedVersion: 2
-        x: 112
+        x: 16
         y: 272
         width: 16
         height: 16
@@ -8534,7 +8534,7 @@ TextureImporter:
       name: RA_Cavern_401
       rect:
         serializedVersion: 2
-        x: 128
+        x: 32
         y: 272
         width: 16
         height: 16
@@ -8555,7 +8555,7 @@ TextureImporter:
       name: RA_Cavern_402
       rect:
         serializedVersion: 2
-        x: 256
+        x: 48
         y: 272
         width: 16
         height: 16
@@ -8576,7 +8576,7 @@ TextureImporter:
       name: RA_Cavern_403
       rect:
         serializedVersion: 2
-        x: 272
+        x: 64
         y: 272
         width: 16
         height: 16
@@ -8597,7 +8597,7 @@ TextureImporter:
       name: RA_Cavern_404
       rect:
         serializedVersion: 2
-        x: 288
+        x: 80
         y: 272
         width: 16
         height: 16
@@ -8618,7 +8618,7 @@ TextureImporter:
       name: RA_Cavern_405
       rect:
         serializedVersion: 2
-        x: 304
+        x: 96
         y: 272
         width: 16
         height: 16
@@ -8639,7 +8639,7 @@ TextureImporter:
       name: RA_Cavern_406
       rect:
         serializedVersion: 2
-        x: 336
+        x: 112
         y: 272
         width: 16
         height: 16
@@ -8660,7 +8660,7 @@ TextureImporter:
       name: RA_Cavern_407
       rect:
         serializedVersion: 2
-        x: 352
+        x: 128
         y: 272
         width: 16
         height: 16
@@ -8681,7 +8681,7 @@ TextureImporter:
       name: RA_Cavern_408
       rect:
         serializedVersion: 2
-        x: 368
+        x: 256
         y: 272
         width: 16
         height: 16
@@ -8702,7 +8702,7 @@ TextureImporter:
       name: RA_Cavern_409
       rect:
         serializedVersion: 2
-        x: 384
+        x: 272
         y: 272
         width: 16
         height: 16
@@ -8723,7 +8723,7 @@ TextureImporter:
       name: RA_Cavern_410
       rect:
         serializedVersion: 2
-        x: 400
+        x: 288
         y: 272
         width: 16
         height: 16
@@ -8744,7 +8744,7 @@ TextureImporter:
       name: RA_Cavern_411
       rect:
         serializedVersion: 2
-        x: 416
+        x: 304
         y: 272
         width: 16
         height: 16
@@ -8765,7 +8765,7 @@ TextureImporter:
       name: RA_Cavern_412
       rect:
         serializedVersion: 2
-        x: 432
+        x: 336
         y: 272
         width: 16
         height: 16
@@ -8786,7 +8786,7 @@ TextureImporter:
       name: RA_Cavern_413
       rect:
         serializedVersion: 2
-        x: 448
+        x: 352
         y: 272
         width: 16
         height: 16
@@ -8807,7 +8807,7 @@ TextureImporter:
       name: RA_Cavern_414
       rect:
         serializedVersion: 2
-        x: 464
+        x: 368
         y: 272
         width: 16
         height: 16
@@ -8828,8 +8828,8 @@ TextureImporter:
       name: RA_Cavern_415
       rect:
         serializedVersion: 2
-        x: 0
-        y: 256
+        x: 384
+        y: 272
         width: 16
         height: 16
       alignment: 0
@@ -8849,8 +8849,8 @@ TextureImporter:
       name: RA_Cavern_416
       rect:
         serializedVersion: 2
-        x: 16
-        y: 256
+        x: 400
+        y: 272
         width: 16
         height: 16
       alignment: 0
@@ -8870,8 +8870,8 @@ TextureImporter:
       name: RA_Cavern_417
       rect:
         serializedVersion: 2
-        x: 32
-        y: 256
+        x: 416
+        y: 272
         width: 16
         height: 16
       alignment: 0
@@ -8891,8 +8891,8 @@ TextureImporter:
       name: RA_Cavern_418
       rect:
         serializedVersion: 2
-        x: 48
-        y: 256
+        x: 432
+        y: 272
         width: 16
         height: 16
       alignment: 0
@@ -8912,8 +8912,8 @@ TextureImporter:
       name: RA_Cavern_419
       rect:
         serializedVersion: 2
-        x: 64
-        y: 256
+        x: 448
+        y: 272
         width: 16
         height: 16
       alignment: 0
@@ -8933,8 +8933,8 @@ TextureImporter:
       name: RA_Cavern_420
       rect:
         serializedVersion: 2
-        x: 80
-        y: 256
+        x: 464
+        y: 272
         width: 16
         height: 16
       alignment: 0
@@ -8954,7 +8954,7 @@ TextureImporter:
       name: RA_Cavern_421
       rect:
         serializedVersion: 2
-        x: 96
+        x: 0
         y: 256
         width: 16
         height: 16
@@ -8975,7 +8975,7 @@ TextureImporter:
       name: RA_Cavern_422
       rect:
         serializedVersion: 2
-        x: 112
+        x: 16
         y: 256
         width: 16
         height: 16
@@ -8996,7 +8996,7 @@ TextureImporter:
       name: RA_Cavern_423
       rect:
         serializedVersion: 2
-        x: 128
+        x: 32
         y: 256
         width: 16
         height: 16
@@ -9017,7 +9017,7 @@ TextureImporter:
       name: RA_Cavern_424
       rect:
         serializedVersion: 2
-        x: 256
+        x: 48
         y: 256
         width: 16
         height: 16
@@ -9038,7 +9038,7 @@ TextureImporter:
       name: RA_Cavern_425
       rect:
         serializedVersion: 2
-        x: 272
+        x: 64
         y: 256
         width: 16
         height: 16
@@ -9059,7 +9059,7 @@ TextureImporter:
       name: RA_Cavern_426
       rect:
         serializedVersion: 2
-        x: 288
+        x: 80
         y: 256
         width: 16
         height: 16
@@ -9080,7 +9080,7 @@ TextureImporter:
       name: RA_Cavern_427
       rect:
         serializedVersion: 2
-        x: 304
+        x: 96
         y: 256
         width: 16
         height: 16
@@ -9101,7 +9101,7 @@ TextureImporter:
       name: RA_Cavern_428
       rect:
         serializedVersion: 2
-        x: 336
+        x: 112
         y: 256
         width: 16
         height: 16
@@ -9122,7 +9122,7 @@ TextureImporter:
       name: RA_Cavern_429
       rect:
         serializedVersion: 2
-        x: 352
+        x: 128
         y: 256
         width: 16
         height: 16
@@ -9143,7 +9143,7 @@ TextureImporter:
       name: RA_Cavern_430
       rect:
         serializedVersion: 2
-        x: 368
+        x: 256
         y: 256
         width: 16
         height: 16
@@ -9164,7 +9164,7 @@ TextureImporter:
       name: RA_Cavern_431
       rect:
         serializedVersion: 2
-        x: 384
+        x: 272
         y: 256
         width: 16
         height: 16
@@ -9185,7 +9185,7 @@ TextureImporter:
       name: RA_Cavern_432
       rect:
         serializedVersion: 2
-        x: 400
+        x: 288
         y: 256
         width: 16
         height: 16
@@ -9206,7 +9206,7 @@ TextureImporter:
       name: RA_Cavern_433
       rect:
         serializedVersion: 2
-        x: 416
+        x: 304
         y: 256
         width: 16
         height: 16
@@ -9227,7 +9227,7 @@ TextureImporter:
       name: RA_Cavern_434
       rect:
         serializedVersion: 2
-        x: 432
+        x: 336
         y: 256
         width: 16
         height: 16
@@ -9248,7 +9248,7 @@ TextureImporter:
       name: RA_Cavern_435
       rect:
         serializedVersion: 2
-        x: 448
+        x: 352
         y: 256
         width: 16
         height: 16
@@ -9269,7 +9269,7 @@ TextureImporter:
       name: RA_Cavern_436
       rect:
         serializedVersion: 2
-        x: 464
+        x: 368
         y: 256
         width: 16
         height: 16
@@ -9290,8 +9290,8 @@ TextureImporter:
       name: RA_Cavern_437
       rect:
         serializedVersion: 2
-        x: 0
-        y: 240
+        x: 384
+        y: 256
         width: 16
         height: 16
       alignment: 0
@@ -9311,8 +9311,8 @@ TextureImporter:
       name: RA_Cavern_438
       rect:
         serializedVersion: 2
-        x: 16
-        y: 240
+        x: 400
+        y: 256
         width: 16
         height: 16
       alignment: 0
@@ -9332,8 +9332,8 @@ TextureImporter:
       name: RA_Cavern_439
       rect:
         serializedVersion: 2
-        x: 32
-        y: 240
+        x: 416
+        y: 256
         width: 16
         height: 16
       alignment: 0
@@ -9353,8 +9353,8 @@ TextureImporter:
       name: RA_Cavern_440
       rect:
         serializedVersion: 2
-        x: 48
-        y: 240
+        x: 432
+        y: 256
         width: 16
         height: 16
       alignment: 0
@@ -9374,8 +9374,8 @@ TextureImporter:
       name: RA_Cavern_441
       rect:
         serializedVersion: 2
-        x: 64
-        y: 240
+        x: 448
+        y: 256
         width: 16
         height: 16
       alignment: 0
@@ -9395,8 +9395,8 @@ TextureImporter:
       name: RA_Cavern_442
       rect:
         serializedVersion: 2
-        x: 80
-        y: 240
+        x: 464
+        y: 256
         width: 16
         height: 16
       alignment: 0
@@ -9416,7 +9416,7 @@ TextureImporter:
       name: RA_Cavern_443
       rect:
         serializedVersion: 2
-        x: 96
+        x: 0
         y: 240
         width: 16
         height: 16
@@ -9437,7 +9437,7 @@ TextureImporter:
       name: RA_Cavern_444
       rect:
         serializedVersion: 2
-        x: 112
+        x: 16
         y: 240
         width: 16
         height: 16
@@ -9458,7 +9458,7 @@ TextureImporter:
       name: RA_Cavern_445
       rect:
         serializedVersion: 2
-        x: 128
+        x: 32
         y: 240
         width: 16
         height: 16
@@ -9479,7 +9479,7 @@ TextureImporter:
       name: RA_Cavern_446
       rect:
         serializedVersion: 2
-        x: 144
+        x: 48
         y: 240
         width: 16
         height: 16
@@ -9500,7 +9500,7 @@ TextureImporter:
       name: RA_Cavern_447
       rect:
         serializedVersion: 2
-        x: 160
+        x: 64
         y: 240
         width: 16
         height: 16
@@ -9521,7 +9521,7 @@ TextureImporter:
       name: RA_Cavern_448
       rect:
         serializedVersion: 2
-        x: 176
+        x: 80
         y: 240
         width: 16
         height: 16
@@ -9542,7 +9542,7 @@ TextureImporter:
       name: RA_Cavern_449
       rect:
         serializedVersion: 2
-        x: 192
+        x: 96
         y: 240
         width: 16
         height: 16
@@ -9563,7 +9563,7 @@ TextureImporter:
       name: RA_Cavern_450
       rect:
         serializedVersion: 2
-        x: 208
+        x: 112
         y: 240
         width: 16
         height: 16
@@ -9584,7 +9584,7 @@ TextureImporter:
       name: RA_Cavern_451
       rect:
         serializedVersion: 2
-        x: 224
+        x: 128
         y: 240
         width: 16
         height: 16
@@ -9605,7 +9605,7 @@ TextureImporter:
       name: RA_Cavern_452
       rect:
         serializedVersion: 2
-        x: 240
+        x: 144
         y: 240
         width: 16
         height: 16
@@ -9626,7 +9626,7 @@ TextureImporter:
       name: RA_Cavern_453
       rect:
         serializedVersion: 2
-        x: 256
+        x: 160
         y: 240
         width: 16
         height: 16
@@ -9647,7 +9647,7 @@ TextureImporter:
       name: RA_Cavern_454
       rect:
         serializedVersion: 2
-        x: 272
+        x: 176
         y: 240
         width: 16
         height: 16
@@ -9668,7 +9668,7 @@ TextureImporter:
       name: RA_Cavern_455
       rect:
         serializedVersion: 2
-        x: 288
+        x: 192
         y: 240
         width: 16
         height: 16
@@ -9689,7 +9689,7 @@ TextureImporter:
       name: RA_Cavern_456
       rect:
         serializedVersion: 2
-        x: 304
+        x: 208
         y: 240
         width: 16
         height: 16
@@ -9710,7 +9710,7 @@ TextureImporter:
       name: RA_Cavern_457
       rect:
         serializedVersion: 2
-        x: 320
+        x: 224
         y: 240
         width: 16
         height: 16
@@ -9731,7 +9731,7 @@ TextureImporter:
       name: RA_Cavern_458
       rect:
         serializedVersion: 2
-        x: 352
+        x: 240
         y: 240
         width: 16
         height: 16
@@ -9752,7 +9752,7 @@ TextureImporter:
       name: RA_Cavern_459
       rect:
         serializedVersion: 2
-        x: 368
+        x: 256
         y: 240
         width: 16
         height: 16
@@ -9773,7 +9773,7 @@ TextureImporter:
       name: RA_Cavern_460
       rect:
         serializedVersion: 2
-        x: 384
+        x: 272
         y: 240
         width: 16
         height: 16
@@ -9794,7 +9794,7 @@ TextureImporter:
       name: RA_Cavern_461
       rect:
         serializedVersion: 2
-        x: 400
+        x: 288
         y: 240
         width: 16
         height: 16
@@ -9815,7 +9815,7 @@ TextureImporter:
       name: RA_Cavern_462
       rect:
         serializedVersion: 2
-        x: 416
+        x: 304
         y: 240
         width: 16
         height: 16
@@ -9836,7 +9836,7 @@ TextureImporter:
       name: RA_Cavern_463
       rect:
         serializedVersion: 2
-        x: 432
+        x: 320
         y: 240
         width: 16
         height: 16
@@ -9857,7 +9857,7 @@ TextureImporter:
       name: RA_Cavern_464
       rect:
         serializedVersion: 2
-        x: 448
+        x: 352
         y: 240
         width: 16
         height: 16
@@ -9878,7 +9878,7 @@ TextureImporter:
       name: RA_Cavern_465
       rect:
         serializedVersion: 2
-        x: 464
+        x: 368
         y: 240
         width: 16
         height: 16
@@ -9899,7 +9899,7 @@ TextureImporter:
       name: RA_Cavern_466
       rect:
         serializedVersion: 2
-        x: 480
+        x: 384
         y: 240
         width: 16
         height: 16
@@ -9920,8 +9920,8 @@ TextureImporter:
       name: RA_Cavern_467
       rect:
         serializedVersion: 2
-        x: 0
-        y: 224
+        x: 400
+        y: 240
         width: 16
         height: 16
       alignment: 0
@@ -9941,8 +9941,8 @@ TextureImporter:
       name: RA_Cavern_468
       rect:
         serializedVersion: 2
-        x: 16
-        y: 224
+        x: 416
+        y: 240
         width: 16
         height: 16
       alignment: 0
@@ -9962,8 +9962,8 @@ TextureImporter:
       name: RA_Cavern_469
       rect:
         serializedVersion: 2
-        x: 32
-        y: 224
+        x: 432
+        y: 240
         width: 16
         height: 16
       alignment: 0
@@ -9983,8 +9983,8 @@ TextureImporter:
       name: RA_Cavern_470
       rect:
         serializedVersion: 2
-        x: 48
-        y: 224
+        x: 448
+        y: 240
         width: 16
         height: 16
       alignment: 0
@@ -10004,8 +10004,8 @@ TextureImporter:
       name: RA_Cavern_471
       rect:
         serializedVersion: 2
-        x: 64
-        y: 224
+        x: 464
+        y: 240
         width: 16
         height: 16
       alignment: 0
@@ -10025,8 +10025,8 @@ TextureImporter:
       name: RA_Cavern_472
       rect:
         serializedVersion: 2
-        x: 80
-        y: 224
+        x: 480
+        y: 240
         width: 16
         height: 16
       alignment: 0
@@ -10046,7 +10046,7 @@ TextureImporter:
       name: RA_Cavern_473
       rect:
         serializedVersion: 2
-        x: 96
+        x: 0
         y: 224
         width: 16
         height: 16
@@ -10067,7 +10067,7 @@ TextureImporter:
       name: RA_Cavern_474
       rect:
         serializedVersion: 2
-        x: 112
+        x: 16
         y: 224
         width: 16
         height: 16
@@ -10088,7 +10088,7 @@ TextureImporter:
       name: RA_Cavern_475
       rect:
         serializedVersion: 2
-        x: 128
+        x: 32
         y: 224
         width: 16
         height: 16
@@ -10109,7 +10109,7 @@ TextureImporter:
       name: RA_Cavern_476
       rect:
         serializedVersion: 2
-        x: 144
+        x: 48
         y: 224
         width: 16
         height: 16
@@ -10130,7 +10130,7 @@ TextureImporter:
       name: RA_Cavern_477
       rect:
         serializedVersion: 2
-        x: 160
+        x: 64
         y: 224
         width: 16
         height: 16
@@ -10151,7 +10151,7 @@ TextureImporter:
       name: RA_Cavern_478
       rect:
         serializedVersion: 2
-        x: 176
+        x: 80
         y: 224
         width: 16
         height: 16
@@ -10172,7 +10172,7 @@ TextureImporter:
       name: RA_Cavern_479
       rect:
         serializedVersion: 2
-        x: 192
+        x: 96
         y: 224
         width: 16
         height: 16
@@ -10193,7 +10193,7 @@ TextureImporter:
       name: RA_Cavern_480
       rect:
         serializedVersion: 2
-        x: 208
+        x: 112
         y: 224
         width: 16
         height: 16
@@ -10214,7 +10214,7 @@ TextureImporter:
       name: RA_Cavern_481
       rect:
         serializedVersion: 2
-        x: 256
+        x: 128
         y: 224
         width: 16
         height: 16
@@ -10235,7 +10235,7 @@ TextureImporter:
       name: RA_Cavern_482
       rect:
         serializedVersion: 2
-        x: 272
+        x: 144
         y: 224
         width: 16
         height: 16
@@ -10256,7 +10256,7 @@ TextureImporter:
       name: RA_Cavern_483
       rect:
         serializedVersion: 2
-        x: 288
+        x: 160
         y: 224
         width: 16
         height: 16
@@ -10277,7 +10277,7 @@ TextureImporter:
       name: RA_Cavern_484
       rect:
         serializedVersion: 2
-        x: 304
+        x: 176
         y: 224
         width: 16
         height: 16
@@ -10298,7 +10298,7 @@ TextureImporter:
       name: RA_Cavern_485
       rect:
         serializedVersion: 2
-        x: 320
+        x: 192
         y: 224
         width: 16
         height: 16
@@ -10319,7 +10319,7 @@ TextureImporter:
       name: RA_Cavern_486
       rect:
         serializedVersion: 2
-        x: 336
+        x: 208
         y: 224
         width: 16
         height: 16
@@ -10340,7 +10340,7 @@ TextureImporter:
       name: RA_Cavern_487
       rect:
         serializedVersion: 2
-        x: 352
+        x: 256
         y: 224
         width: 16
         height: 16
@@ -10361,7 +10361,7 @@ TextureImporter:
       name: RA_Cavern_488
       rect:
         serializedVersion: 2
-        x: 368
+        x: 272
         y: 224
         width: 16
         height: 16
@@ -10382,7 +10382,7 @@ TextureImporter:
       name: RA_Cavern_489
       rect:
         serializedVersion: 2
-        x: 384
+        x: 288
         y: 224
         width: 16
         height: 16
@@ -10403,7 +10403,7 @@ TextureImporter:
       name: RA_Cavern_490
       rect:
         serializedVersion: 2
-        x: 400
+        x: 304
         y: 224
         width: 16
         height: 16
@@ -10424,7 +10424,7 @@ TextureImporter:
       name: RA_Cavern_491
       rect:
         serializedVersion: 2
-        x: 416
+        x: 320
         y: 224
         width: 16
         height: 16
@@ -10445,7 +10445,7 @@ TextureImporter:
       name: RA_Cavern_492
       rect:
         serializedVersion: 2
-        x: 432
+        x: 336
         y: 224
         width: 16
         height: 16
@@ -10466,7 +10466,7 @@ TextureImporter:
       name: RA_Cavern_493
       rect:
         serializedVersion: 2
-        x: 448
+        x: 352
         y: 224
         width: 16
         height: 16
@@ -10487,7 +10487,7 @@ TextureImporter:
       name: RA_Cavern_494
       rect:
         serializedVersion: 2
-        x: 464
+        x: 368
         y: 224
         width: 16
         height: 16
@@ -10508,7 +10508,7 @@ TextureImporter:
       name: RA_Cavern_495
       rect:
         serializedVersion: 2
-        x: 480
+        x: 384
         y: 224
         width: 16
         height: 16
@@ -10529,8 +10529,8 @@ TextureImporter:
       name: RA_Cavern_496
       rect:
         serializedVersion: 2
-        x: 0
-        y: 208
+        x: 400
+        y: 224
         width: 16
         height: 16
       alignment: 0
@@ -10550,8 +10550,8 @@ TextureImporter:
       name: RA_Cavern_497
       rect:
         serializedVersion: 2
-        x: 16
-        y: 208
+        x: 416
+        y: 224
         width: 16
         height: 16
       alignment: 0
@@ -10571,8 +10571,8 @@ TextureImporter:
       name: RA_Cavern_498
       rect:
         serializedVersion: 2
-        x: 32
-        y: 208
+        x: 432
+        y: 224
         width: 16
         height: 16
       alignment: 0
@@ -10592,8 +10592,8 @@ TextureImporter:
       name: RA_Cavern_499
       rect:
         serializedVersion: 2
-        x: 48
-        y: 208
+        x: 448
+        y: 224
         width: 16
         height: 16
       alignment: 0
@@ -10613,8 +10613,8 @@ TextureImporter:
       name: RA_Cavern_500
       rect:
         serializedVersion: 2
-        x: 80
-        y: 208
+        x: 464
+        y: 224
         width: 16
         height: 16
       alignment: 0
@@ -10634,8 +10634,8 @@ TextureImporter:
       name: RA_Cavern_501
       rect:
         serializedVersion: 2
-        x: 96
-        y: 208
+        x: 480
+        y: 224
         width: 16
         height: 16
       alignment: 0
@@ -10655,7 +10655,7 @@ TextureImporter:
       name: RA_Cavern_502
       rect:
         serializedVersion: 2
-        x: 112
+        x: 0
         y: 208
         width: 16
         height: 16
@@ -10676,7 +10676,7 @@ TextureImporter:
       name: RA_Cavern_503
       rect:
         serializedVersion: 2
-        x: 128
+        x: 16
         y: 208
         width: 16
         height: 16
@@ -10697,7 +10697,7 @@ TextureImporter:
       name: RA_Cavern_504
       rect:
         serializedVersion: 2
-        x: 144
+        x: 32
         y: 208
         width: 16
         height: 16
@@ -10718,7 +10718,7 @@ TextureImporter:
       name: RA_Cavern_505
       rect:
         serializedVersion: 2
-        x: 160
+        x: 48
         y: 208
         width: 16
         height: 16
@@ -10739,7 +10739,7 @@ TextureImporter:
       name: RA_Cavern_506
       rect:
         serializedVersion: 2
-        x: 176
+        x: 80
         y: 208
         width: 16
         height: 16
@@ -10760,7 +10760,7 @@ TextureImporter:
       name: RA_Cavern_507
       rect:
         serializedVersion: 2
-        x: 192
+        x: 96
         y: 208
         width: 16
         height: 16
@@ -10781,7 +10781,7 @@ TextureImporter:
       name: RA_Cavern_508
       rect:
         serializedVersion: 2
-        x: 208
+        x: 112
         y: 208
         width: 16
         height: 16
@@ -10802,7 +10802,7 @@ TextureImporter:
       name: RA_Cavern_509
       rect:
         serializedVersion: 2
-        x: 224
+        x: 128
         y: 208
         width: 16
         height: 16
@@ -10823,7 +10823,7 @@ TextureImporter:
       name: RA_Cavern_510
       rect:
         serializedVersion: 2
-        x: 240
+        x: 144
         y: 208
         width: 16
         height: 16
@@ -10844,7 +10844,7 @@ TextureImporter:
       name: RA_Cavern_511
       rect:
         serializedVersion: 2
-        x: 256
+        x: 160
         y: 208
         width: 16
         height: 16
@@ -10865,7 +10865,7 @@ TextureImporter:
       name: RA_Cavern_512
       rect:
         serializedVersion: 2
-        x: 272
+        x: 176
         y: 208
         width: 16
         height: 16
@@ -10886,7 +10886,7 @@ TextureImporter:
       name: RA_Cavern_513
       rect:
         serializedVersion: 2
-        x: 288
+        x: 192
         y: 208
         width: 16
         height: 16
@@ -10907,7 +10907,7 @@ TextureImporter:
       name: RA_Cavern_514
       rect:
         serializedVersion: 2
-        x: 304
+        x: 208
         y: 208
         width: 16
         height: 16
@@ -10928,7 +10928,7 @@ TextureImporter:
       name: RA_Cavern_515
       rect:
         serializedVersion: 2
-        x: 320
+        x: 224
         y: 208
         width: 16
         height: 16
@@ -10949,7 +10949,7 @@ TextureImporter:
       name: RA_Cavern_516
       rect:
         serializedVersion: 2
-        x: 336
+        x: 240
         y: 208
         width: 16
         height: 16
@@ -10970,7 +10970,7 @@ TextureImporter:
       name: RA_Cavern_517
       rect:
         serializedVersion: 2
-        x: 352
+        x: 256
         y: 208
         width: 16
         height: 16
@@ -10991,7 +10991,7 @@ TextureImporter:
       name: RA_Cavern_518
       rect:
         serializedVersion: 2
-        x: 368
+        x: 272
         y: 208
         width: 16
         height: 16
@@ -11012,7 +11012,7 @@ TextureImporter:
       name: RA_Cavern_519
       rect:
         serializedVersion: 2
-        x: 384
+        x: 288
         y: 208
         width: 16
         height: 16
@@ -11033,7 +11033,7 @@ TextureImporter:
       name: RA_Cavern_520
       rect:
         serializedVersion: 2
-        x: 400
+        x: 304
         y: 208
         width: 16
         height: 16
@@ -11054,7 +11054,7 @@ TextureImporter:
       name: RA_Cavern_521
       rect:
         serializedVersion: 2
-        x: 416
+        x: 320
         y: 208
         width: 16
         height: 16
@@ -11075,7 +11075,7 @@ TextureImporter:
       name: RA_Cavern_522
       rect:
         serializedVersion: 2
-        x: 432
+        x: 336
         y: 208
         width: 16
         height: 16
@@ -11096,8 +11096,8 @@ TextureImporter:
       name: RA_Cavern_523
       rect:
         serializedVersion: 2
-        x: 0
-        y: 192
+        x: 352
+        y: 208
         width: 16
         height: 16
       alignment: 0
@@ -11117,8 +11117,8 @@ TextureImporter:
       name: RA_Cavern_524
       rect:
         serializedVersion: 2
-        x: 16
-        y: 192
+        x: 368
+        y: 208
         width: 16
         height: 16
       alignment: 0
@@ -11138,8 +11138,8 @@ TextureImporter:
       name: RA_Cavern_525
       rect:
         serializedVersion: 2
-        x: 32
-        y: 192
+        x: 384
+        y: 208
         width: 16
         height: 16
       alignment: 0
@@ -11159,8 +11159,8 @@ TextureImporter:
       name: RA_Cavern_526
       rect:
         serializedVersion: 2
-        x: 48
-        y: 192
+        x: 400
+        y: 208
         width: 16
         height: 16
       alignment: 0
@@ -11180,8 +11180,8 @@ TextureImporter:
       name: RA_Cavern_527
       rect:
         serializedVersion: 2
-        x: 64
-        y: 192
+        x: 416
+        y: 208
         width: 16
         height: 16
       alignment: 0
@@ -11201,8 +11201,8 @@ TextureImporter:
       name: RA_Cavern_528
       rect:
         serializedVersion: 2
-        x: 80
-        y: 192
+        x: 432
+        y: 208
         width: 16
         height: 16
       alignment: 0
@@ -11222,7 +11222,7 @@ TextureImporter:
       name: RA_Cavern_529
       rect:
         serializedVersion: 2
-        x: 96
+        x: 0
         y: 192
         width: 16
         height: 16
@@ -11243,7 +11243,7 @@ TextureImporter:
       name: RA_Cavern_530
       rect:
         serializedVersion: 2
-        x: 112
+        x: 16
         y: 192
         width: 16
         height: 16
@@ -11264,7 +11264,7 @@ TextureImporter:
       name: RA_Cavern_531
       rect:
         serializedVersion: 2
-        x: 128
+        x: 32
         y: 192
         width: 16
         height: 16
@@ -11285,7 +11285,7 @@ TextureImporter:
       name: RA_Cavern_532
       rect:
         serializedVersion: 2
-        x: 144
+        x: 48
         y: 192
         width: 16
         height: 16
@@ -11306,7 +11306,7 @@ TextureImporter:
       name: RA_Cavern_533
       rect:
         serializedVersion: 2
-        x: 160
+        x: 64
         y: 192
         width: 16
         height: 16
@@ -11327,7 +11327,7 @@ TextureImporter:
       name: RA_Cavern_534
       rect:
         serializedVersion: 2
-        x: 176
+        x: 80
         y: 192
         width: 16
         height: 16
@@ -11348,7 +11348,7 @@ TextureImporter:
       name: RA_Cavern_535
       rect:
         serializedVersion: 2
-        x: 192
+        x: 96
         y: 192
         width: 16
         height: 16
@@ -11369,7 +11369,7 @@ TextureImporter:
       name: RA_Cavern_536
       rect:
         serializedVersion: 2
-        x: 208
+        x: 112
         y: 192
         width: 16
         height: 16
@@ -11390,7 +11390,7 @@ TextureImporter:
       name: RA_Cavern_537
       rect:
         serializedVersion: 2
-        x: 256
+        x: 128
         y: 192
         width: 16
         height: 16
@@ -11411,7 +11411,7 @@ TextureImporter:
       name: RA_Cavern_538
       rect:
         serializedVersion: 2
-        x: 272
+        x: 144
         y: 192
         width: 16
         height: 16
@@ -11432,7 +11432,7 @@ TextureImporter:
       name: RA_Cavern_539
       rect:
         serializedVersion: 2
-        x: 288
+        x: 160
         y: 192
         width: 16
         height: 16
@@ -11453,7 +11453,7 @@ TextureImporter:
       name: RA_Cavern_540
       rect:
         serializedVersion: 2
-        x: 304
+        x: 176
         y: 192
         width: 16
         height: 16
@@ -11474,7 +11474,7 @@ TextureImporter:
       name: RA_Cavern_541
       rect:
         serializedVersion: 2
-        x: 320
+        x: 192
         y: 192
         width: 16
         height: 16
@@ -11495,7 +11495,7 @@ TextureImporter:
       name: RA_Cavern_542
       rect:
         serializedVersion: 2
-        x: 336
+        x: 208
         y: 192
         width: 16
         height: 16
@@ -11516,7 +11516,7 @@ TextureImporter:
       name: RA_Cavern_543
       rect:
         serializedVersion: 2
-        x: 352
+        x: 256
         y: 192
         width: 16
         height: 16
@@ -11537,7 +11537,7 @@ TextureImporter:
       name: RA_Cavern_544
       rect:
         serializedVersion: 2
-        x: 368
+        x: 272
         y: 192
         width: 16
         height: 16
@@ -11558,7 +11558,7 @@ TextureImporter:
       name: RA_Cavern_545
       rect:
         serializedVersion: 2
-        x: 384
+        x: 288
         y: 192
         width: 16
         height: 16
@@ -11579,7 +11579,7 @@ TextureImporter:
       name: RA_Cavern_546
       rect:
         serializedVersion: 2
-        x: 400
+        x: 304
         y: 192
         width: 16
         height: 16
@@ -11600,7 +11600,7 @@ TextureImporter:
       name: RA_Cavern_547
       rect:
         serializedVersion: 2
-        x: 416
+        x: 320
         y: 192
         width: 16
         height: 16
@@ -11621,7 +11621,7 @@ TextureImporter:
       name: RA_Cavern_548
       rect:
         serializedVersion: 2
-        x: 432
+        x: 336
         y: 192
         width: 16
         height: 16
@@ -11642,8 +11642,8 @@ TextureImporter:
       name: RA_Cavern_549
       rect:
         serializedVersion: 2
-        x: 0
-        y: 176
+        x: 352
+        y: 192
         width: 16
         height: 16
       alignment: 0
@@ -11663,8 +11663,8 @@ TextureImporter:
       name: RA_Cavern_550
       rect:
         serializedVersion: 2
-        x: 16
-        y: 176
+        x: 368
+        y: 192
         width: 16
         height: 16
       alignment: 0
@@ -11684,8 +11684,8 @@ TextureImporter:
       name: RA_Cavern_551
       rect:
         serializedVersion: 2
-        x: 32
-        y: 176
+        x: 384
+        y: 192
         width: 16
         height: 16
       alignment: 0
@@ -11705,8 +11705,8 @@ TextureImporter:
       name: RA_Cavern_552
       rect:
         serializedVersion: 2
-        x: 48
-        y: 176
+        x: 400
+        y: 192
         width: 16
         height: 16
       alignment: 0
@@ -11726,8 +11726,8 @@ TextureImporter:
       name: RA_Cavern_553
       rect:
         serializedVersion: 2
-        x: 64
-        y: 176
+        x: 416
+        y: 192
         width: 16
         height: 16
       alignment: 0
@@ -11747,8 +11747,8 @@ TextureImporter:
       name: RA_Cavern_554
       rect:
         serializedVersion: 2
-        x: 80
-        y: 176
+        x: 432
+        y: 192
         width: 16
         height: 16
       alignment: 0
@@ -11768,7 +11768,7 @@ TextureImporter:
       name: RA_Cavern_555
       rect:
         serializedVersion: 2
-        x: 96
+        x: 0
         y: 176
         width: 16
         height: 16
@@ -11789,7 +11789,7 @@ TextureImporter:
       name: RA_Cavern_556
       rect:
         serializedVersion: 2
-        x: 112
+        x: 16
         y: 176
         width: 16
         height: 16
@@ -11810,7 +11810,7 @@ TextureImporter:
       name: RA_Cavern_557
       rect:
         serializedVersion: 2
-        x: 128
+        x: 32
         y: 176
         width: 16
         height: 16
@@ -11831,7 +11831,7 @@ TextureImporter:
       name: RA_Cavern_558
       rect:
         serializedVersion: 2
-        x: 144
+        x: 48
         y: 176
         width: 16
         height: 16
@@ -11852,7 +11852,7 @@ TextureImporter:
       name: RA_Cavern_559
       rect:
         serializedVersion: 2
-        x: 160
+        x: 64
         y: 176
         width: 16
         height: 16
@@ -11873,7 +11873,7 @@ TextureImporter:
       name: RA_Cavern_560
       rect:
         serializedVersion: 2
-        x: 176
+        x: 80
         y: 176
         width: 16
         height: 16
@@ -11894,7 +11894,7 @@ TextureImporter:
       name: RA_Cavern_561
       rect:
         serializedVersion: 2
-        x: 192
+        x: 96
         y: 176
         width: 16
         height: 16
@@ -11915,7 +11915,7 @@ TextureImporter:
       name: RA_Cavern_562
       rect:
         serializedVersion: 2
-        x: 208
+        x: 112
         y: 176
         width: 16
         height: 16
@@ -11936,8 +11936,8 @@ TextureImporter:
       name: RA_Cavern_563
       rect:
         serializedVersion: 2
-        x: 0
-        y: 160
+        x: 128
+        y: 176
         width: 16
         height: 16
       alignment: 0
@@ -11957,8 +11957,8 @@ TextureImporter:
       name: RA_Cavern_564
       rect:
         serializedVersion: 2
-        x: 16
-        y: 160
+        x: 144
+        y: 176
         width: 16
         height: 16
       alignment: 0
@@ -11978,8 +11978,8 @@ TextureImporter:
       name: RA_Cavern_565
       rect:
         serializedVersion: 2
-        x: 32
-        y: 160
+        x: 160
+        y: 176
         width: 16
         height: 16
       alignment: 0
@@ -11999,8 +11999,8 @@ TextureImporter:
       name: RA_Cavern_566
       rect:
         serializedVersion: 2
-        x: 48
-        y: 160
+        x: 176
+        y: 176
         width: 16
         height: 16
       alignment: 0
@@ -12020,8 +12020,8 @@ TextureImporter:
       name: RA_Cavern_567
       rect:
         serializedVersion: 2
-        x: 80
-        y: 160
+        x: 192
+        y: 176
         width: 16
         height: 16
       alignment: 0
@@ -12041,8 +12041,8 @@ TextureImporter:
       name: RA_Cavern_568
       rect:
         serializedVersion: 2
-        x: 96
-        y: 160
+        x: 208
+        y: 176
         width: 16
         height: 16
       alignment: 0
@@ -12062,7 +12062,7 @@ TextureImporter:
       name: RA_Cavern_569
       rect:
         serializedVersion: 2
-        x: 112
+        x: 0
         y: 160
         width: 16
         height: 16
@@ -12083,7 +12083,7 @@ TextureImporter:
       name: RA_Cavern_570
       rect:
         serializedVersion: 2
-        x: 128
+        x: 16
         y: 160
         width: 16
         height: 16
@@ -12104,7 +12104,7 @@ TextureImporter:
       name: RA_Cavern_571
       rect:
         serializedVersion: 2
-        x: 144
+        x: 32
         y: 160
         width: 16
         height: 16
@@ -12125,7 +12125,7 @@ TextureImporter:
       name: RA_Cavern_572
       rect:
         serializedVersion: 2
-        x: 160
+        x: 48
         y: 160
         width: 16
         height: 16
@@ -12146,7 +12146,7 @@ TextureImporter:
       name: RA_Cavern_573
       rect:
         serializedVersion: 2
-        x: 176
+        x: 80
         y: 160
         width: 16
         height: 16
@@ -12167,7 +12167,7 @@ TextureImporter:
       name: RA_Cavern_574
       rect:
         serializedVersion: 2
-        x: 192
+        x: 96
         y: 160
         width: 16
         height: 16
@@ -12188,7 +12188,7 @@ TextureImporter:
       name: RA_Cavern_575
       rect:
         serializedVersion: 2
-        x: 208
+        x: 112
         y: 160
         width: 16
         height: 16
@@ -12209,7 +12209,7 @@ TextureImporter:
       name: RA_Cavern_576
       rect:
         serializedVersion: 2
-        x: 256
+        x: 128
         y: 160
         width: 16
         height: 16
@@ -12230,7 +12230,7 @@ TextureImporter:
       name: RA_Cavern_577
       rect:
         serializedVersion: 2
-        x: 272
+        x: 144
         y: 160
         width: 16
         height: 16
@@ -12251,7 +12251,7 @@ TextureImporter:
       name: RA_Cavern_578
       rect:
         serializedVersion: 2
-        x: 288
+        x: 160
         y: 160
         width: 16
         height: 16
@@ -12272,7 +12272,7 @@ TextureImporter:
       name: RA_Cavern_579
       rect:
         serializedVersion: 2
-        x: 304
+        x: 176
         y: 160
         width: 16
         height: 16
@@ -12293,7 +12293,7 @@ TextureImporter:
       name: RA_Cavern_580
       rect:
         serializedVersion: 2
-        x: 320
+        x: 192
         y: 160
         width: 16
         height: 16
@@ -12314,7 +12314,7 @@ TextureImporter:
       name: RA_Cavern_581
       rect:
         serializedVersion: 2
-        x: 352
+        x: 208
         y: 160
         width: 16
         height: 16
@@ -12335,7 +12335,7 @@ TextureImporter:
       name: RA_Cavern_582
       rect:
         serializedVersion: 2
-        x: 368
+        x: 256
         y: 160
         width: 16
         height: 16
@@ -12356,7 +12356,7 @@ TextureImporter:
       name: RA_Cavern_583
       rect:
         serializedVersion: 2
-        x: 384
+        x: 272
         y: 160
         width: 16
         height: 16
@@ -12377,7 +12377,7 @@ TextureImporter:
       name: RA_Cavern_584
       rect:
         serializedVersion: 2
-        x: 400
+        x: 288
         y: 160
         width: 16
         height: 16
@@ -12398,7 +12398,7 @@ TextureImporter:
       name: RA_Cavern_585
       rect:
         serializedVersion: 2
-        x: 416
+        x: 304
         y: 160
         width: 16
         height: 16
@@ -12419,7 +12419,7 @@ TextureImporter:
       name: RA_Cavern_586
       rect:
         serializedVersion: 2
-        x: 432
+        x: 320
         y: 160
         width: 16
         height: 16
@@ -12440,7 +12440,7 @@ TextureImporter:
       name: RA_Cavern_587
       rect:
         serializedVersion: 2
-        x: 448
+        x: 352
         y: 160
         width: 16
         height: 16
@@ -12461,7 +12461,7 @@ TextureImporter:
       name: RA_Cavern_588
       rect:
         serializedVersion: 2
-        x: 464
+        x: 368
         y: 160
         width: 16
         height: 16
@@ -12482,7 +12482,7 @@ TextureImporter:
       name: RA_Cavern_589
       rect:
         serializedVersion: 2
-        x: 480
+        x: 384
         y: 160
         width: 16
         height: 16
@@ -12503,8 +12503,8 @@ TextureImporter:
       name: RA_Cavern_590
       rect:
         serializedVersion: 2
-        x: 0
-        y: 144
+        x: 400
+        y: 160
         width: 16
         height: 16
       alignment: 0
@@ -12524,8 +12524,8 @@ TextureImporter:
       name: RA_Cavern_591
       rect:
         serializedVersion: 2
-        x: 16
-        y: 144
+        x: 416
+        y: 160
         width: 16
         height: 16
       alignment: 0
@@ -12545,8 +12545,8 @@ TextureImporter:
       name: RA_Cavern_592
       rect:
         serializedVersion: 2
-        x: 32
-        y: 144
+        x: 432
+        y: 160
         width: 16
         height: 16
       alignment: 0
@@ -12566,8 +12566,8 @@ TextureImporter:
       name: RA_Cavern_593
       rect:
         serializedVersion: 2
-        x: 48
-        y: 144
+        x: 448
+        y: 160
         width: 16
         height: 16
       alignment: 0
@@ -12587,8 +12587,8 @@ TextureImporter:
       name: RA_Cavern_594
       rect:
         serializedVersion: 2
-        x: 80
-        y: 144
+        x: 464
+        y: 160
         width: 16
         height: 16
       alignment: 0
@@ -12608,8 +12608,8 @@ TextureImporter:
       name: RA_Cavern_595
       rect:
         serializedVersion: 2
-        x: 96
-        y: 144
+        x: 480
+        y: 160
         width: 16
         height: 16
       alignment: 0
@@ -12629,7 +12629,7 @@ TextureImporter:
       name: RA_Cavern_596
       rect:
         serializedVersion: 2
-        x: 112
+        x: 0
         y: 144
         width: 16
         height: 16
@@ -12650,7 +12650,7 @@ TextureImporter:
       name: RA_Cavern_597
       rect:
         serializedVersion: 2
-        x: 128
+        x: 16
         y: 144
         width: 16
         height: 16
@@ -12671,7 +12671,7 @@ TextureImporter:
       name: RA_Cavern_598
       rect:
         serializedVersion: 2
-        x: 144
+        x: 32
         y: 144
         width: 16
         height: 16
@@ -12692,7 +12692,7 @@ TextureImporter:
       name: RA_Cavern_599
       rect:
         serializedVersion: 2
-        x: 160
+        x: 48
         y: 144
         width: 16
         height: 16
@@ -12713,7 +12713,7 @@ TextureImporter:
       name: RA_Cavern_600
       rect:
         serializedVersion: 2
-        x: 176
+        x: 80
         y: 144
         width: 16
         height: 16
@@ -12734,7 +12734,7 @@ TextureImporter:
       name: RA_Cavern_601
       rect:
         serializedVersion: 2
-        x: 192
+        x: 96
         y: 144
         width: 16
         height: 16
@@ -12755,7 +12755,7 @@ TextureImporter:
       name: RA_Cavern_602
       rect:
         serializedVersion: 2
-        x: 208
+        x: 112
         y: 144
         width: 16
         height: 16
@@ -12776,7 +12776,7 @@ TextureImporter:
       name: RA_Cavern_603
       rect:
         serializedVersion: 2
-        x: 256
+        x: 128
         y: 144
         width: 16
         height: 16
@@ -12797,7 +12797,7 @@ TextureImporter:
       name: RA_Cavern_604
       rect:
         serializedVersion: 2
-        x: 272
+        x: 144
         y: 144
         width: 16
         height: 16
@@ -12818,7 +12818,7 @@ TextureImporter:
       name: RA_Cavern_605
       rect:
         serializedVersion: 2
-        x: 288
+        x: 160
         y: 144
         width: 16
         height: 16
@@ -12839,7 +12839,7 @@ TextureImporter:
       name: RA_Cavern_606
       rect:
         serializedVersion: 2
-        x: 304
+        x: 176
         y: 144
         width: 16
         height: 16
@@ -12860,7 +12860,7 @@ TextureImporter:
       name: RA_Cavern_607
       rect:
         serializedVersion: 2
-        x: 320
+        x: 192
         y: 144
         width: 16
         height: 16
@@ -12881,7 +12881,7 @@ TextureImporter:
       name: RA_Cavern_608
       rect:
         serializedVersion: 2
-        x: 336
+        x: 208
         y: 144
         width: 16
         height: 16
@@ -12902,7 +12902,7 @@ TextureImporter:
       name: RA_Cavern_609
       rect:
         serializedVersion: 2
-        x: 352
+        x: 256
         y: 144
         width: 16
         height: 16
@@ -12923,7 +12923,7 @@ TextureImporter:
       name: RA_Cavern_610
       rect:
         serializedVersion: 2
-        x: 368
+        x: 272
         y: 144
         width: 16
         height: 16
@@ -12944,7 +12944,7 @@ TextureImporter:
       name: RA_Cavern_611
       rect:
         serializedVersion: 2
-        x: 384
+        x: 288
         y: 144
         width: 16
         height: 16
@@ -12965,7 +12965,7 @@ TextureImporter:
       name: RA_Cavern_612
       rect:
         serializedVersion: 2
-        x: 400
+        x: 304
         y: 144
         width: 16
         height: 16
@@ -12986,7 +12986,7 @@ TextureImporter:
       name: RA_Cavern_613
       rect:
         serializedVersion: 2
-        x: 416
+        x: 320
         y: 144
         width: 16
         height: 16
@@ -13007,7 +13007,7 @@ TextureImporter:
       name: RA_Cavern_614
       rect:
         serializedVersion: 2
-        x: 432
+        x: 336
         y: 144
         width: 16
         height: 16
@@ -13028,7 +13028,7 @@ TextureImporter:
       name: RA_Cavern_615
       rect:
         serializedVersion: 2
-        x: 448
+        x: 352
         y: 144
         width: 16
         height: 16
@@ -13049,7 +13049,7 @@ TextureImporter:
       name: RA_Cavern_616
       rect:
         serializedVersion: 2
-        x: 464
+        x: 368
         y: 144
         width: 16
         height: 16
@@ -13070,7 +13070,7 @@ TextureImporter:
       name: RA_Cavern_617
       rect:
         serializedVersion: 2
-        x: 480
+        x: 384
         y: 144
         width: 16
         height: 16
@@ -13091,8 +13091,8 @@ TextureImporter:
       name: RA_Cavern_618
       rect:
         serializedVersion: 2
-        x: 0
-        y: 128
+        x: 400
+        y: 144
         width: 16
         height: 16
       alignment: 0
@@ -13112,8 +13112,8 @@ TextureImporter:
       name: RA_Cavern_619
       rect:
         serializedVersion: 2
-        x: 16
-        y: 128
+        x: 416
+        y: 144
         width: 16
         height: 16
       alignment: 0
@@ -13133,8 +13133,8 @@ TextureImporter:
       name: RA_Cavern_620
       rect:
         serializedVersion: 2
-        x: 32
-        y: 128
+        x: 432
+        y: 144
         width: 16
         height: 16
       alignment: 0
@@ -13154,8 +13154,8 @@ TextureImporter:
       name: RA_Cavern_621
       rect:
         serializedVersion: 2
-        x: 48
-        y: 128
+        x: 448
+        y: 144
         width: 16
         height: 16
       alignment: 0
@@ -13175,8 +13175,8 @@ TextureImporter:
       name: RA_Cavern_622
       rect:
         serializedVersion: 2
-        x: 80
-        y: 128
+        x: 464
+        y: 144
         width: 16
         height: 16
       alignment: 0
@@ -13196,8 +13196,8 @@ TextureImporter:
       name: RA_Cavern_623
       rect:
         serializedVersion: 2
-        x: 96
-        y: 128
+        x: 480
+        y: 144
         width: 16
         height: 16
       alignment: 0
@@ -13217,7 +13217,7 @@ TextureImporter:
       name: RA_Cavern_624
       rect:
         serializedVersion: 2
-        x: 112
+        x: 0
         y: 128
         width: 16
         height: 16
@@ -13238,7 +13238,7 @@ TextureImporter:
       name: RA_Cavern_625
       rect:
         serializedVersion: 2
-        x: 128
+        x: 16
         y: 128
         width: 16
         height: 16
@@ -13259,7 +13259,7 @@ TextureImporter:
       name: RA_Cavern_626
       rect:
         serializedVersion: 2
-        x: 144
+        x: 32
         y: 128
         width: 16
         height: 16
@@ -13280,7 +13280,7 @@ TextureImporter:
       name: RA_Cavern_627
       rect:
         serializedVersion: 2
-        x: 160
+        x: 48
         y: 128
         width: 16
         height: 16
@@ -13301,7 +13301,7 @@ TextureImporter:
       name: RA_Cavern_628
       rect:
         serializedVersion: 2
-        x: 176
+        x: 80
         y: 128
         width: 16
         height: 16
@@ -13322,7 +13322,7 @@ TextureImporter:
       name: RA_Cavern_629
       rect:
         serializedVersion: 2
-        x: 192
+        x: 96
         y: 128
         width: 16
         height: 16
@@ -13343,7 +13343,7 @@ TextureImporter:
       name: RA_Cavern_630
       rect:
         serializedVersion: 2
-        x: 208
+        x: 112
         y: 128
         width: 16
         height: 16
@@ -13364,7 +13364,7 @@ TextureImporter:
       name: RA_Cavern_631
       rect:
         serializedVersion: 2
-        x: 256
+        x: 128
         y: 128
         width: 16
         height: 16
@@ -13385,7 +13385,7 @@ TextureImporter:
       name: RA_Cavern_632
       rect:
         serializedVersion: 2
-        x: 272
+        x: 144
         y: 128
         width: 16
         height: 16
@@ -13406,7 +13406,7 @@ TextureImporter:
       name: RA_Cavern_633
       rect:
         serializedVersion: 2
-        x: 288
+        x: 160
         y: 128
         width: 16
         height: 16
@@ -13427,7 +13427,7 @@ TextureImporter:
       name: RA_Cavern_634
       rect:
         serializedVersion: 2
-        x: 304
+        x: 176
         y: 128
         width: 16
         height: 16
@@ -13448,7 +13448,7 @@ TextureImporter:
       name: RA_Cavern_635
       rect:
         serializedVersion: 2
-        x: 320
+        x: 192
         y: 128
         width: 16
         height: 16
@@ -13469,7 +13469,7 @@ TextureImporter:
       name: RA_Cavern_636
       rect:
         serializedVersion: 2
-        x: 336
+        x: 208
         y: 128
         width: 16
         height: 16
@@ -13490,7 +13490,7 @@ TextureImporter:
       name: RA_Cavern_637
       rect:
         serializedVersion: 2
-        x: 352
+        x: 256
         y: 128
         width: 16
         height: 16
@@ -13511,7 +13511,7 @@ TextureImporter:
       name: RA_Cavern_638
       rect:
         serializedVersion: 2
-        x: 368
+        x: 272
         y: 128
         width: 16
         height: 16
@@ -13532,7 +13532,7 @@ TextureImporter:
       name: RA_Cavern_639
       rect:
         serializedVersion: 2
-        x: 384
+        x: 288
         y: 128
         width: 16
         height: 16
@@ -13553,7 +13553,7 @@ TextureImporter:
       name: RA_Cavern_640
       rect:
         serializedVersion: 2
-        x: 400
+        x: 304
         y: 128
         width: 16
         height: 16
@@ -13574,7 +13574,7 @@ TextureImporter:
       name: RA_Cavern_641
       rect:
         serializedVersion: 2
-        x: 416
+        x: 320
         y: 128
         width: 16
         height: 16
@@ -13595,7 +13595,7 @@ TextureImporter:
       name: RA_Cavern_642
       rect:
         serializedVersion: 2
-        x: 432
+        x: 336
         y: 128
         width: 16
         height: 16
@@ -13616,8 +13616,8 @@ TextureImporter:
       name: RA_Cavern_643
       rect:
         serializedVersion: 2
-        x: 0
-        y: 112
+        x: 352
+        y: 128
         width: 16
         height: 16
       alignment: 0
@@ -13637,8 +13637,8 @@ TextureImporter:
       name: RA_Cavern_644
       rect:
         serializedVersion: 2
-        x: 16
-        y: 112
+        x: 368
+        y: 128
         width: 16
         height: 16
       alignment: 0
@@ -13658,8 +13658,8 @@ TextureImporter:
       name: RA_Cavern_645
       rect:
         serializedVersion: 2
-        x: 32
-        y: 112
+        x: 384
+        y: 128
         width: 16
         height: 16
       alignment: 0
@@ -13679,8 +13679,8 @@ TextureImporter:
       name: RA_Cavern_646
       rect:
         serializedVersion: 2
-        x: 48
-        y: 112
+        x: 400
+        y: 128
         width: 16
         height: 16
       alignment: 0
@@ -13700,8 +13700,8 @@ TextureImporter:
       name: RA_Cavern_647
       rect:
         serializedVersion: 2
-        x: 64
-        y: 112
+        x: 416
+        y: 128
         width: 16
         height: 16
       alignment: 0
@@ -13721,8 +13721,8 @@ TextureImporter:
       name: RA_Cavern_648
       rect:
         serializedVersion: 2
-        x: 80
-        y: 112
+        x: 432
+        y: 128
         width: 16
         height: 16
       alignment: 0
@@ -13742,7 +13742,7 @@ TextureImporter:
       name: RA_Cavern_649
       rect:
         serializedVersion: 2
-        x: 96
+        x: 0
         y: 112
         width: 16
         height: 16
@@ -13763,7 +13763,7 @@ TextureImporter:
       name: RA_Cavern_650
       rect:
         serializedVersion: 2
-        x: 112
+        x: 16
         y: 112
         width: 16
         height: 16
@@ -13784,7 +13784,7 @@ TextureImporter:
       name: RA_Cavern_651
       rect:
         serializedVersion: 2
-        x: 128
+        x: 32
         y: 112
         width: 16
         height: 16
@@ -13805,7 +13805,7 @@ TextureImporter:
       name: RA_Cavern_652
       rect:
         serializedVersion: 2
-        x: 144
+        x: 48
         y: 112
         width: 16
         height: 16
@@ -13826,7 +13826,7 @@ TextureImporter:
       name: RA_Cavern_653
       rect:
         serializedVersion: 2
-        x: 160
+        x: 64
         y: 112
         width: 16
         height: 16
@@ -13847,7 +13847,7 @@ TextureImporter:
       name: RA_Cavern_654
       rect:
         serializedVersion: 2
-        x: 176
+        x: 80
         y: 112
         width: 16
         height: 16
@@ -13868,7 +13868,7 @@ TextureImporter:
       name: RA_Cavern_655
       rect:
         serializedVersion: 2
-        x: 192
+        x: 96
         y: 112
         width: 16
         height: 16
@@ -13889,7 +13889,7 @@ TextureImporter:
       name: RA_Cavern_656
       rect:
         serializedVersion: 2
-        x: 208
+        x: 112
         y: 112
         width: 16
         height: 16
@@ -13910,7 +13910,7 @@ TextureImporter:
       name: RA_Cavern_657
       rect:
         serializedVersion: 2
-        x: 224
+        x: 128
         y: 112
         width: 16
         height: 16
@@ -13931,7 +13931,7 @@ TextureImporter:
       name: RA_Cavern_658
       rect:
         serializedVersion: 2
-        x: 240
+        x: 144
         y: 112
         width: 16
         height: 16
@@ -13952,7 +13952,7 @@ TextureImporter:
       name: RA_Cavern_659
       rect:
         serializedVersion: 2
-        x: 256
+        x: 160
         y: 112
         width: 16
         height: 16
@@ -13973,7 +13973,7 @@ TextureImporter:
       name: RA_Cavern_660
       rect:
         serializedVersion: 2
-        x: 272
+        x: 176
         y: 112
         width: 16
         height: 16
@@ -13994,7 +13994,7 @@ TextureImporter:
       name: RA_Cavern_661
       rect:
         serializedVersion: 2
-        x: 288
+        x: 192
         y: 112
         width: 16
         height: 16
@@ -14015,7 +14015,7 @@ TextureImporter:
       name: RA_Cavern_662
       rect:
         serializedVersion: 2
-        x: 304
+        x: 208
         y: 112
         width: 16
         height: 16
@@ -14036,7 +14036,7 @@ TextureImporter:
       name: RA_Cavern_663
       rect:
         serializedVersion: 2
-        x: 320
+        x: 224
         y: 112
         width: 16
         height: 16
@@ -14057,7 +14057,7 @@ TextureImporter:
       name: RA_Cavern_664
       rect:
         serializedVersion: 2
-        x: 336
+        x: 240
         y: 112
         width: 16
         height: 16
@@ -14078,7 +14078,7 @@ TextureImporter:
       name: RA_Cavern_665
       rect:
         serializedVersion: 2
-        x: 352
+        x: 256
         y: 112
         width: 16
         height: 16
@@ -14099,7 +14099,7 @@ TextureImporter:
       name: RA_Cavern_666
       rect:
         serializedVersion: 2
-        x: 368
+        x: 272
         y: 112
         width: 16
         height: 16
@@ -14120,7 +14120,7 @@ TextureImporter:
       name: RA_Cavern_667
       rect:
         serializedVersion: 2
-        x: 384
+        x: 288
         y: 112
         width: 16
         height: 16
@@ -14141,7 +14141,7 @@ TextureImporter:
       name: RA_Cavern_668
       rect:
         serializedVersion: 2
-        x: 400
+        x: 304
         y: 112
         width: 16
         height: 16
@@ -14162,7 +14162,7 @@ TextureImporter:
       name: RA_Cavern_669
       rect:
         serializedVersion: 2
-        x: 416
+        x: 320
         y: 112
         width: 16
         height: 16
@@ -14183,7 +14183,7 @@ TextureImporter:
       name: RA_Cavern_670
       rect:
         serializedVersion: 2
-        x: 432
+        x: 336
         y: 112
         width: 16
         height: 16
@@ -14204,8 +14204,8 @@ TextureImporter:
       name: RA_Cavern_671
       rect:
         serializedVersion: 2
-        x: 0
-        y: 96
+        x: 352
+        y: 112
         width: 16
         height: 16
       alignment: 0
@@ -14225,8 +14225,8 @@ TextureImporter:
       name: RA_Cavern_672
       rect:
         serializedVersion: 2
-        x: 16
-        y: 96
+        x: 368
+        y: 112
         width: 16
         height: 16
       alignment: 0
@@ -14246,8 +14246,8 @@ TextureImporter:
       name: RA_Cavern_673
       rect:
         serializedVersion: 2
-        x: 32
-        y: 96
+        x: 384
+        y: 112
         width: 16
         height: 16
       alignment: 0
@@ -14267,8 +14267,8 @@ TextureImporter:
       name: RA_Cavern_674
       rect:
         serializedVersion: 2
-        x: 48
-        y: 96
+        x: 400
+        y: 112
         width: 16
         height: 16
       alignment: 0
@@ -14288,8 +14288,8 @@ TextureImporter:
       name: RA_Cavern_675
       rect:
         serializedVersion: 2
-        x: 64
-        y: 96
+        x: 416
+        y: 112
         width: 16
         height: 16
       alignment: 0
@@ -14309,8 +14309,8 @@ TextureImporter:
       name: RA_Cavern_676
       rect:
         serializedVersion: 2
-        x: 80
-        y: 96
+        x: 432
+        y: 112
         width: 16
         height: 16
       alignment: 0
@@ -14330,7 +14330,7 @@ TextureImporter:
       name: RA_Cavern_677
       rect:
         serializedVersion: 2
-        x: 96
+        x: 0
         y: 96
         width: 16
         height: 16
@@ -14351,7 +14351,7 @@ TextureImporter:
       name: RA_Cavern_678
       rect:
         serializedVersion: 2
-        x: 112
+        x: 16
         y: 96
         width: 16
         height: 16
@@ -14372,7 +14372,7 @@ TextureImporter:
       name: RA_Cavern_679
       rect:
         serializedVersion: 2
-        x: 128
+        x: 32
         y: 96
         width: 16
         height: 16
@@ -14393,7 +14393,7 @@ TextureImporter:
       name: RA_Cavern_680
       rect:
         serializedVersion: 2
-        x: 144
+        x: 48
         y: 96
         width: 16
         height: 16
@@ -14414,7 +14414,7 @@ TextureImporter:
       name: RA_Cavern_681
       rect:
         serializedVersion: 2
-        x: 160
+        x: 64
         y: 96
         width: 16
         height: 16
@@ -14435,7 +14435,7 @@ TextureImporter:
       name: RA_Cavern_682
       rect:
         serializedVersion: 2
-        x: 176
+        x: 80
         y: 96
         width: 16
         height: 16
@@ -14456,7 +14456,7 @@ TextureImporter:
       name: RA_Cavern_683
       rect:
         serializedVersion: 2
-        x: 192
+        x: 96
         y: 96
         width: 16
         height: 16
@@ -14477,7 +14477,7 @@ TextureImporter:
       name: RA_Cavern_684
       rect:
         serializedVersion: 2
-        x: 208
+        x: 112
         y: 96
         width: 16
         height: 16
@@ -14498,7 +14498,7 @@ TextureImporter:
       name: RA_Cavern_685
       rect:
         serializedVersion: 2
-        x: 224
+        x: 128
         y: 96
         width: 16
         height: 16
@@ -14519,7 +14519,7 @@ TextureImporter:
       name: RA_Cavern_686
       rect:
         serializedVersion: 2
-        x: 240
+        x: 144
         y: 96
         width: 16
         height: 16
@@ -14540,8 +14540,8 @@ TextureImporter:
       name: RA_Cavern_687
       rect:
         serializedVersion: 2
-        x: 0
-        y: 80
+        x: 160
+        y: 96
         width: 16
         height: 16
       alignment: 0
@@ -14561,8 +14561,8 @@ TextureImporter:
       name: RA_Cavern_688
       rect:
         serializedVersion: 2
-        x: 16
-        y: 80
+        x: 176
+        y: 96
         width: 16
         height: 16
       alignment: 0
@@ -14582,8 +14582,8 @@ TextureImporter:
       name: RA_Cavern_689
       rect:
         serializedVersion: 2
-        x: 32
-        y: 80
+        x: 192
+        y: 96
         width: 16
         height: 16
       alignment: 0
@@ -14603,8 +14603,8 @@ TextureImporter:
       name: RA_Cavern_690
       rect:
         serializedVersion: 2
-        x: 48
-        y: 80
+        x: 208
+        y: 96
         width: 16
         height: 16
       alignment: 0
@@ -14624,8 +14624,8 @@ TextureImporter:
       name: RA_Cavern_691
       rect:
         serializedVersion: 2
-        x: 64
-        y: 80
+        x: 224
+        y: 96
         width: 16
         height: 16
       alignment: 0
@@ -14645,8 +14645,8 @@ TextureImporter:
       name: RA_Cavern_692
       rect:
         serializedVersion: 2
-        x: 80
-        y: 80
+        x: 240
+        y: 96
         width: 16
         height: 16
       alignment: 0
@@ -14666,7 +14666,7 @@ TextureImporter:
       name: RA_Cavern_693
       rect:
         serializedVersion: 2
-        x: 96
+        x: 0
         y: 80
         width: 16
         height: 16
@@ -14687,7 +14687,7 @@ TextureImporter:
       name: RA_Cavern_694
       rect:
         serializedVersion: 2
-        x: 112
+        x: 16
         y: 80
         width: 16
         height: 16
@@ -14708,7 +14708,7 @@ TextureImporter:
       name: RA_Cavern_695
       rect:
         serializedVersion: 2
-        x: 128
+        x: 32
         y: 80
         width: 16
         height: 16
@@ -14729,7 +14729,7 @@ TextureImporter:
       name: RA_Cavern_696
       rect:
         serializedVersion: 2
-        x: 144
+        x: 48
         y: 80
         width: 16
         height: 16
@@ -14750,7 +14750,7 @@ TextureImporter:
       name: RA_Cavern_697
       rect:
         serializedVersion: 2
-        x: 160
+        x: 64
         y: 80
         width: 16
         height: 16
@@ -14771,7 +14771,7 @@ TextureImporter:
       name: RA_Cavern_698
       rect:
         serializedVersion: 2
-        x: 176
+        x: 80
         y: 80
         width: 16
         height: 16
@@ -14792,7 +14792,7 @@ TextureImporter:
       name: RA_Cavern_699
       rect:
         serializedVersion: 2
-        x: 192
+        x: 96
         y: 80
         width: 16
         height: 16
@@ -14813,7 +14813,7 @@ TextureImporter:
       name: RA_Cavern_700
       rect:
         serializedVersion: 2
-        x: 208
+        x: 112
         y: 80
         width: 16
         height: 16
@@ -14834,7 +14834,7 @@ TextureImporter:
       name: RA_Cavern_701
       rect:
         serializedVersion: 2
-        x: 224
+        x: 128
         y: 80
         width: 16
         height: 16
@@ -14855,7 +14855,7 @@ TextureImporter:
       name: RA_Cavern_702
       rect:
         serializedVersion: 2
-        x: 240
+        x: 144
         y: 80
         width: 16
         height: 16
@@ -14876,7 +14876,7 @@ TextureImporter:
       name: RA_Cavern_703
       rect:
         serializedVersion: 2
-        x: 256
+        x: 160
         y: 80
         width: 16
         height: 16
@@ -14897,7 +14897,7 @@ TextureImporter:
       name: RA_Cavern_704
       rect:
         serializedVersion: 2
-        x: 272
+        x: 176
         y: 80
         width: 16
         height: 16
@@ -14918,7 +14918,7 @@ TextureImporter:
       name: RA_Cavern_705
       rect:
         serializedVersion: 2
-        x: 288
+        x: 192
         y: 80
         width: 16
         height: 16
@@ -14939,7 +14939,7 @@ TextureImporter:
       name: RA_Cavern_706
       rect:
         serializedVersion: 2
-        x: 304
+        x: 208
         y: 80
         width: 16
         height: 16
@@ -14960,7 +14960,7 @@ TextureImporter:
       name: RA_Cavern_707
       rect:
         serializedVersion: 2
-        x: 320
+        x: 224
         y: 80
         width: 16
         height: 16
@@ -14981,7 +14981,7 @@ TextureImporter:
       name: RA_Cavern_708
       rect:
         serializedVersion: 2
-        x: 352
+        x: 240
         y: 80
         width: 16
         height: 16
@@ -15002,7 +15002,7 @@ TextureImporter:
       name: RA_Cavern_709
       rect:
         serializedVersion: 2
-        x: 368
+        x: 256
         y: 80
         width: 16
         height: 16
@@ -15023,7 +15023,7 @@ TextureImporter:
       name: RA_Cavern_710
       rect:
         serializedVersion: 2
-        x: 384
+        x: 272
         y: 80
         width: 16
         height: 16
@@ -15044,7 +15044,7 @@ TextureImporter:
       name: RA_Cavern_711
       rect:
         serializedVersion: 2
-        x: 400
+        x: 288
         y: 80
         width: 16
         height: 16
@@ -15065,7 +15065,7 @@ TextureImporter:
       name: RA_Cavern_712
       rect:
         serializedVersion: 2
-        x: 416
+        x: 304
         y: 80
         width: 16
         height: 16
@@ -15086,7 +15086,7 @@ TextureImporter:
       name: RA_Cavern_713
       rect:
         serializedVersion: 2
-        x: 432
+        x: 320
         y: 80
         width: 16
         height: 16
@@ -15107,7 +15107,7 @@ TextureImporter:
       name: RA_Cavern_714
       rect:
         serializedVersion: 2
-        x: 448
+        x: 352
         y: 80
         width: 16
         height: 16
@@ -15128,7 +15128,7 @@ TextureImporter:
       name: RA_Cavern_715
       rect:
         serializedVersion: 2
-        x: 464
+        x: 368
         y: 80
         width: 16
         height: 16
@@ -15149,7 +15149,7 @@ TextureImporter:
       name: RA_Cavern_716
       rect:
         serializedVersion: 2
-        x: 480
+        x: 384
         y: 80
         width: 16
         height: 16
@@ -15170,8 +15170,8 @@ TextureImporter:
       name: RA_Cavern_717
       rect:
         serializedVersion: 2
-        x: 0
-        y: 64
+        x: 400
+        y: 80
         width: 16
         height: 16
       alignment: 0
@@ -15191,8 +15191,8 @@ TextureImporter:
       name: RA_Cavern_718
       rect:
         serializedVersion: 2
-        x: 16
-        y: 64
+        x: 416
+        y: 80
         width: 16
         height: 16
       alignment: 0
@@ -15212,8 +15212,8 @@ TextureImporter:
       name: RA_Cavern_719
       rect:
         serializedVersion: 2
-        x: 32
-        y: 64
+        x: 432
+        y: 80
         width: 16
         height: 16
       alignment: 0
@@ -15233,8 +15233,8 @@ TextureImporter:
       name: RA_Cavern_720
       rect:
         serializedVersion: 2
-        x: 112
-        y: 64
+        x: 448
+        y: 80
         width: 16
         height: 16
       alignment: 0
@@ -15254,8 +15254,8 @@ TextureImporter:
       name: RA_Cavern_721
       rect:
         serializedVersion: 2
-        x: 128
-        y: 64
+        x: 464
+        y: 80
         width: 16
         height: 16
       alignment: 0
@@ -15275,8 +15275,8 @@ TextureImporter:
       name: RA_Cavern_722
       rect:
         serializedVersion: 2
-        x: 144
-        y: 64
+        x: 480
+        y: 80
         width: 16
         height: 16
       alignment: 0
@@ -15296,7 +15296,7 @@ TextureImporter:
       name: RA_Cavern_723
       rect:
         serializedVersion: 2
-        x: 160
+        x: 0
         y: 64
         width: 16
         height: 16
@@ -15317,7 +15317,7 @@ TextureImporter:
       name: RA_Cavern_724
       rect:
         serializedVersion: 2
-        x: 176
+        x: 16
         y: 64
         width: 16
         height: 16
@@ -15338,7 +15338,7 @@ TextureImporter:
       name: RA_Cavern_725
       rect:
         serializedVersion: 2
-        x: 192
+        x: 32
         y: 64
         width: 16
         height: 16
@@ -15359,7 +15359,7 @@ TextureImporter:
       name: RA_Cavern_726
       rect:
         serializedVersion: 2
-        x: 208
+        x: 112
         y: 64
         width: 16
         height: 16
@@ -15380,7 +15380,7 @@ TextureImporter:
       name: RA_Cavern_727
       rect:
         serializedVersion: 2
-        x: 224
+        x: 128
         y: 64
         width: 16
         height: 16
@@ -15401,7 +15401,7 @@ TextureImporter:
       name: RA_Cavern_728
       rect:
         serializedVersion: 2
-        x: 240
+        x: 144
         y: 64
         width: 16
         height: 16
@@ -15422,7 +15422,7 @@ TextureImporter:
       name: RA_Cavern_729
       rect:
         serializedVersion: 2
-        x: 256
+        x: 160
         y: 64
         width: 16
         height: 16
@@ -15443,7 +15443,7 @@ TextureImporter:
       name: RA_Cavern_730
       rect:
         serializedVersion: 2
-        x: 272
+        x: 176
         y: 64
         width: 16
         height: 16
@@ -15464,7 +15464,7 @@ TextureImporter:
       name: RA_Cavern_731
       rect:
         serializedVersion: 2
-        x: 288
+        x: 192
         y: 64
         width: 16
         height: 16
@@ -15485,7 +15485,7 @@ TextureImporter:
       name: RA_Cavern_732
       rect:
         serializedVersion: 2
-        x: 304
+        x: 208
         y: 64
         width: 16
         height: 16
@@ -15506,7 +15506,7 @@ TextureImporter:
       name: RA_Cavern_733
       rect:
         serializedVersion: 2
-        x: 320
+        x: 224
         y: 64
         width: 16
         height: 16
@@ -15527,7 +15527,7 @@ TextureImporter:
       name: RA_Cavern_734
       rect:
         serializedVersion: 2
-        x: 336
+        x: 240
         y: 64
         width: 16
         height: 16
@@ -15548,7 +15548,7 @@ TextureImporter:
       name: RA_Cavern_735
       rect:
         serializedVersion: 2
-        x: 352
+        x: 256
         y: 64
         width: 16
         height: 16
@@ -15569,7 +15569,7 @@ TextureImporter:
       name: RA_Cavern_736
       rect:
         serializedVersion: 2
-        x: 368
+        x: 272
         y: 64
         width: 16
         height: 16
@@ -15590,7 +15590,7 @@ TextureImporter:
       name: RA_Cavern_737
       rect:
         serializedVersion: 2
-        x: 384
+        x: 288
         y: 64
         width: 16
         height: 16
@@ -15611,7 +15611,7 @@ TextureImporter:
       name: RA_Cavern_738
       rect:
         serializedVersion: 2
-        x: 400
+        x: 304
         y: 64
         width: 16
         height: 16
@@ -15632,7 +15632,7 @@ TextureImporter:
       name: RA_Cavern_739
       rect:
         serializedVersion: 2
-        x: 416
+        x: 320
         y: 64
         width: 16
         height: 16
@@ -15653,7 +15653,7 @@ TextureImporter:
       name: RA_Cavern_740
       rect:
         serializedVersion: 2
-        x: 432
+        x: 336
         y: 64
         width: 16
         height: 16
@@ -15674,7 +15674,7 @@ TextureImporter:
       name: RA_Cavern_741
       rect:
         serializedVersion: 2
-        x: 448
+        x: 352
         y: 64
         width: 16
         height: 16
@@ -15695,7 +15695,7 @@ TextureImporter:
       name: RA_Cavern_742
       rect:
         serializedVersion: 2
-        x: 464
+        x: 368
         y: 64
         width: 16
         height: 16
@@ -15716,7 +15716,7 @@ TextureImporter:
       name: RA_Cavern_743
       rect:
         serializedVersion: 2
-        x: 480
+        x: 384
         y: 64
         width: 16
         height: 16
@@ -15737,8 +15737,8 @@ TextureImporter:
       name: RA_Cavern_744
       rect:
         serializedVersion: 2
-        x: 0
-        y: 48
+        x: 400
+        y: 64
         width: 16
         height: 16
       alignment: 0
@@ -15758,8 +15758,8 @@ TextureImporter:
       name: RA_Cavern_745
       rect:
         serializedVersion: 2
-        x: 16
-        y: 48
+        x: 416
+        y: 64
         width: 16
         height: 16
       alignment: 0
@@ -15779,8 +15779,8 @@ TextureImporter:
       name: RA_Cavern_746
       rect:
         serializedVersion: 2
-        x: 32
-        y: 48
+        x: 432
+        y: 64
         width: 16
         height: 16
       alignment: 0
@@ -15800,8 +15800,8 @@ TextureImporter:
       name: RA_Cavern_747
       rect:
         serializedVersion: 2
-        x: 48
-        y: 48
+        x: 448
+        y: 64
         width: 16
         height: 16
       alignment: 0
@@ -15821,8 +15821,8 @@ TextureImporter:
       name: RA_Cavern_748
       rect:
         serializedVersion: 2
-        x: 64
-        y: 48
+        x: 464
+        y: 64
         width: 16
         height: 16
       alignment: 0
@@ -15842,8 +15842,8 @@ TextureImporter:
       name: RA_Cavern_749
       rect:
         serializedVersion: 2
-        x: 80
-        y: 48
+        x: 480
+        y: 64
         width: 16
         height: 16
       alignment: 0
@@ -15863,7 +15863,7 @@ TextureImporter:
       name: RA_Cavern_750
       rect:
         serializedVersion: 2
-        x: 96
+        x: 0
         y: 48
         width: 16
         height: 16
@@ -15884,7 +15884,7 @@ TextureImporter:
       name: RA_Cavern_751
       rect:
         serializedVersion: 2
-        x: 112
+        x: 16
         y: 48
         width: 16
         height: 16
@@ -15905,7 +15905,7 @@ TextureImporter:
       name: RA_Cavern_752
       rect:
         serializedVersion: 2
-        x: 128
+        x: 32
         y: 48
         width: 16
         height: 16
@@ -15926,7 +15926,7 @@ TextureImporter:
       name: RA_Cavern_753
       rect:
         serializedVersion: 2
-        x: 144
+        x: 48
         y: 48
         width: 16
         height: 16
@@ -15947,7 +15947,7 @@ TextureImporter:
       name: RA_Cavern_754
       rect:
         serializedVersion: 2
-        x: 160
+        x: 64
         y: 48
         width: 16
         height: 16
@@ -15968,7 +15968,7 @@ TextureImporter:
       name: RA_Cavern_755
       rect:
         serializedVersion: 2
-        x: 176
+        x: 80
         y: 48
         width: 16
         height: 16
@@ -15989,7 +15989,7 @@ TextureImporter:
       name: RA_Cavern_756
       rect:
         serializedVersion: 2
-        x: 192
+        x: 96
         y: 48
         width: 16
         height: 16
@@ -16010,7 +16010,7 @@ TextureImporter:
       name: RA_Cavern_757
       rect:
         serializedVersion: 2
-        x: 256
+        x: 112
         y: 48
         width: 16
         height: 16
@@ -16031,7 +16031,7 @@ TextureImporter:
       name: RA_Cavern_758
       rect:
         serializedVersion: 2
-        x: 272
+        x: 128
         y: 48
         width: 16
         height: 16
@@ -16052,7 +16052,7 @@ TextureImporter:
       name: RA_Cavern_759
       rect:
         serializedVersion: 2
-        x: 288
+        x: 144
         y: 48
         width: 16
         height: 16
@@ -16073,7 +16073,7 @@ TextureImporter:
       name: RA_Cavern_760
       rect:
         serializedVersion: 2
-        x: 304
+        x: 160
         y: 48
         width: 16
         height: 16
@@ -16094,7 +16094,7 @@ TextureImporter:
       name: RA_Cavern_761
       rect:
         serializedVersion: 2
-        x: 320
+        x: 176
         y: 48
         width: 16
         height: 16
@@ -16115,7 +16115,7 @@ TextureImporter:
       name: RA_Cavern_762
       rect:
         serializedVersion: 2
-        x: 336
+        x: 192
         y: 48
         width: 16
         height: 16
@@ -16136,7 +16136,7 @@ TextureImporter:
       name: RA_Cavern_763
       rect:
         serializedVersion: 2
-        x: 352
+        x: 256
         y: 48
         width: 16
         height: 16
@@ -16157,7 +16157,7 @@ TextureImporter:
       name: RA_Cavern_764
       rect:
         serializedVersion: 2
-        x: 368
+        x: 272
         y: 48
         width: 16
         height: 16
@@ -16178,7 +16178,7 @@ TextureImporter:
       name: RA_Cavern_765
       rect:
         serializedVersion: 2
-        x: 384
+        x: 288
         y: 48
         width: 16
         height: 16
@@ -16199,7 +16199,7 @@ TextureImporter:
       name: RA_Cavern_766
       rect:
         serializedVersion: 2
-        x: 400
+        x: 304
         y: 48
         width: 16
         height: 16
@@ -16220,7 +16220,7 @@ TextureImporter:
       name: RA_Cavern_767
       rect:
         serializedVersion: 2
-        x: 416
+        x: 320
         y: 48
         width: 16
         height: 16
@@ -16241,7 +16241,7 @@ TextureImporter:
       name: RA_Cavern_768
       rect:
         serializedVersion: 2
-        x: 432
+        x: 336
         y: 48
         width: 16
         height: 16
@@ -16262,8 +16262,8 @@ TextureImporter:
       name: RA_Cavern_769
       rect:
         serializedVersion: 2
-        x: 0
-        y: 32
+        x: 352
+        y: 48
         width: 16
         height: 16
       alignment: 0
@@ -16283,8 +16283,8 @@ TextureImporter:
       name: RA_Cavern_770
       rect:
         serializedVersion: 2
-        x: 32
-        y: 32
+        x: 368
+        y: 48
         width: 16
         height: 16
       alignment: 0
@@ -16304,8 +16304,8 @@ TextureImporter:
       name: RA_Cavern_771
       rect:
         serializedVersion: 2
-        x: 48
-        y: 32
+        x: 384
+        y: 48
         width: 16
         height: 16
       alignment: 0
@@ -16325,8 +16325,8 @@ TextureImporter:
       name: RA_Cavern_772
       rect:
         serializedVersion: 2
-        x: 64
-        y: 32
+        x: 400
+        y: 48
         width: 16
         height: 16
       alignment: 0
@@ -16346,8 +16346,8 @@ TextureImporter:
       name: RA_Cavern_773
       rect:
         serializedVersion: 2
-        x: 80
-        y: 32
+        x: 416
+        y: 48
         width: 16
         height: 16
       alignment: 0
@@ -16367,8 +16367,8 @@ TextureImporter:
       name: RA_Cavern_774
       rect:
         serializedVersion: 2
-        x: 96
-        y: 32
+        x: 432
+        y: 48
         width: 16
         height: 16
       alignment: 0
@@ -16388,7 +16388,7 @@ TextureImporter:
       name: RA_Cavern_775
       rect:
         serializedVersion: 2
-        x: 112
+        x: 0
         y: 32
         width: 16
         height: 16
@@ -16409,7 +16409,7 @@ TextureImporter:
       name: RA_Cavern_776
       rect:
         serializedVersion: 2
-        x: 128
+        x: 32
         y: 32
         width: 16
         height: 16
@@ -16430,7 +16430,7 @@ TextureImporter:
       name: RA_Cavern_777
       rect:
         serializedVersion: 2
-        x: 144
+        x: 48
         y: 32
         width: 16
         height: 16
@@ -16451,7 +16451,7 @@ TextureImporter:
       name: RA_Cavern_778
       rect:
         serializedVersion: 2
-        x: 160
+        x: 64
         y: 32
         width: 16
         height: 16
@@ -16472,7 +16472,7 @@ TextureImporter:
       name: RA_Cavern_779
       rect:
         serializedVersion: 2
-        x: 176
+        x: 80
         y: 32
         width: 16
         height: 16
@@ -16493,7 +16493,7 @@ TextureImporter:
       name: RA_Cavern_780
       rect:
         serializedVersion: 2
-        x: 192
+        x: 96
         y: 32
         width: 16
         height: 16
@@ -16514,7 +16514,7 @@ TextureImporter:
       name: RA_Cavern_781
       rect:
         serializedVersion: 2
-        x: 256
+        x: 112
         y: 32
         width: 16
         height: 16
@@ -16535,7 +16535,7 @@ TextureImporter:
       name: RA_Cavern_782
       rect:
         serializedVersion: 2
-        x: 272
+        x: 128
         y: 32
         width: 16
         height: 16
@@ -16556,7 +16556,7 @@ TextureImporter:
       name: RA_Cavern_783
       rect:
         serializedVersion: 2
-        x: 288
+        x: 144
         y: 32
         width: 16
         height: 16
@@ -16577,7 +16577,7 @@ TextureImporter:
       name: RA_Cavern_784
       rect:
         serializedVersion: 2
-        x: 304
+        x: 160
         y: 32
         width: 16
         height: 16
@@ -16598,7 +16598,7 @@ TextureImporter:
       name: RA_Cavern_785
       rect:
         serializedVersion: 2
-        x: 320
+        x: 176
         y: 32
         width: 16
         height: 16
@@ -16619,7 +16619,7 @@ TextureImporter:
       name: RA_Cavern_786
       rect:
         serializedVersion: 2
-        x: 336
+        x: 192
         y: 32
         width: 16
         height: 16
@@ -16640,7 +16640,7 @@ TextureImporter:
       name: RA_Cavern_787
       rect:
         serializedVersion: 2
-        x: 352
+        x: 256
         y: 32
         width: 16
         height: 16
@@ -16661,7 +16661,7 @@ TextureImporter:
       name: RA_Cavern_788
       rect:
         serializedVersion: 2
-        x: 368
+        x: 272
         y: 32
         width: 16
         height: 16
@@ -16682,7 +16682,7 @@ TextureImporter:
       name: RA_Cavern_789
       rect:
         serializedVersion: 2
-        x: 384
+        x: 288
         y: 32
         width: 16
         height: 16
@@ -16703,7 +16703,7 @@ TextureImporter:
       name: RA_Cavern_790
       rect:
         serializedVersion: 2
-        x: 400
+        x: 304
         y: 32
         width: 16
         height: 16
@@ -16724,7 +16724,7 @@ TextureImporter:
       name: RA_Cavern_791
       rect:
         serializedVersion: 2
-        x: 416
+        x: 320
         y: 32
         width: 16
         height: 16
@@ -16745,7 +16745,7 @@ TextureImporter:
       name: RA_Cavern_792
       rect:
         serializedVersion: 2
-        x: 432
+        x: 336
         y: 32
         width: 16
         height: 16
@@ -16766,8 +16766,8 @@ TextureImporter:
       name: RA_Cavern_793
       rect:
         serializedVersion: 2
-        x: 0
-        y: 16
+        x: 352
+        y: 32
         width: 16
         height: 16
       alignment: 0
@@ -16787,8 +16787,8 @@ TextureImporter:
       name: RA_Cavern_794
       rect:
         serializedVersion: 2
-        x: 16
-        y: 16
+        x: 368
+        y: 32
         width: 16
         height: 16
       alignment: 0
@@ -16808,8 +16808,8 @@ TextureImporter:
       name: RA_Cavern_795
       rect:
         serializedVersion: 2
-        x: 32
-        y: 16
+        x: 384
+        y: 32
         width: 16
         height: 16
       alignment: 0
@@ -16829,8 +16829,8 @@ TextureImporter:
       name: RA_Cavern_796
       rect:
         serializedVersion: 2
-        x: 48
-        y: 16
+        x: 400
+        y: 32
         width: 16
         height: 16
       alignment: 0
@@ -16850,8 +16850,8 @@ TextureImporter:
       name: RA_Cavern_797
       rect:
         serializedVersion: 2
-        x: 80
-        y: 16
+        x: 416
+        y: 32
         width: 16
         height: 16
       alignment: 0
@@ -16871,8 +16871,8 @@ TextureImporter:
       name: RA_Cavern_798
       rect:
         serializedVersion: 2
-        x: 96
-        y: 16
+        x: 432
+        y: 32
         width: 16
         height: 16
       alignment: 0
@@ -16892,7 +16892,7 @@ TextureImporter:
       name: RA_Cavern_799
       rect:
         serializedVersion: 2
-        x: 112
+        x: 0
         y: 16
         width: 16
         height: 16
@@ -16913,7 +16913,7 @@ TextureImporter:
       name: RA_Cavern_800
       rect:
         serializedVersion: 2
-        x: 128
+        x: 16
         y: 16
         width: 16
         height: 16
@@ -16934,7 +16934,7 @@ TextureImporter:
       name: RA_Cavern_801
       rect:
         serializedVersion: 2
-        x: 144
+        x: 32
         y: 16
         width: 16
         height: 16
@@ -16955,7 +16955,7 @@ TextureImporter:
       name: RA_Cavern_802
       rect:
         serializedVersion: 2
-        x: 160
+        x: 48
         y: 16
         width: 16
         height: 16
@@ -16976,7 +16976,7 @@ TextureImporter:
       name: RA_Cavern_803
       rect:
         serializedVersion: 2
-        x: 176
+        x: 80
         y: 16
         width: 16
         height: 16
@@ -16997,7 +16997,7 @@ TextureImporter:
       name: RA_Cavern_804
       rect:
         serializedVersion: 2
-        x: 192
+        x: 96
         y: 16
         width: 16
         height: 16
@@ -17018,8 +17018,8 @@ TextureImporter:
       name: RA_Cavern_805
       rect:
         serializedVersion: 2
-        x: 80
-        y: 0
+        x: 112
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -17039,8 +17039,8 @@ TextureImporter:
       name: RA_Cavern_806
       rect:
         serializedVersion: 2
-        x: 96
-        y: 0
+        x: 128
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -17060,8 +17060,8 @@ TextureImporter:
       name: RA_Cavern_807
       rect:
         serializedVersion: 2
-        x: 112
-        y: 0
+        x: 144
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -17081,8 +17081,8 @@ TextureImporter:
       name: RA_Cavern_808
       rect:
         serializedVersion: 2
-        x: 128
-        y: 0
+        x: 160
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -17102,8 +17102,8 @@ TextureImporter:
       name: RA_Cavern_809
       rect:
         serializedVersion: 2
-        x: 144
-        y: 0
+        x: 176
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -17123,8 +17123,8 @@ TextureImporter:
       name: RA_Cavern_810
       rect:
         serializedVersion: 2
-        x: 160
-        y: 0
+        x: 192
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -17136,6 +17136,132 @@ TextureImporter:
       bones: []
       spriteID: 7eeaa00656c3b944092d08ff5535f368
       internalID: -641908981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Cavern_811
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0abc4cd9f00425640a4dffd2d8de5304
+      internalID: 1002184554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Cavern_812
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0b2221e0b9a0f044ac0c7b5e8055cec
+      internalID: -963053659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Cavern_813
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fd66251ed771e74da0d0b300c85f5bf
+      internalID: -1813346475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Cavern_814
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9faf222c1f26a743a6bcd9861506671
+      internalID: -675531861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Cavern_815
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a8d93a9356c2da48aec38cc7e9635f2
+      internalID: -1991204079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RA_Cavern_816
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dd0f96686ab0e9418dda0b4708ed098
+      internalID: -1688722121
       vertices: []
       indices: 
       edges: []
@@ -17943,6 +18069,12 @@ TextureImporter:
       RA_Cavern_809: -1292638745
       RA_Cavern_81: 1515351920
       RA_Cavern_810: -641908981
+      RA_Cavern_811: 1002184554
+      RA_Cavern_812: -963053659
+      RA_Cavern_813: -1813346475
+      RA_Cavern_814: -675531861
+      RA_Cavern_815: -1991204079
+      RA_Cavern_816: -1688722121
       RA_Cavern_82: 1832317939
       RA_Cavern_83: 907291486
       RA_Cavern_84: 189601082
