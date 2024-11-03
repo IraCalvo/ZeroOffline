@@ -10,94 +10,67 @@ public static class WallGenerator
 {
     public static void CreateWalls(HashSet<Vector2Int> floorPos, TilemapVisualizer tilemapVisualizer)
     {
+        // Generate one time
         var basicWallPos = FindWallsInDirections(floorPos, Direction2D.cardinalDirectionsList);
         var cornerWallPos = FindWallsInDirections(floorPos, Direction2D.diagonalDirectionsList);
-        
 
         CreateBasicWalls(tilemapVisualizer, basicWallPos, floorPos);
         CreateCornerWalls(tilemapVisualizer, cornerWallPos, floorPos);
 
-        FindPerimeter(tilemapVisualizer, basicWallPos, cornerWallPos, floorPos);
+        var perimeterWalls = FindPerimeter(tilemapVisualizer, basicWallPos, cornerWallPos, floorPos);
 
+        // Paint over again
+        floorPos = FillFloorGaps(perimeterWalls);
 
-        var walkedFloorPos = FillFloorGaps(floorPos, basicWallPos, cornerWallPos, tilemapVisualizer);
+        tilemapVisualizer.floorTilemap.ClearAllTiles();
+        tilemapVisualizer.wallTilemap.ClearAllTiles();
+        tilemapVisualizer.PaintFloorTiles(floorPos);
 
-        floorPos.UnionWith(walkedFloorPos);
         basicWallPos = FindWallsInDirections(floorPos, Direction2D.cardinalDirectionsList);
         cornerWallPos = FindWallsInDirections(floorPos, Direction2D.diagonalDirectionsList);
 
-        // Paint over again
-        tilemapVisualizer.PaintFloorTiles(floorPos);
         CreateBasicWalls(tilemapVisualizer, basicWallPos, floorPos);
         CreateCornerWalls(tilemapVisualizer, cornerWallPos, floorPos);
-        RemoveFullWalls(tilemapVisualizer);
-
     }
 
-    private static HashSet<Vector2Int> FillFloorGaps(HashSet<Vector2Int> floorPos, HashSet<Vector2Int> basicWallPos, HashSet<Vector2Int> cornerWallPos, TilemapVisualizer tilemapVisualizer) {
-        // Get the highest and lowest rows
-        // From high to low, iterate through each row
-        // Find the min and max x of this row
-        // Start Walker: Can't spawn it on the walls or on empty spaces
-        // Walk right placing tiles
-        // Check if there is a wall, if there is die
-        //
-        HashSet<Vector2Int> walkedFloorPositions = new HashSet<Vector2Int>();
-        int highestRowY = tilemapVisualizer.wallTilemap.cellBounds.yMax;
-        int lowestRowY = tilemapVisualizer.wallTilemap.cellBounds.yMin;
-        int highestColumnX = tilemapVisualizer.wallTilemap.cellBounds.xMax;
-        int lowestColumnX = tilemapVisualizer.wallTilemap.cellBounds.xMin;
+    // Fill the floor through BFS
+    private static HashSet<Vector2Int> FillFloorGaps(HashSet<Vector2Int> perimeterWalls)
+    {
+        HashSet<Vector2Int> floorPos = new HashSet<Vector2Int>();
 
-        for (int y = highestRowY; y >= lowestRowY; y--)
+        HashSet<Vector2Int> visited = new HashSet<Vector2Int>();
+        Queue<Vector2Int> queue = new Queue<Vector2Int>();
+        Vector2Int startingPoint = new Vector2Int(0, 0);
+
+        queue.Enqueue(startingPoint);
+
+        while (queue.Count > 0)
         {
-            for (int x = lowestColumnX; x <= highestColumnX; x++)
+            Vector2Int currentPoint = queue.Dequeue();
+            // If we already saw this point or we hit a wall then we stop searching
+            if (visited.Contains(currentPoint) || perimeterWalls.Contains(currentPoint))
             {
-                Vector2Int currentPosition = new Vector2Int(x, y);
-                if (basicWallPos.Contains(currentPosition) || cornerWallPos.Contains(currentPosition))
-                {
-                    if (tilemapVisualizer.wallTilemap.GetSprite((Vector3Int)currentPosition) == null)
-                    {
-                        walkedFloorPositions.Add(currentPosition);
-                    }
-                }
+                continue;
             }
 
+            visited.Add(currentPoint);
+            floorPos.Add(currentPoint);
+
+            // Search all other directions
+            queue.Enqueue(currentPoint + Vector2Int.up);
+            queue.Enqueue(currentPoint + Vector2Int.down);
+            queue.Enqueue(currentPoint + Vector2Int.left);
+            queue.Enqueue(currentPoint + Vector2Int.right);
         }
 
-        return walkedFloorPositions;
+        return floorPos;
     }
 
-    private static void RemoveFullWalls(TilemapVisualizer tilemapVisualizer)
-    {
-        Tilemap floorTileMap = tilemapVisualizer.floorTilemap;
-        Tilemap wallTileMap = tilemapVisualizer.wallTilemap;
-
-        BoundsInt bounds = wallTileMap.cellBounds;
-        for (int y = bounds.yMax; y >= bounds.yMin; y--)
-        {
-            for (int x = bounds.xMin; x <= bounds.xMax; x++)
-            {
-                Vector3Int position = new Vector3Int(x, y);
-                TileBase tile = wallTileMap.GetTile(position);
-
-                if (tile != null && tile.name == tilemapVisualizer.wallFull.name)
-                {
-                    Debug.Log("RemoveFullWalls: " + tile.name);
-                    TileData tileData = new TileData();
-                    tile.GetTileData(position, wallTileMap, ref tileData);
-
-                    TileData floorTileData = new TileData();
-                    
-
-                    //floorTileMap.SetTile(position, tileData);
-                }
-            }
-        }
-    }
-
-    private static void FindPerimeter(TilemapVisualizer tilemapVisualizer, HashSet<Vector2Int> basicWallPos, HashSet<Vector2Int> cornerWallPos, HashSet<Vector2Int> floorPos)
+    private static HashSet<Vector2Int> FindPerimeter(TilemapVisualizer tilemapVisualizer, HashSet<Vector2Int> basicWallPos, HashSet<Vector2Int> cornerWallPos, HashSet<Vector2Int> floorPos)
     {
         Tilemap wallTileMap = tilemapVisualizer.wallTilemap;
+        HashSet<Vector2Int> wallPos = new HashSet<Vector2Int>(basicWallPos);
+        wallPos.UnionWith(cornerWallPos);
 
         Vector2Int firstTile = new Vector2Int(0, 0);
 
@@ -108,9 +81,8 @@ public static class WallGenerator
             bool shouldBreak = false;
             for (int x = boundsInt.xMin; x <= boundsInt.xMax; x++)
             {
-                Vector3Int position = new Vector3Int(x, y);
-                TileBase tile = wallTileMap.GetTile(position);
-                if (tile != null && tile.name == tilemapVisualizer.wallFull.name)
+                Vector2Int position = new Vector2Int(x, y);
+                if (wallPos.Contains(position))
                 {
                     firstTile = new Vector2Int(x, y);
                     shouldBreak = true;
@@ -123,134 +95,120 @@ public static class WallGenerator
             }
         }
 
+        // Set the first currentTile
         Vector2Int currentTile = firstTile;
+        if (wallPos.Contains(new Vector2Int(currentTile.x + 1, currentTile.y)))
+        {
+            currentTile = new Vector2Int(currentTile.x + 1, currentTile.y);
+        }
+        else if (wallPos.Contains(new Vector2Int(currentTile.x, currentTile.y - 1)))
+        {
+            currentTile = new Vector2Int(currentTile.x, currentTile.y - 1);
+        }
+        else if (wallPos.Contains(new Vector2Int(currentTile.x - 1, currentTile.y)))
+        {
+            currentTile = new Vector2Int(currentTile.x - 1, currentTile.y);
+        }
+        else if (wallPos.Contains(new Vector2Int(currentTile.x, currentTile.y + 1)))
+        {
+            currentTile = new Vector2Int(currentTile.x, currentTile.y + 1);
+        }
 
-        HashSet<Vector2Int> perimeterWall = FindPerimeterWall(wallTileMap, firstTile, currentTile);
-        // Find the first next tile to kick off the loop.
-        //currentTile = FindNextWallTile(wallTileMap, currentTile, seenTiles, perimeterTiles);
-        //perimeterTiles.Add(currentTile);
-        //while (currentTile != firstTile)
-        //{
-        //    currentTile = FindNextWallTile(wallTileMap, currentTile, seenTiles, perimeterTiles);
-        //    if (currentTile == new Vector2Int(0, 0))
-        //    {
-        //        // Stop finding the perimeter, should never happen. Crash the game here
-        //        Debug.Log("FindPerimeter Broke");
-        //        Debug.Log("FindPerimeter seenTiles: " + seenTiles);
-        //        Debug.Log("FindPerimeter perimeterTiles: " + perimeterTiles);
-        //        return;
-        //    }
-        //    perimeterTiles.Add(currentTile);
-        //}
+        HashSet<Vector2Int> perimeterWall = FindPerimeterWall(wallPos, firstTile, currentTile);
+        Debug.Log("FindPerimeter " + perimeterWall.Count);
 
-        // Find the tiles that are not contained in perimeter tiles and remove them
-        //Debug.Log("FindPerimeter" + perimeterTiles);
+        return perimeterWall;
     }
 
-    private static HashSet<Vector2Int> FindPerimeterWall(Tilemap wallTileMap, Vector2Int firstTile, Vector2Int currentTile)
+    private static HashSet<Vector2Int> FindPerimeterWall(HashSet<Vector2Int> wallPos, Vector2Int firstTile, Vector2Int currentTile)
     {
         HashSet<Vector2Int> perimeterTiles = new HashSet<Vector2Int>();
         HashSet<Vector2Int> seenTiles = new HashSet<Vector2Int>();
-        if (FindNextWallTile(wallTileMap, firstTile, currentTile, new Vector2Int(currentTile.x + 1, currentTile.y), seenTiles, perimeterTiles)
-            || FindNextWallTile(wallTileMap, firstTile, currentTile, new Vector2Int(currentTile.x, currentTile.y - 1), seenTiles, perimeterTiles)
-            || FindNextWallTile(wallTileMap, firstTile, currentTile, new Vector2Int(currentTile.x - 1, currentTile.y), seenTiles, perimeterTiles)
-            || FindNextWallTile(wallTileMap, firstTile, currentTile, new Vector2Int(currentTile.x, currentTile.y + 1), seenTiles, perimeterTiles))
+        perimeterTiles.Add(firstTile);
+        perimeterTiles.Add(currentTile);
+        seenTiles.Add(firstTile);
+        seenTiles.Add(currentTile);
+
+        // Starter code for the first tile
+        // Look Right
+        if (FindNextWallTile(wallPos, firstTile, new Vector2Int(currentTile.x + 1, currentTile.y), seenTiles, perimeterTiles))
         {
+            perimeterTiles.Add(new Vector2Int(currentTile.x + 1, currentTile.y));
             return perimeterTiles;
-        } else
+        }
+        // Look Down
+        else if (FindNextWallTile(wallPos, firstTile, new Vector2Int(currentTile.x, currentTile.y - 1), seenTiles, perimeterTiles))
+        {
+            perimeterTiles.Add(new Vector2Int(currentTile.x, currentTile.y - 1));
+            return perimeterTiles;
+        }
+        // Look Left
+        else if (FindNextWallTile(wallPos, firstTile, new Vector2Int(currentTile.x - 1, currentTile.y), seenTiles, perimeterTiles))
+        {
+            perimeterTiles.Add(new Vector2Int(currentTile.x - 1, currentTile.y));
+            return perimeterTiles;
+        }
+        // Look Up
+        else if (FindNextWallTile(wallPos, firstTile, new Vector2Int(currentTile.x, currentTile.y + 1), seenTiles, perimeterTiles))
+        {
+            perimeterTiles.Add(new Vector2Int(currentTile.x, currentTile.y + 1));
+            return perimeterTiles;
+        }
+        // Fail
+        else
         {
             return new HashSet<Vector2Int>();
         }
     }
 
-    private static bool FindNextWallTile(Tilemap wallTileMap, Vector2Int firstTile, Vector2Int currentTile, Vector2Int nextTile, HashSet<Vector2Int> seenTiles, HashSet<Vector2Int> perimeterTiles)
+    private static bool FindNextWallTile(HashSet<Vector2Int> wallPos, Vector2Int firstTile, Vector2Int nextTile, HashSet<Vector2Int> seenTiles, HashSet<Vector2Int> perimeterTiles)
     {
-        // Find the next tile
-
-        if (currentTile == firstTile)
+        // If we arrive at the start then we can return everything is true
+        if (nextTile == firstTile)
         {
+            perimeterTiles.Add(nextTile);
             return true;
         }
 
-        if (!seenTiles.Contains(nextTile) &&
-            !perimeterTiles.Contains(nextTile) &&
-            wallTileMap.GetTile(new Vector3Int(nextTile.x, nextTile.y, 0)) == null)
+        if (seenTiles.Contains(nextTile) ||
+            !wallPos.Contains(nextTile))
         {
             seenTiles.Add(nextTile);
             return false;
         }
         seenTiles.Add(nextTile);
-        perimeterTiles.Add(nextTile);
 
-
-        return FindNextWallTile(wallTileMap, firstTile, nextTile, new Vector2Int(nextTile.x + 1, nextTile.y), seenTiles, perimeterTiles) 
-            || FindNextWallTile(wallTileMap, firstTile, nextTile, new Vector2Int(nextTile.x, nextTile.y - 1), seenTiles, perimeterTiles) 
-            || FindNextWallTile(wallTileMap, firstTile, nextTile, new Vector2Int(nextTile.x - 1, nextTile.y), seenTiles, perimeterTiles) 
-            || FindNextWallTile(wallTileMap, firstTile, nextTile, new Vector2Int(nextTile.x, nextTile.y + 1), seenTiles, perimeterTiles);
-
-
-        // We will look starting right and then clockwise
-        // Look Right
-        //Vector2Int nextTile = new Vector2Int(currentTile.x + 1, currentTile.y);
-        //if (!seenTiles.Contains(nextTile) &&
-        //    !perimeterTiles.Contains(nextTile) &&
-        //    wallTileMap.GetTile(new Vector3Int(nextTile.x, nextTile.y, 0)) != null)
-        //{
-        //    return nextTile;
-        //}
-        //else
-        //{
-        //    seenTiles.Add(nextTile);
-        //}
-
-
-        //// Look Down
-        //nextTile = new Vector2Int(currentTile.x, currentTile.y - 1);
-        //if (!seenTiles.Contains(nextTile) &&
-        //    !perimeterTiles.Contains(nextTile) && 
-        //    wallTileMap.GetTile(new Vector3Int(nextTile.x, nextTile.y, 0)) != null)
-        //{
-        //    return nextTile;
-        //}
-        //else
-        //{
-        //    seenTiles.Add(nextTile);
-        //}
-
-        //// Look Left
-        //nextTile = new Vector2Int(currentTile.x - 1, currentTile.y);
-        //if (!seenTiles.Contains(nextTile) &&
-        //    !perimeterTiles.Contains(nextTile) && 
-        //    wallTileMap.GetTile(new Vector3Int(nextTile.x, nextTile.y, 0)) != null)
-        //{
-        //    return nextTile;
-        //}
-        //else
-        //{
-        //    seenTiles.Add(nextTile);
-        //}
-
-        //// Look Up
-        //nextTile = new Vector2Int(currentTile.x, currentTile.y + 1);
-        //if (!seenTiles.Contains(nextTile) &&
-        //    !perimeterTiles.Contains(nextTile) && 
-        //    wallTileMap.GetTile(new Vector3Int(nextTile.x, nextTile.y, 0)) != null)
-        //{
-        //    return nextTile;
-        //}
-        //else
-        //{
-        //    seenTiles.Add(nextTile);
-        //}
-
-        // Failed to find perimeter, should never happen
-        // Crash the game
-        return new Vector2Int(0, 0);
+        // Recursive statement to look in each direction. When the nextTile == firstTile, this will recursively
+        // call back with a bunch of trues and add to perimeterTiles
+        if (FindNextWallTile(wallPos, firstTile, new Vector2Int(nextTile.x + 1, nextTile.y), seenTiles, perimeterTiles))
+        {
+            perimeterTiles.Add(new Vector2Int(nextTile.x + 1, nextTile.y));
+            return true;
+        }
+        else if (FindNextWallTile(wallPos, firstTile, new Vector2Int(nextTile.x, nextTile.y - 1), seenTiles, perimeterTiles))
+        {
+            perimeterTiles.Add(new Vector2Int(nextTile.x, nextTile.y - 1));
+            return true;
+        }
+        else if (FindNextWallTile(wallPos, firstTile, new Vector2Int(nextTile.x - 1, nextTile.y), seenTiles, perimeterTiles))
+        {
+            perimeterTiles.Add(new Vector2Int(nextTile.x - 1, nextTile.y));
+            return true;
+        }
+        else if (FindNextWallTile(wallPos, firstTile, new Vector2Int(nextTile.x, nextTile.y + 1), seenTiles, perimeterTiles))
+        {
+            perimeterTiles.Add(new Vector2Int(nextTile.x, nextTile.y + 1));
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 
     private static void CreateCornerWalls(TilemapVisualizer tilemapVisualizer, HashSet<Vector2Int> cornerWallPos, HashSet<Vector2Int> floorPos)
     {
-        foreach (var pos in cornerWallPos) 
+        foreach (var pos in cornerWallPos)
         {
             string neighborsBinaryValue = "";
             Debug.Log("WallGenerator, CreateCornerWalls: Evaluating Pos - " + pos);
@@ -307,7 +265,7 @@ public static class WallGenerator
             {
                 var neighborPos = pos + direction;
                 if (floorPos.Contains(neighborPos) == false)
-                { 
+                {
                     wallPos.Add(neighborPos);
                 }
             }

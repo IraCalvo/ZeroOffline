@@ -10,4 +10,5 @@ public class EnemySO : ScriptableObject
     public float enemyBaseMS;
     public float enemyBaseDamage;
     public float enemyBaseRange;
+    public bool enemyNeedsConstantLOS;
 }

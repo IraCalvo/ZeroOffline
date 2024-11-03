@@ -50,7 +50,7 @@ public class Shooter : MonoBehaviour, IEnemy
             case EnemyState.Spawning:
                 CheckIfDoneSpawning();
                 break;
-            case EnemyState.Moving:
+            case EnemyState.Chasing:
                 MoveToRange();
                 break;
             case EnemyState.Attacking:
@@ -63,7 +63,7 @@ public class Shooter : MonoBehaviour, IEnemy
 
     public virtual void CheckIfDoneSpawning()
     {
-        enemy.enemyState = EnemyState.Moving;
+        enemy.enemyState = EnemyState.Chasing;
     }
     
     public virtual void MoveToRange()
@@ -75,7 +75,7 @@ public class Shooter : MonoBehaviour, IEnemy
         }
         else
         {
-            enemy.enemyState = EnemyState.Moving;
+            enemy.enemyState = EnemyState.Chasing;
 
             transform.position = Vector2.MoveTowards(transform.position, PlayerController.instance.transform.position, enemy.currentEnemyMS * Time.deltaTime);
         }
@@ -104,7 +104,7 @@ public class Shooter : MonoBehaviour, IEnemy
         }
         else 
         {
-            enemy.enemyState = EnemyState.Moving;
+            enemy.enemyState = EnemyState.Chasing;
         }
     }
 

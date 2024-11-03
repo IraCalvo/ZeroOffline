@@ -6,12 +6,13 @@ using TMPro;
 public enum EnemyState
 {
     Spawning,
-    Moving,
+    Idle,
+    Chasing,
     Attacking,
     Death
 }
 
-public class Enemy : MonoBehaviour
+public class Enemy : MonoBehaviour, IDamageable
 {
     public EnemySO enemySO;
     public float currentHP;
@@ -27,4 +28,20 @@ public class Enemy : MonoBehaviour
         currentAttackRange = enemySO.enemyBaseRange;
     }
 
+    public void TakeDamage(int damageToTake, DamageSource dmgSource)
+    {
+        if (dmgSource == DamageSource.Player || dmgSource == DamageSource.Neutral)
+        {
+            currentHP -= damageToTake;
+            if (currentHP <= 0)
+            {
+                DeathProcedures();
+            }
+        }
+    }
+
+    void DeathProcedures()
+    {
+        ObjectPoolManager.Instance.DeactivateObjectInPool(gameObject);
+    }
 }

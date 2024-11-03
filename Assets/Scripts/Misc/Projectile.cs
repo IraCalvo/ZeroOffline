@@ -5,7 +5,8 @@ using UnityEngine;
 public enum DamageSource
 { 
     Player,
-    Enemy
+    Enemy,
+    Neutral
 }
 
 [RequireComponent(typeof(Rigidbody2D))]
@@ -18,6 +19,8 @@ public class Projectile : MonoBehaviour
     [SerializeField] float projRange;
     [SerializeField] int projPierceAmount;
     private Vector3 startPos;
+    [HideInInspector] public string playerString = "Player";
+    [HideInInspector] public string enemyString = "Enemy";
 
     public virtual void OnEnable()
     {
@@ -78,7 +81,7 @@ public class Projectile : MonoBehaviour
 
     public virtual void OnTriggerEnter2D(Collider2D otherCollider)
     {
-        if (otherCollider.CompareTag("Player") || otherCollider.CompareTag("Enemy"))
+        if (otherCollider.CompareTag(playerString) || otherCollider.CompareTag(enemyString))
         {
             otherCollider.GetComponent<IDamageable>().TakeDamage(projDMG, projOwner);
         }
