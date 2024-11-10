@@ -16,6 +16,8 @@ public class Gun : Weapon
         bullet.transform.position = firePoint.position;
         bullet.transform.rotation = targetRotation;
         bullet.GetComponent<Projectile>().UpdateProjMS(_weaponSO.projectileMS);
+        bullet.GetComponent<Projectile>().UpdateCritChance(_weaponSO.weaponBaseCritChance);
+        bullet.GetComponent<Projectile>().UpdateProjDamage(_weaponSO.weaponDamageBase);
         PlayerController.instance.SetAttackCD(_weaponSO.weaponCDBase);
     }
 }

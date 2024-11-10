@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3708770446556134552}
   - component: {fileID: 1111108527051097658}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_33 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2003841019042662346}
   - component: {fileID: 4482996734046554654}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_32 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -178,7 +178,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7540640708505480831}
   - component: {fileID: 6966546339779497737}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_267 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -262,7 +262,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4890519973422568951}
   - component: {fileID: 8619191248446741468}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_359 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -346,7 +346,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6008062757713632500}
   - component: {fileID: 7575702375973490618}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_33 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -430,7 +430,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3878212189100908100}
   - component: {fileID: 5064396134417645959}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_267 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -514,7 +514,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5533987697090134531}
   - component: {fileID: 3948977319256525281}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_117 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -598,7 +598,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5491275570099691085}
   - component: {fileID: 7623992912128186142}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_3 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -682,7 +682,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4604415487388064383}
   - component: {fileID: 8331833988079743727}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_267 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -766,7 +766,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9111020506911270871}
   - component: {fileID: 7687625481531508105}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_3 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -850,7 +850,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6257124067769999877}
   - component: {fileID: 6188743043407220728}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_31 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -934,7 +934,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2850997551792058495}
   - component: {fileID: 5213557826759446278}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_2 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1018,7 +1018,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2416470532772913261}
   - component: {fileID: 4707193637786141878}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_3 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1102,7 +1102,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1151347175403125560}
   - component: {fileID: 1242804865761274419}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_117 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1186,7 +1186,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6507034774041528854}
   - component: {fileID: 1539414540959444475}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_32 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1270,7 +1270,7 @@ GameObject:
   m_Component:
   - component: {fileID: 222774421637568470}
   - component: {fileID: 7462378799219209253}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_32 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1354,7 +1354,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4782688869450074963}
   - component: {fileID: 2267853925481716501}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_31 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1439,7 +1439,8 @@ GameObject:
   - component: {fileID: 3638409753708655486}
   - component: {fileID: 7481718991647805527}
   - component: {fileID: 3862023490462755113}
-  m_Layer: 0
+  - component: {fileID: 7936476270716992111}
+  m_Layer: 8
   m_Name: RockFormation 13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1455,7 +1456,7 @@ Transform:
   m_GameObject: {fileID: 5552919527059529901}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -53.220993, y: -8.367752, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1572,6 +1573,18 @@ PolygonCollider2D:
       - {x: 1.2246971, y: -0.7064209}
       - {x: 1.1658926, y: 0.23740572}
   m_UseDelaunayMesh: 0
+--- !u!210 &7936476270716992111
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5552919527059529901}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 5
+  m_SortAtRoot: 0
 --- !u!1 &5564061214083268234
 GameObject:
   m_ObjectHideFlags: 0
@@ -1582,7 +1595,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4239892229715399099}
   - component: {fileID: 3406709522326710606}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_268 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1666,7 +1679,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1743417988848723005}
   - component: {fileID: 5918978215860163036}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_269 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1750,7 +1763,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2984103343595284012}
   - component: {fileID: 4768050509057024549}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_31 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1834,7 +1847,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7279194059029933958}
   - component: {fileID: 6332096511170464826}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1918,7 +1931,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8634309568193631705}
   - component: {fileID: 185039729741442811}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_359 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2002,7 +2015,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7803390835429263382}
   - component: {fileID: 1069851713151745502}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_32 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2086,7 +2099,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8553447653888348874}
   - component: {fileID: 9200830417342903299}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_32 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2170,7 +2183,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7344782029940996206}
   - component: {fileID: 7372423790816692592}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_32 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2254,7 +2267,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7724641149608461168}
   - component: {fileID: 6372698130972253564}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_32 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2338,7 +2351,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1213755665595223151}
   - component: {fileID: 8084559625945455252}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_33 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

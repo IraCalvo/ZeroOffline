@@ -7,7 +7,8 @@ public enum PoolObjectType
 { 
     Enemy,
     Projectile,
-    Resource
+    Resource,
+    DamagePopup
 }
 
 [Serializable]

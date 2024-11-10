@@ -12,7 +12,7 @@ public class PlayerHealth : MonoBehaviour, IDamageable
         
     }
 
-    public void TakeDamage(int dmgToTake, DamageSource dmgSource)
+    public void TakeDamage(int dmgToTake, DamageSource dmgSource, float critChance)
     {
         if (currentHealth > 0)
         {

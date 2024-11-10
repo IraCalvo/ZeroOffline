@@ -9,6 +9,7 @@ public class EnemySO : ScriptableObject
     public int enemyBaseMaxHP;
     public float enemyBaseMS;
     public float enemyBaseDamage;
-    public float enemyBaseRange;
+    public float enemyAttackRange;
     public bool enemyNeedsConstantLOS;
+    public float invulnTime;
 }

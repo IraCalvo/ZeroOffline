@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5205348184592055231}
   - component: {fileID: 7515407102416153364}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_269 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 343908284122983350}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5, y: -7, z: 0}
+  m_LocalPosition: {x: 5, y: -4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8535821471539482456}
   - component: {fileID: 2269971073715706325}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -110,7 +110,7 @@ Transform:
   m_GameObject: {fileID: 475554277212292115}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -3, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -178,7 +178,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3953773554034599204}
   - component: {fileID: 3538030141103050411}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_32 (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -194,7 +194,7 @@ Transform:
   m_GameObject: {fileID: 1142087362874921999}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3, y: -7, z: 0}
+  m_LocalPosition: {x: 3, y: -4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -262,7 +262,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1622961911734666590}
   - component: {fileID: 4406169723068566657}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_32 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -278,7 +278,7 @@ Transform:
   m_GameObject: {fileID: 1172263496426856704}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4, y: -4, z: 0}
+  m_LocalPosition: {x: 4, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -346,7 +346,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6990432232554914291}
   - component: {fileID: 336876794406321400}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_357 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -362,7 +362,7 @@ Transform:
   m_GameObject: {fileID: 1198360755214582116}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2, y: -9, z: 0}
+  m_LocalPosition: {x: 2, y: -6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -430,7 +430,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8183157206194115048}
   - component: {fileID: 8786781821571168437}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_32 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -446,7 +446,7 @@ Transform:
   m_GameObject: {fileID: 1365572872609091519}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4, y: -5, z: 0}
+  m_LocalPosition: {x: 4, y: -2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -514,7 +514,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5893229695956022928}
   - component: {fileID: 224928544170837055}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_119 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -530,7 +530,7 @@ Transform:
   m_GameObject: {fileID: 1385959336946789023}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1, y: -5, z: -0.025956389}
+  m_LocalPosition: {x: -1, y: -2, z: -0.025956389}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -598,7 +598,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7092273055466556318}
   - component: {fileID: 7741290159755766166}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_31 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -614,7 +614,7 @@ Transform:
   m_GameObject: {fileID: 1702570253298449613}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2, y: -6, z: -0.025956389}
+  m_LocalPosition: {x: -2, y: -3, z: -0.025956389}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -682,7 +682,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5632888769477557975}
   - component: {fileID: 1097855460895051047}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_31 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -698,7 +698,7 @@ Transform:
   m_GameObject: {fileID: 2191105636863122445}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1, y: -9, z: -0.025956389}
+  m_LocalPosition: {x: 1, y: -6, z: -0.025956389}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -766,7 +766,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4439831687030102489}
   - component: {fileID: 5282033665213190461}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_31 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -782,7 +782,7 @@ Transform:
   m_GameObject: {fileID: 2240013930080447690}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2, y: -7, z: -0.025956389}
+  m_LocalPosition: {x: -2, y: -4, z: -0.025956389}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -850,7 +850,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8810803768343308243}
   - component: {fileID: 6001675581196754501}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_268 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -866,7 +866,7 @@ Transform:
   m_GameObject: {fileID: 2400979872034330037}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1, y: -8, z: 0}
+  m_LocalPosition: {x: -1, y: -5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -934,7 +934,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6411782368409125644}
   - component: {fileID: 3814374325272896270}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_359 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -950,7 +950,7 @@ Transform:
   m_GameObject: {fileID: 2799987417877614441}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1, y: -8, z: 0}
+  m_LocalPosition: {x: 1, y: -5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1018,7 +1018,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1578411223989520207}
   - component: {fileID: 950139434397953261}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_269 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1034,7 +1034,7 @@ Transform:
   m_GameObject: {fileID: 2968990369467125438}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6, y: -6, z: 0}
+  m_LocalPosition: {x: 6, y: -3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1102,7 +1102,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7424361777498982592}
   - component: {fileID: 6995191789377167272}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_2 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1118,7 +1118,7 @@ Transform:
   m_GameObject: {fileID: 3027140175091802895}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2, y: -3, z: 0}
+  m_LocalPosition: {x: 2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1186,7 +1186,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2777780445438564708}
   - component: {fileID: 7193400363205550126}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_32 (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1202,7 +1202,7 @@ Transform:
   m_GameObject: {fileID: 3163855953505993908}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3, y: -6, z: 0}
+  m_LocalPosition: {x: 3, y: -3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1270,7 +1270,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3215077243678716087}
   - component: {fileID: 2332417468925922271}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_269 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1286,7 +1286,7 @@ Transform:
   m_GameObject: {fileID: 3238331927555748217}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3, y: -9, z: 0}
+  m_LocalPosition: {x: 3, y: -6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1354,7 +1354,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5560456068202075630}
   - component: {fileID: 5936302997952413402}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_2 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1370,7 +1370,7 @@ Transform:
   m_GameObject: {fileID: 3857111445645115784}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4, y: -3, z: 0}
+  m_LocalPosition: {x: 4, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1438,7 +1438,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8075250630970851578}
   - component: {fileID: 5951378651879354345}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_33 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1454,7 +1454,7 @@ Transform:
   m_GameObject: {fileID: 4003352155404454451}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6, y: -5, z: 0}
+  m_LocalPosition: {x: 6, y: -2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1522,7 +1522,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7220653167064377251}
   - component: {fileID: 2217890801789776663}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_269 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1538,7 +1538,7 @@ Transform:
   m_GameObject: {fileID: 4182472449939247225}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2, y: -10, z: 0}
+  m_LocalPosition: {x: 2, y: -7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1606,7 +1606,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5480895213220501215}
   - component: {fileID: 2681470012125102390}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_357 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1622,7 +1622,7 @@ Transform:
   m_GameObject: {fileID: 4204819313390698548}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5, y: -6, z: 0}
+  m_LocalPosition: {x: 5, y: -3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1690,7 +1690,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6786940969782480895}
   - component: {fileID: 7211255837335962059}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_32 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1706,7 +1706,7 @@ Transform:
   m_GameObject: {fileID: 4208088399856241656}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2, y: -4, z: 0}
+  m_LocalPosition: {x: 2, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1774,7 +1774,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6038039767709085624}
   - component: {fileID: 1194832814540194474}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_32 (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1790,7 +1790,7 @@ Transform:
   m_GameObject: {fileID: 4333918568235382965}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1, y: -7, z: 0}
+  m_LocalPosition: {x: -1, y: -4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1858,7 +1858,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3287582601974761056}
   - component: {fileID: 437603034849861775}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_1 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1874,7 +1874,7 @@ Transform:
   m_GameObject: {fileID: 4661721499298606783}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2, y: -5, z: 0}
+  m_LocalPosition: {x: -2, y: -2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1942,7 +1942,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2701180526538340692}
   - component: {fileID: 5049972279007008351}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_3 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1958,7 +1958,7 @@ Transform:
   m_GameObject: {fileID: 4774749595000605180}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6, y: -4, z: 0}
+  m_LocalPosition: {x: 6, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2026,7 +2026,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6128575849309869658}
   - component: {fileID: 5559079757358831685}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_357 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2042,7 +2042,7 @@ Transform:
   m_GameObject: {fileID: 4892159172522970936}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4, y: -7, z: 0}
+  m_LocalPosition: {x: 4, y: -4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2110,7 +2110,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1746834366697573530}
   - component: {fileID: 5494709837579837911}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_267 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2126,7 +2126,7 @@ Transform:
   m_GameObject: {fileID: 4935820217675397649}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2, y: -8, z: 0}
+  m_LocalPosition: {x: -2, y: -5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2194,7 +2194,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6148499176061197512}
   - component: {fileID: 3044591561157952100}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_119 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2210,7 +2210,7 @@ Transform:
   m_GameObject: {fileID: 4942865651210146506}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -4, z: -0.025956389}
+  m_LocalPosition: {x: 0, y: -1, z: -0.025956389}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2278,7 +2278,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5654934916258657770}
   - component: {fileID: 6989527917151120192}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_32 (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2294,7 +2294,7 @@ Transform:
   m_GameObject: {fileID: 5048315796212898904}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2, y: -7, z: 0}
+  m_LocalPosition: {x: 2, y: -4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2362,7 +2362,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3800667497230751073}
   - component: {fileID: 5965595106471476567}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_2 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2378,7 +2378,7 @@ Transform:
   m_GameObject: {fileID: 5162400967762955177}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1, y: -3, z: 0}
+  m_LocalPosition: {x: 1, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2446,7 +2446,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3477819545692365180}
   - component: {fileID: 3596899580342742570}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_32 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2462,7 +2462,7 @@ Transform:
   m_GameObject: {fileID: 5275328832047822158}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -5, z: 0}
+  m_LocalPosition: {x: 0, y: -2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2530,7 +2530,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6208474687260802445}
   - component: {fileID: 166635248188561505}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_117 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2546,7 +2546,7 @@ Transform:
   m_GameObject: {fileID: 5469696321378157121}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5, y: -4, z: -0.025956389}
+  m_LocalPosition: {x: 5, y: -1, z: -0.025956389}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2614,7 +2614,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2686157249335836825}
   - component: {fileID: 8704811166612031926}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_32 (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2630,7 +2630,7 @@ Transform:
   m_GameObject: {fileID: 5479945156919856512}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2, y: -8, z: 0}
+  m_LocalPosition: {x: 2, y: -5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2698,7 +2698,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4641583632483581017}
   - component: {fileID: 7606833442495659068}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_269 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2714,7 +2714,7 @@ Transform:
   m_GameObject: {fileID: 5908800224854145088}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4, y: -8, z: 0}
+  m_LocalPosition: {x: 4, y: -5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2782,7 +2782,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1162176782288045099}
   - component: {fileID: 2597055718478742412}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_32 (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2798,7 +2798,7 @@ Transform:
   m_GameObject: {fileID: 5960114754413724173}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1, y: -7, z: 0}
+  m_LocalPosition: {x: 1, y: -4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2866,7 +2866,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8310767964874743727}
   - component: {fileID: 1081618185764404738}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_32 (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2882,7 +2882,7 @@ Transform:
   m_GameObject: {fileID: 6195826826273645403}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -7, z: 0}
+  m_LocalPosition: {x: 0, y: -4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2950,7 +2950,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4043539809341925588}
   - component: {fileID: 5827486276286014965}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_357 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2966,7 +2966,7 @@ Transform:
   m_GameObject: {fileID: 6417472712107549043}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3, y: -8, z: 0}
+  m_LocalPosition: {x: 3, y: -5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3034,7 +3034,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1212570111079035454}
   - component: {fileID: 9098770791063126564}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_268 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3050,7 +3050,7 @@ Transform:
   m_GameObject: {fileID: 6542203952056393568}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -8, z: 0}
+  m_LocalPosition: {x: 0, y: -5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3118,7 +3118,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6044535285646791752}
   - component: {fileID: 3678796708856607369}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_32 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3134,7 +3134,7 @@ Transform:
   m_GameObject: {fileID: 6605002793200699911}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5, y: -5, z: 0}
+  m_LocalPosition: {x: 5, y: -2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3202,7 +3202,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2528968571402434667}
   - component: {fileID: 3840341913618121517}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_32 (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3218,7 +3218,7 @@ Transform:
   m_GameObject: {fileID: 6635340578318145691}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1, y: -6, z: 0}
+  m_LocalPosition: {x: -1, y: -3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3286,7 +3286,7 @@ GameObject:
   m_Component:
   - component: {fileID: 200913728645516719}
   - component: {fileID: 6610996444637264460}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_267 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3302,7 +3302,7 @@ Transform:
   m_GameObject: {fileID: 6744292990315545188}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1, y: -10, z: 0}
+  m_LocalPosition: {x: 1, y: -7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3370,7 +3370,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6336275510617532456}
   - component: {fileID: 1544756391771881323}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_32 (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3386,7 +3386,7 @@ Transform:
   m_GameObject: {fileID: 6803067744148991009}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -6, z: 0}
+  m_LocalPosition: {x: 0, y: -3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3454,7 +3454,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8115236614472772180}
   - component: {fileID: 2925830394102034876}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_32 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3470,7 +3470,7 @@ Transform:
   m_GameObject: {fileID: 6874126184880077352}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3, y: -5, z: 0}
+  m_LocalPosition: {x: 3, y: -2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3538,7 +3538,7 @@ GameObject:
   m_Component:
   - component: {fileID: 589778485623740499}
   - component: {fileID: 1611686759102886319}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_32 (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3554,7 +3554,7 @@ Transform:
   m_GameObject: {fileID: 7134789047633053355}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4, y: -6, z: 0}
+  m_LocalPosition: {x: 4, y: -3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3622,7 +3622,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4541271242301900083}
   - component: {fileID: 5212013505296946566}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_32 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3638,7 +3638,7 @@ Transform:
   m_GameObject: {fileID: 7376474266300467781}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1, y: -4, z: 0}
+  m_LocalPosition: {x: 1, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3706,7 +3706,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2822131679978008350}
   - component: {fileID: 8895845554099188321}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_3 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3722,7 +3722,7 @@ Transform:
   m_GameObject: {fileID: 7535293567665091466}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5, y: -3, z: 0}
+  m_LocalPosition: {x: 5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3790,7 +3790,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7545939687741570896}
   - component: {fileID: 8540465310379226797}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_32 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3806,7 +3806,7 @@ Transform:
   m_GameObject: {fileID: 7569684127168219876}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2, y: -5, z: 0}
+  m_LocalPosition: {x: 2, y: -2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3874,7 +3874,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5388411225758064346}
   - component: {fileID: 5895949728636137815}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_2 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3890,7 +3890,7 @@ Transform:
   m_GameObject: {fileID: 8046026613196077358}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3, y: -3, z: 0}
+  m_LocalPosition: {x: 3, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3959,7 +3959,8 @@ GameObject:
   - component: {fileID: 5345034727208240794}
   - component: {fileID: 6186266383966589834}
   - component: {fileID: 6903631171720636812}
-  m_Layer: 0
+  - component: {fileID: -3306710960380894423}
+  m_Layer: 8
   m_Name: RockFormation 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3975,7 +3976,7 @@ Transform:
   m_GameObject: {fileID: 8284540217349682346}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.27388, y: 2.11, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4127,6 +4128,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!210 &-3306710960380894423
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8284540217349682346}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 5
+  m_SortAtRoot: 0
 --- !u!1 &8523023626827015188
 GameObject:
   m_ObjectHideFlags: 0
@@ -4137,7 +4150,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1267001959598424433}
   - component: {fileID: 864485157581006916}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_32 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4153,7 +4166,7 @@ Transform:
   m_GameObject: {fileID: 8523023626827015188}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3, y: -4, z: 0}
+  m_LocalPosition: {x: 3, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4221,7 +4234,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2535160405258630517}
   - component: {fileID: 3050631982718282284}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4237,7 +4250,7 @@ Transform:
   m_GameObject: {fileID: 8626124713237716632}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1, y: -4, z: 0}
+  m_LocalPosition: {x: -1, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4305,7 +4318,7 @@ GameObject:
   m_Component:
   - component: {fileID: 63083407112820457}
   - component: {fileID: 281509958307388547}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_32 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4321,7 +4334,7 @@ Transform:
   m_GameObject: {fileID: 9018112394456614074}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1, y: -5, z: 0}
+  m_LocalPosition: {x: 1, y: -2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4389,7 +4402,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2160491170058251160}
   - component: {fileID: 6924957198980794765}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_32 (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4405,7 +4418,7 @@ Transform:
   m_GameObject: {fileID: 9098580361359308369}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2, y: -6, z: 0}
+  m_LocalPosition: {x: 2, y: -3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4473,7 +4486,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6379394704928964728}
   - component: {fileID: 3331966446633238204}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RA_Cavern_32 (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4489,7 +4502,7 @@ Transform:
   m_GameObject: {fileID: 9161033106369493629}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1, y: -6, z: 0}
+  m_LocalPosition: {x: 1, y: -3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

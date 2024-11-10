@@ -1,18 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Tilemaps;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class EnemyAIBrain : MonoBehaviour
 {
     Enemy enemy;
     EnemySO enemySO;
-    EnemyMovement enemyMovement;
+    EnemySteeringMovement enemySteeringMovement;
 
     //variables needed for AI movement
     public List<Transform> targets = null;
     public Collider2D[] obstacles = null;
     public Transform currentTarget;
     [SerializeField] private float detectionDelay;
+    Vector2 resultDir = Vector2.zero;
 
     //variables for Detection of obstacles and terrain
     [SerializeField] private float detectionRadius = 2;
@@ -31,7 +34,7 @@ public class EnemyAIBrain : MonoBehaviour
     {
         enemy = GetComponent<Enemy>();
         enemySO = enemy.enemySO;
-        enemyMovement = GetComponent<EnemyMovement>();
+        enemySteeringMovement = GetComponent<EnemySteeringMovement>();
     }
 
     private void Start()
@@ -43,12 +46,6 @@ public class EnemyAIBrain : MonoBehaviour
     {
         Detect();
         DetectPlayer();
-
-        float[] danger = new float[8];
-        float[] interest = new float[8];
-
-        enemyMovement.GetSteering(danger, interest);
-        enemyMovement.GetSeeking(danger, interest);
     }
 
     //Enemy pathfinding and moving
@@ -85,6 +82,31 @@ public class EnemyAIBrain : MonoBehaviour
         targets = targetColliders;
     }
 
+    public Vector2 GetDirectionToMove()
+    {
+        float[] danger = new float[8];
+        float[] interest = new float[8];
+
+        enemySteeringMovement.GetSteering(danger, interest);
+        enemySteeringMovement.GetSeeking(danger, interest);
+
+        //subtract danger values fro interest array
+        for (int i = 0; i < 8; i++)
+        {
+            interest[i] = Mathf.Clamp01(interest[i] - danger[i]);
+        }
+
+        Vector2 outputDir = Vector2.zero;
+        for (int i = 0; i < 8; i++)
+        {
+            outputDir += Directions.eightDirections[i] * interest[i];
+        }
+        outputDir.Normalize();
+        resultDir = outputDir;
+
+        return resultDir;
+    }
+
     private void OnDrawGizmos()
     {
         if (showGizmos == false)
@@ -112,7 +134,6 @@ public class EnemyAIBrain : MonoBehaviour
 
         if (targetColliders == null)
         {
-            Debug.Log("not drawing");
             return;
         }
 
@@ -120,7 +141,6 @@ public class EnemyAIBrain : MonoBehaviour
         foreach (var item in targetColliders)
         {
             Gizmos.DrawSphere(item.position, 0.3f);
-            Debug.Log("should be drawing");
         }
     }
 }

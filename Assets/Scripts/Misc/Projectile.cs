@@ -16,6 +16,7 @@ public class Projectile : MonoBehaviour
     [SerializeField] float projMS;
     [SerializeField] DamageSource projOwner;
     [SerializeField] int projDMG;
+    [SerializeField] float critChance;
     [SerializeField] float projRange;
     [SerializeField] int projPierceAmount;
     private Vector3 startPos;
@@ -45,6 +46,11 @@ public class Projectile : MonoBehaviour
     public virtual void UpdatePierceAmount(int pierceAmount)
     {
         this.projPierceAmount = pierceAmount;
+    }
+
+    public virtual void UpdateCritChance(float critPercent)
+    { 
+        this.critChance = critPercent;
     }
 
     public virtual void UpdateProjOwner(DamageSource proj)
@@ -83,13 +89,23 @@ public class Projectile : MonoBehaviour
     {
         if (otherCollider.CompareTag(playerString) || otherCollider.CompareTag(enemyString))
         {
-            otherCollider.GetComponent<IDamageable>().TakeDamage(projDMG, projOwner);
+            IDamageable damagedObject = otherCollider.GetComponent<IDamageable>();
+            damagedObject.TakeDamage(projDMG, projOwner, critChance);
+
+            if (projOwner == DamageSource.Player)
+            {
+                projPierceAmount--;
+                if (projPierceAmount <= 0)
+                {
+                    ObjectPoolManager.Instance.DeactivateObjectInPool(gameObject);
+                }
+            }
         }
 
-        //object layer
-        if (otherCollider.gameObject.layer == 6)
-        {
-            ObjectPoolManager.Instance.DeactivateObjectInPool(gameObject);
-        }
+        //detect layer collision for walls/breakables/objects etc
+        //if (otherCollider.gameObject.layer == 6)
+        //{
+        //    ObjectPoolManager.Instance.DeactivateObjectInPool(gameObject);
+        //}
     }
 }

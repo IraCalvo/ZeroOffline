@@ -15,7 +15,8 @@ MonoBehaviour:
   weapon: {fileID: 0}
   weaponPrefab: {fileID: 0}
   weaponCDBase: 0
-  weaponDamageBase: 0
+  weaponDamageBase: 1
   weaponKnockbackBase: 0
   projectileMS: 25
+  weaponBaseCritChance: 50
   weaponRarityBase: 0
