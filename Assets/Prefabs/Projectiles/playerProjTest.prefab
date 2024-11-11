@@ -126,11 +126,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbe96e0b81b1c4e499826916245e437f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wallLayers:
+    serializedVersion: 2
+    m_Bits: 128
   projMS: 0
   projOwner: 0
   projDMG: 0
+  critChance: 0
   projRange: 0
   projPierceAmount: 0
+  playerString: Player
+  enemyString: Enemy
 --- !u!70 &6437980108481294060
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

@@ -4,6 +4,11 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using static UnityEngine.InputSystem.InputAction;
 
+public class PlayerStates
+{
+    public bool playerCanBeHit;
+}
+
 public class PlayerController : MonoBehaviour
 {
     public static PlayerController instance;
@@ -13,7 +18,6 @@ public class PlayerController : MonoBehaviour
     [HideInInspector] public bool canAttack;
     float attackCD;
     PlayerDash playerDash;
-    [HideInInspector] public bool playerCanBeHit;
     bool isAttacking = false;
 
     private void Awake()

@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7f039fb4848d44aa376357f3fd7c87, type: 3}
+  m_Name: InnerDungeonWalls
+  m_EditorClassIdentifier: 
+  wallPrefabList:
+  - {fileID: -1518919595940352257, guid: 0a8ac64406ce60c4db2a3a8606f1f489, type: 3}
+  - {fileID: 6950379408077419123, guid: 73b9be9265b10354a991290b954b1632, type: 3}
+  - {fileID: 6707528319458553279, guid: b14f670a3b2dc8b42b192b8b444e460e, type: 3}
+  - {fileID: 8376940960005977461, guid: cdf0a5ad0d4eed4478e189da9710c9b8, type: 3}
+  - {fileID: -9157126396612818467, guid: 6cfa69daa19686c4fba14a47f3b39ec8, type: 3}
+  - {fileID: -5347121531721891384, guid: 5cc374fa5878a7748ac19c51fdedc4da, type: 3}
+  - {fileID: -4295053476478447655, guid: 7b6f3b7f558c9fe4ea851bf20d6f5b39, type: 3}
+  - {fileID: -4988014132421288275, guid: 830cd951addfe024399c9e70ef9aedf0, type: 3}
+  - {fileID: 5650144188598910215, guid: 728808fc41a6eb247bcdcccc48627388, type: 3}
+  - {fileID: -5290810173492332526, guid: 13278d5a0720f764fbe85a7d1df10261, type: 3}
+  - {fileID: 369151963511963712, guid: 50297e2bb5912bd479fc09fb97919252, type: 3}
+  - {fileID: -5587417322670082417, guid: bb12cad099f77874e93d1bb2a653c68d, type: 3}
+  wallGenerationAmount: 100
+  layersToNotSpawnOn:
+    serializedVersion: 2
+    m_Bits: 896
+  spawnRetries: 5

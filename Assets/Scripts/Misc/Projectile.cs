@@ -22,6 +22,8 @@ public class Projectile : MonoBehaviour
     private Vector3 startPos;
     [HideInInspector] public string playerString = "Player";
     [HideInInspector] public string enemyString = "Enemy";
+    [HideInInspector] public string wallLayer = "Walls";
+    [HideInInspector] public string obstacleLayer = "Obstacles";
 
     public virtual void OnEnable()
     {
@@ -101,6 +103,13 @@ public class Projectile : MonoBehaviour
                 }
             }
         }
+        else if (otherCollider.gameObject.layer == LayerMask.NameToLayer(wallLayer) ||
+            otherCollider.gameObject.layer == LayerMask.NameToLayer(obstacleLayer))
+        {
+            ObjectPoolManager.Instance.DeactivateObjectInPool(gameObject);
+        }
+
+
 
         //detect layer collision for walls/breakables/objects etc
         //if (otherCollider.gameObject.layer == 6)

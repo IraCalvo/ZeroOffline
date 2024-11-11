@@ -23,11 +23,11 @@ public class PlayerDash : MonoBehaviour
     {
         isDashing = true;
         PlayerController.instance.playerMS *= dashSpeed;
-        PlayerController.instance.playerCanBeHit = false;
+        PlayerHealth.instance.playerCanBeHit = false;
 
         yield return new WaitForSeconds(dashDuration);
         PlayerController.instance.playerMS = startingSpeed;
-        PlayerController.instance.playerCanBeHit = true;
+        PlayerHealth.instance.playerCanBeHit = true;
 
         yield return new WaitForSeconds(dashCD);
         isDashing = false;

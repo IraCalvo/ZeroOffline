@@ -8,7 +8,7 @@ using UnityEngine.Tilemaps;
 
 public static class WallGenerator
 {
-    public static void CreateWalls(HashSet<Vector2Int> floorPos, TilemapVisualizer tilemapVisualizer)
+    public static void CreateWalls(HashSet<Vector2Int> floorPos, TilemapVisualizer tilemapVisualizer, out HashSet<Vector2Int> walls)
     {
         // Generate one time
         var basicWallPos = FindWallsInDirections(floorPos, Direction2D.cardinalDirectionsList);
@@ -31,6 +31,10 @@ public static class WallGenerator
 
         CreateBasicWalls(tilemapVisualizer, basicWallPos, floorPos);
         CreateCornerWalls(tilemapVisualizer, cornerWallPos, floorPos);
+
+        walls = new HashSet<Vector2Int>();
+        walls.UnionWith(basicWallPos);
+        walls.UnionWith(cornerWallPos);
     }
 
     // Fill the floor through BFS

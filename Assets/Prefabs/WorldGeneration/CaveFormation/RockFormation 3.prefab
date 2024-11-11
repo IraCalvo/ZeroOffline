@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2985189316660881650}
   - component: {fileID: 8794996723020859835}
   - component: {fileID: -5998969446565993815}
+  - component: {fileID: 8376940960005977461}
   m_Layer: 8
   m_Name: RockFormation 3
   m_TagString: Untagged
@@ -75,7 +76,7 @@ PolygonCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.96}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -132,6 +133,18 @@ SortingGroup:
   m_SortingLayer: 0
   m_SortingOrder: 5
   m_SortAtRoot: 0
+--- !u!114 &8376940960005977461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 383312155017829991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e84e0d9ee2f08946ba30594d329b220, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2574117779450281167
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,14 +4,25 @@ using UnityEngine;
 
 public class InnerEntitySpawner : MonoBehaviour
 {
-    public void SpawnObject(Vector2Int spawnPos)
+    public InnerEntitySpawner SpawnObject(Vector2Int spawnPos)
     {
         Vector3 spawnPosition = new Vector3(spawnPos.x, spawnPos.y, 0);
-        Instantiate(this.gameObject, spawnPosition, Quaternion.identity);    
+        GameObject obj = Instantiate(this.gameObject, spawnPosition, Quaternion.identity);
+        return obj.GetComponent<InnerEntitySpawner>();
     }
 
     public void DestroyObject()
     {
-        Destroy(gameObject);
+        DestroyImmediate(gameObject);
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Vector2 objSize = GetComponent<Collider2D>().bounds.size;
+        objSize += new Vector2(2, 2);
+        Vector2 objCenter = GetComponent<Collider2D>().bounds.center;
+
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireCube(objCenter, objSize);
     }
 }

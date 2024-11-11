@@ -516,6 +516,7 @@ GameObject:
   - component: {fileID: 4788642047114320489}
   - component: {fileID: 5512381239278655189}
   - component: {fileID: -1134810911963555900}
+  - component: {fileID: -5347121531721891384}
   m_Layer: 8
   m_Name: RockFormation 6
   m_TagString: Untagged
@@ -578,7 +579,7 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.5420611, y: -4.4192204}
+  m_Offset: {x: 0.5420611, y: -1.53}
   m_Size: {x: 1.8164339, y: 3.7910833}
   m_Direction: 0
 --- !u!50 &5512381239278655189
@@ -620,6 +621,18 @@ SortingGroup:
   m_SortingLayer: 0
   m_SortingOrder: 5
   m_SortAtRoot: 0
+--- !u!114 &-5347121531721891384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5469186193811956805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e84e0d9ee2f08946ba30594d329b220, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6301642449571523340
 GameObject:
   m_ObjectHideFlags: 0

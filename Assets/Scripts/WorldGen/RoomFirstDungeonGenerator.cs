@@ -47,7 +47,8 @@ public class RoomFirstDungeonGenerator : SimpleRandomWalkDungeonGenerator
         floor.UnionWith(corridors);
 
         tilemapVisualizer.PaintFloorTiles(floor);
-        WallGenerator.CreateWalls(floor, tilemapVisualizer);
+        HashSet<Vector2Int> walls = new HashSet<Vector2Int>();
+        WallGenerator.CreateWalls(floor, tilemapVisualizer, out walls);
     }
 
     private HashSet<Vector2Int> CreateRoomsRandomly(List<BoundsInt> roomsList)

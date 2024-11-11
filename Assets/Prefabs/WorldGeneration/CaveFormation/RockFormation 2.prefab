@@ -3624,6 +3624,7 @@ GameObject:
   - component: {fileID: 2636391726270376039}
   - component: {fileID: 1117556233504608622}
   - component: {fileID: -3656399227624996145}
+  - component: {fileID: 6707528319458553279}
   m_Layer: 8
   m_Name: RockFormation 2
   m_TagString: Untagged
@@ -3788,3 +3789,15 @@ SortingGroup:
   m_SortingLayer: 0
   m_SortingOrder: 5
   m_SortAtRoot: 0
+--- !u!114 &6707528319458553279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8930141507126951103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e84e0d9ee2f08946ba30594d329b220, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
