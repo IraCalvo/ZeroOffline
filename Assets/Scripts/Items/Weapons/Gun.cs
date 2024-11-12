@@ -13,8 +13,7 @@ public class Gun : Weapon
         Quaternion targetRotation = Quaternion.AngleAxis(targetAngle, Vector3.forward);
 
         GameObject bullet = ObjectPoolManager.Instance.GetPoolObject(projectileToShoot.gameObject);
-        bullet.transform.position = firePoint.position;
-        bullet.transform.rotation = targetRotation;
+        bullet.transform.SetPositionAndRotation(firePoint.position, targetRotation);
         bullet.GetComponent<Projectile>().UpdateProjMS(_weaponSO.projectileMS);
         bullet.GetComponent<Projectile>().UpdateCritChance(_weaponSO.weaponBaseCritChance);
         bullet.GetComponent<Projectile>().UpdateProjDamage(_weaponSO.weaponDamageBase);

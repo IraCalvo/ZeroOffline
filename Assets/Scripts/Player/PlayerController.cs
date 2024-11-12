@@ -74,6 +74,16 @@ public class PlayerController : MonoBehaviour
     
     }
 
+    public void SetAttackCD(float attackCD)
+    {
+        this.attackCD = attackCD;
+    }
+
+    public void OnReload()
+    {
+        ActiveWeapon.Instance.Reload();
+    }
+
     public void OnInteract()
     {
         if (PlayerInteract.instance.interablesInRange.Count > 0)
@@ -90,10 +100,5 @@ public class PlayerController : MonoBehaviour
     void MovePlayer()
     {
         rb.velocity = playerMovement * playerMS;
-    }
-
-    public void SetAttackCD(float attackCD)
-    {
-        this.attackCD = attackCD;
     }
 }

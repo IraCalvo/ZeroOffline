@@ -14,5 +14,7 @@ public class WeaponSO : ScriptableObject
     public float weaponKnockbackBase;
     public float projectileMS;
     public float weaponBaseCritChance;
+    public int maxAmmoAmount;
+    public float baseReloadTime;
     public WeaponRarity weaponRarityBase;
 }
