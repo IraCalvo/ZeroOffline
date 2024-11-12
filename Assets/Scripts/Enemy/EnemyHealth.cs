@@ -11,13 +11,13 @@ public class EnemyHealth : MonoBehaviour, IDamageable
     [SerializeField] GameObject dmgTakenText;
     [SerializeField] Transform positionToDisplayDamageText;
     [SerializeField] Material whiteDamageMaterial;
-    private Material material;
+    SpriteRenderer sr;
 
     void OnEnable()
     { 
         enemy = GetComponent<Enemy>();
         currentEnemyHP = enemy.enemySO.enemyBaseMaxHP;
-        material = GetComponent<Material>();
+        sr = GetComponent<SpriteRenderer>();
     }
 
     public void TakeDamage(int damageInput, DamageSource dmgSource, float critChance)
@@ -66,10 +66,10 @@ public class EnemyHealth : MonoBehaviour, IDamageable
 
     IEnumerator InvulnTimerCoroutine()
     {
-        Material startMaterial = material;
-        material = whiteDamageMaterial;
+        Material startMaterial = sr.material;
+        sr.material = whiteDamageMaterial;
         yield return new WaitForSeconds(enemy.enemySO.invulnTime);
-        material = startMaterial;
+        sr.material = startMaterial;
         canBeDamaged = true;
     }
 }

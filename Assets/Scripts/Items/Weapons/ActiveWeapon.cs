@@ -35,6 +35,7 @@ public class ActiveWeapon : Singleton<ActiveWeapon>
         else if(!isReloading)
         {
             StartCoroutine(ReloadCoroutine());
+            ReloadBar.instance.ShowReloadProgress(reloadTime);
         }
     }
 
@@ -43,6 +44,7 @@ public class ActiveWeapon : Singleton<ActiveWeapon>
         if (currentAmmo != maxAmmo && !isReloading)
         {
             StartCoroutine(ReloadCoroutine());
+            ReloadBar.instance.ShowReloadProgress(reloadTime);
         }
     }
 
