@@ -19,4 +19,6 @@ MonoBehaviour:
   weaponKnockbackBase: 0
   projectileMS: 25
   weaponBaseCritChance: 50
+  maxAmmoAmount: 5
+  baseReloadTime: 1
   weaponRarityBase: 0

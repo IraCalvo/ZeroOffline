@@ -59,7 +59,13 @@ public class ObjectPoolManager : Singleton<ObjectPoolManager>
 
         if (obj.TryGetComponent<Projectile>(out Projectile proj))
         {
+            Debug.Log("if statement hit");
             selected = GetPoolByProjectileSprite(proj.GetComponent<SpriteRenderer>().sprite);
+        }
+        else if(obj.TryGetComponent<Ore>(out Ore ore))
+        {
+            Debug.Log("hi");
+            selected = GetPoolByOreSprite(ore.GetComponent<SpriteRenderer>().sprite);
         }
 
         List<GameObject> pool = selected.pool;
@@ -145,6 +151,22 @@ public class ObjectPoolManager : Singleton<ObjectPoolManager>
             {
                 Sprite tempSprite = poolInfo.prefabToPool.GetComponent<SpriteRenderer>().sprite;
                 if (projSprite == tempSprite)
+                {
+                    return poolInfo;
+                }
+            }
+        }
+        return null;
+    }
+
+    private PoolInfo GetPoolByOreSprite(Sprite oreSprite)
+    {
+        foreach (PoolInfo poolInfo in listOfPools)
+        {
+            if (poolInfo.type == PoolObjectType.Resource)
+            {
+                Sprite tempSprite = poolInfo.prefabToPool.GetComponent<SpriteRenderer>().sprite;
+                if (oreSprite == tempSprite)
                 {
                     return poolInfo;
                 }

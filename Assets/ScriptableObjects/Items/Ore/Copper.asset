@@ -9,13 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6cd1db7c028b4db469abcd2a3416e3fa, type: 3}
-  m_Name: Test
+  m_Script: {fileID: 11500000, guid: 1123747e404bc0240827e3bdd6b1358d, type: 3}
+  m_Name: Copper
   m_EditorClassIdentifier: 
-  enemyName: Test
-  enemyBaseMaxHP: 10
-  enemyBaseMS: 3
-  enemyBaseDamage: 5
-  enemyAttackRange: 0
-  enemyNeedsConstantLOS: 0
-  invulnTime: 0.25
+  resourceType: 0
+  oreToDrop: {fileID: 507534166773860292, guid: 5ed25627a35c9c641a62a5178a1bba56, type: 3}
+  minAmountToDrop: 5
+  maxAmountToDrop: 10
+  baseOreHealth: 5
