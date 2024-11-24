@@ -8,7 +8,7 @@ public class PlayerHealth : MonoBehaviour, IDamageable
     public int maxHealth;
     public int currentHealth;
     [SerializeField] public float invulnTimer;
-    public bool playerCanBeHit;
+    public bool playerCanBeHit = true;
     Material originalMaterial;
     [SerializeField] Material whiteFlashMaterial;
 
@@ -22,7 +22,13 @@ public class PlayerHealth : MonoBehaviour, IDamageable
         {
             Destroy(gameObject);
         }
-        originalMaterial = GetComponent<Material>();
+        originalMaterial = GetComponent<SpriteRenderer>().material;
+        currentHealth = maxHealth;
+    }
+
+    void Start()
+    {
+        PlayerUIManager.instance.UpdateHPBar(currentHealth, maxHealth);
     }
 
     public void TakeDamage(int dmgToTake, DamageSource dmgSource, float critChance)
@@ -34,10 +40,11 @@ public class PlayerHealth : MonoBehaviour, IDamageable
                 if (dmgSource == DamageSource.Enemy || dmgSource == DamageSource.Neutral)
                 {
                     currentHealth -= dmgToTake;
+                    StartCoroutine(InvulnCountdown());
+                    PlayerUIManager.instance.UpdateHPBar(currentHealth, maxHealth);
                     if (currentHealth < 0)
                     {
                         //TODO: Add game lose procedures in game manager
-                        StartCoroutine(InvulnCountdown());
                     }
                 }
             }
@@ -47,9 +54,9 @@ public class PlayerHealth : MonoBehaviour, IDamageable
     IEnumerator InvulnCountdown()
     {
         playerCanBeHit = false;
-        GetComponent<Renderer>().material = whiteFlashMaterial;
+        GetComponent<SpriteRenderer>().material = whiteFlashMaterial;
         yield return new WaitForSeconds(invulnTimer);
-        GetComponent<Renderer>().material = originalMaterial;
+        GetComponent<SpriteRenderer>().material = originalMaterial;
         playerCanBeHit = true;
     }
 }

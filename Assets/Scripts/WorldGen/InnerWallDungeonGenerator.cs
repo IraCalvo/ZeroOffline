@@ -14,9 +14,6 @@ public class InnerWallDungeonGenerator : MonoBehaviour
         this.floorPos = floorPos;
     }
 
-    private bool didGenerateWalls = false;
-    private bool canTrySpawnWall = true;
-
     public static void InnerWallGenerator(HashSet<Vector2Int> floorPos, InnerDungeonWallSO innerWallGenSO)
     {
         InnerEntitySpawner wallPrefab = null;
@@ -52,37 +49,4 @@ public class InnerWallDungeonGenerator : MonoBehaviour
             }
         }
     }
-
-    //private void CreateInnerWalls(InnerDungeonWallSO innerWallGenSO)
-    //{
-    //    int amountWallsGenerated = 0;
-    //    while (amountWallsGenerated < innerWallGenSO.wallGenerationAmount)
-    //    {
-    //        if (canTrySpawnWall)
-    //        {
-    //            canTrySpawnWall = false;
-
-    //            int retries = 0;
-
-    //            //Get random spawn pos, spawn it on said spawnPos, then check if it collides, if not retry, until give up
-    //            while (retries < innerWallGenSO.spawnRetries)
-    //            {
-    //                Vector2Int spawnPos = InnerDungeonGeneratorUtils.GetRandomSpawnPosition(floorPos);
-    //                wall.SpawnObject(spawnPos);
-
-    //                if (InnerDungeonGeneratorUtils.CheckObjectCollision(wall.gameObject, innerWallGenSO.layersToNotSpawnOn))
-    //                {
-    //                    Debug.Log("Destroy wall");
-    //                    wall.DestroyObject();
-    //                    retries++;
-    //                }
-    //                else
-    //                {
-    //                    break;
-    //                }
-    //            }
-    //        }
-    //        amountWallsGenerated++;
-    //    }
-    //}
 }

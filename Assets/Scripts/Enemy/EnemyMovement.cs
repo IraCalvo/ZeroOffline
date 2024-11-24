@@ -18,7 +18,7 @@ public class EnemyMovement : MonoBehaviour
     {
         if (enemyAIBrain.currentTarget != null)
         {
-            Debug.Log("current target not null");
+            //Debug.Log("current target not null");
             float distance = Vector2.Distance(enemyAIBrain.currentTarget.position, transform.position);
             if (distance > enemy.enemySO.enemyAttackRange)
             {

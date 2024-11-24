@@ -102,6 +102,7 @@ MonoBehaviour:
   _itemName: Gun
   _itemDesc: its a gun
   _weaponSO: {fileID: 11400000, guid: ab7a1e73f52686d41a5842527b906dff, type: 2}
+  _inventoryIcon: {fileID: 0}
   firePoint: {fileID: 5664275321233543861}
   projectileToShoot: {fileID: 6947857064861607272, guid: 6b54284584b6ee7448f535cf0f9b3a89, type: 3}
 --- !u!114 &4113241903323842835
@@ -158,6 +159,7 @@ GameObject:
   m_Component:
   - component: {fileID: 357950115904640950}
   - component: {fileID: 1781412776904335443}
+  - component: {fileID: 5368388388282386789}
   - component: {fileID: 5546953934429102328}
   - component: {fileID: 123648198852266556}
   - component: {fileID: 2323509073765284398}
@@ -166,7 +168,6 @@ GameObject:
   - component: {fileID: 6514240097515509049}
   - component: {fileID: 514007131562325640}
   - component: {fileID: 3141371384316527030}
-  - component: {fileID: 5368388388282386789}
   m_Layer: 0
   m_Name: TestPlayer
   m_TagString: Player
@@ -217,6 +218,41 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
+--- !u!58 &5368388388282386789
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8872185727410855465}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!212 &5546953934429102328
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -313,7 +349,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerMS: 10
   canAttack: 0
-  playerCanBeHit: 0
 --- !u!114 &1543189633042505584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -340,6 +375,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentWeapon: {fileID: 5657959744734233842}
+  currentAmmo: 0
+  isReloading: 0
 --- !u!114 &6514240097515509049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -369,6 +406,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 0
   currentHealth: 0
+  invulnTimer: 0
+  playerCanBeHit: 0
+  whiteFlashMaterial: {fileID: 0}
 --- !u!114 &3141371384316527030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -385,38 +425,3 @@ MonoBehaviour:
   mouseWorldPos: {x: 0, y: 0}
   aimDir: {x: 0, y: 0}
   fieldOfView: {fileID: 0}
---- !u!58 &5368388388282386789
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8872185727410855465}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5

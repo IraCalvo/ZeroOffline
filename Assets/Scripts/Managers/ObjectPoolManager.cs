@@ -59,12 +59,10 @@ public class ObjectPoolManager : Singleton<ObjectPoolManager>
 
         if (obj.TryGetComponent<Projectile>(out Projectile proj))
         {
-            Debug.Log("if statement hit");
             selected = GetPoolByProjectileSprite(proj.GetComponent<SpriteRenderer>().sprite);
         }
         else if(obj.TryGetComponent<Ore>(out Ore ore))
         {
-            Debug.Log("hi");
             selected = GetPoolByOreSprite(ore.GetComponent<SpriteRenderer>().sprite);
         }
 

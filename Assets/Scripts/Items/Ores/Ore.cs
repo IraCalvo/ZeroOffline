@@ -1,18 +1,20 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
-public abstract class Weapon : MonoBehaviour, IWeapon
+public class Ore : MonoBehaviour, IItem
 {
     [SerializeField] string _itemName;
     [SerializeField] string _itemDesc;
-    [SerializeField] public WeaponSO _weaponSO;
-    int _itemStackAmount = 1;
+    [SerializeField] int _itemStackAmount;
     [SerializeField] Sprite _inventoryIcon;
+
     public string ItemName 
     {
         get { return _itemName; }
-        set { _itemName = value; } 
+        set { _itemName = value; }
     }
 
     public string ItemDesc
@@ -24,7 +26,7 @@ public abstract class Weapon : MonoBehaviour, IWeapon
     public int ItemStackAmount
     {
         get { return _itemStackAmount; }
-        set { _itemStackAmount = value; }
+        set { _itemStackAmount = value; } 
     }
 
     public Sprite InventoryIcon
@@ -32,12 +34,4 @@ public abstract class Weapon : MonoBehaviour, IWeapon
         get { return _inventoryIcon; }
         set { _inventoryIcon = value; }
     }
-
-    public WeaponSO WeaponSO
-    {
-        get { return _weaponSO; }
-        set { _weaponSO = value; }
-    }
-
-    public abstract void UseWeapon();
 }

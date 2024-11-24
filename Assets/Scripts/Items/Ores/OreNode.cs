@@ -57,12 +57,14 @@ public class OreNode : MonoBehaviour, IDamageable
     void DestroyOre()
     {
         int dropAmount = Random.Range(oreSO.minAmountToDrop, oreSO.maxAmountToDrop);
+        Debug.Log(dropAmount);
 
         for (int i = 0; i < dropAmount; i++)
         {
             Vector2 spawnPos = GetRandomPositionInCircle(transform.position, spawnRadius);
             GameObject ore = ObjectPoolManager.Instance.GetPoolObject(oreDrop);
-            ore.transform.position = spawnPos;
+            ore.transform.position = transform.position;
+            ore.GetComponent<ItemBounce>().StartBounce(spawnPos);
         }
         Destroy(gameObject);
     }

@@ -97,6 +97,18 @@ public class PlayerController : MonoBehaviour
         playerDash.Dash();
     }
 
+    public void OnOpenInventory()
+    {
+        if (!InventoryUIManager.instance.inventoryUI.activeInHierarchy)
+        {
+            InventoryUIManager.instance.OpenInventory();
+        }
+        else 
+        {
+            InventoryUIManager.instance.CloseInventory();
+        }
+    }
+
     void MovePlayer()
     {
         rb.velocity = playerMovement * playerMS;

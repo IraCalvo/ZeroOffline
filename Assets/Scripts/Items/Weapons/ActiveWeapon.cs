@@ -31,6 +31,7 @@ public class ActiveWeapon : Singleton<ActiveWeapon>
         {
             (currentWeapon as IWeapon).UseWeapon();
             currentAmmo--;
+            PlayerUIManager.instance.UpdateAmmoCount(currentAmmo);
         }
         else if(!isReloading)
         {
@@ -54,5 +55,6 @@ public class ActiveWeapon : Singleton<ActiveWeapon>
         yield return new WaitForSeconds(reloadTime);
         currentAmmo = maxAmmo;
         isReloading = false;
+        PlayerUIManager.instance.UpdateAmmoCount(currentAmmo);
     }
 }
