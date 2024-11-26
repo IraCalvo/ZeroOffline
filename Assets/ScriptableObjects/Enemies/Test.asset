@@ -16,6 +16,6 @@ MonoBehaviour:
   enemyBaseMaxHP: 10
   enemyBaseMS: 3
   enemyBaseDamage: 5
-  enemyAttackRange: 0
+  enemyAttackRange: 2.5
   enemyNeedsConstantLOS: 0
   invulnTime: 0.25

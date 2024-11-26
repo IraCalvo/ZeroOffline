@@ -28,6 +28,7 @@ public class EnemyMovement : MonoBehaviour
             else 
             {
                 //do attack stuff, can add delay to check so that its not ran every frame
+                enemy.enemyState = EnemyState.Attacking;
             }
         }
         else if (enemyAIBrain.GetTargetsCount() > 0)
