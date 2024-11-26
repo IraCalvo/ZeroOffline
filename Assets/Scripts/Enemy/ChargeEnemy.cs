@@ -44,11 +44,11 @@ public class ChargeEnemy : MonoBehaviour
         isCharging = true;
 
         Vector2 dir = (enemyAIBrain.currentTarget.position - transform.position).normalized;
-        rb.velocity = dir * chargeSpeed;
+        rb.linearVelocity = dir * chargeSpeed;
 
         yield return new WaitForSeconds(chargeDuration);
 
-        rb.velocity = Vector2.zero;
+        rb.linearVelocity = Vector2.zero;
         isCharging = false;
         canAttack = false;
         enemy.enemyState = EnemyState.Chasing;

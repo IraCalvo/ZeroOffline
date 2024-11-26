@@ -111,6 +111,6 @@ public class PlayerController : MonoBehaviour
 
     void MovePlayer()
     {
-        rb.velocity = playerMovement * playerMS;
+        rb.linearVelocity = playerMovement * playerMS;
     }
 }
