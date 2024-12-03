@@ -109,6 +109,11 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public void OnEsc()
+    {
+        PlayerUIManager.instance.PauseGame();
+    }
+
     void MovePlayer()
     {
         rb.linearVelocity = playerMovement * playerMS;
