@@ -11,6 +11,7 @@ public class EnemyHealth : MonoBehaviour, IDamageable
     [SerializeField] GameObject dmgTakenText;
     [SerializeField] Transform positionToDisplayDamageText;
     [SerializeField] Material whiteDamageMaterial;
+    [SerializeField] int xpToDrop;
     SpriteRenderer sr;
 
     void OnEnable()
@@ -62,6 +63,13 @@ public class EnemyHealth : MonoBehaviour, IDamageable
     void DeathProcedures()
     {
         ObjectPoolManager.Instance.DeactivateObjectInPool(gameObject);
+        for (int i = 0; i < xpToDrop; i++)
+        {
+            Vector2 spawnPos = GetRandomPosInCircle(transform.position, 1.5f);
+            GameObject xp = ObjectPoolManager.Instance.GetPoolObject(PoolObjectType.XP);
+            xp.transform.position = spawnPos;
+            xp.GetComponent<ItemBounce>().StartBounce(spawnPos);
+        }
     }
 
     IEnumerator InvulnTimerCoroutine()
@@ -71,5 +79,16 @@ public class EnemyHealth : MonoBehaviour, IDamageable
         yield return new WaitForSeconds(enemy.enemySO.invulnTime);
         sr.material = startMaterial;
         canBeDamaged = true;
+    }
+
+    private Vector2 GetRandomPosInCircle(Vector2 center, float radius)
+    {
+        float angle = Random.Range(0f, 2f * Mathf.PI);
+        float distance = Random.Range(0f, radius);
+
+        float x = center.x + Mathf.Cos(angle) * distance;
+        float y = center.y + Mathf.Sin(angle) * distance;
+
+        return  new Vector2(x, y);
     }
 }
