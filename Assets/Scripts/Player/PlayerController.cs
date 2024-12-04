@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour
     [HideInInspector] public bool canAttack;
     float attackCD;
     PlayerDash playerDash;
-    bool isAttacking = false;
+    //bool isAttacking = false;
 
     private void Awake()
     {
@@ -61,6 +61,7 @@ public class PlayerController : MonoBehaviour
     {
         if (canAttack)
         {
+            //need a way to check for holding down
             if (value.isPressed)
             {
                 ActiveWeapon.Instance.Attack();
@@ -70,8 +71,8 @@ public class PlayerController : MonoBehaviour
     }
 
     public void OnFire2()
-    { 
-    
+    {
+        PlayerEquipSystem.instance.UsePod();
     }
 
     public void SetAttackCD(float attackCD)
