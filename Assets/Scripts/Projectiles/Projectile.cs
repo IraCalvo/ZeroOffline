@@ -14,16 +14,12 @@ public enum DamageSource
 public class Projectile : MonoBehaviour
 {
     [SerializeField] float projMS;
-    [SerializeField] DamageSource projOwner;
-    [SerializeField] int projDMG;
-    [SerializeField] float critChance;
+    [SerializeField] public DamageSource projOwner;
+    [SerializeField] public int projDMG;
+    [SerializeField] public float critChance;
     [SerializeField] float projRange;
-    [SerializeField] int projPierceAmount;
+    [SerializeField] public int projPierceAmount;
     private Vector3 startPos;
-    [HideInInspector] public string playerString = "Player";
-    [HideInInspector] public string enemyString = "Enemy";
-    [HideInInspector] public string wallLayer = "Walls";
-    [HideInInspector] public string obstacleLayer = "Obstacles";
 
     public virtual void OnEnable()
     {
@@ -82,14 +78,15 @@ public class Projectile : MonoBehaviour
     public virtual void DetectProjectileDistance()
     {
         if (Vector3.Distance(transform.position, startPos) > projRange)
-        { 
-            //turn the projectile off in the objectpool
+        {
+            //ObjectPoolManager.Instance.DeactivateObjectInPool(gameObject);
         }
     }
 
-    public virtual void OnTriggerEnter2D(Collider2D otherCollider)
+    protected virtual void OnTriggerEnter2D(Collider2D otherCollider)
     {
-        if (otherCollider.CompareTag(playerString) || otherCollider.CompareTag(enemyString))
+        if (otherCollider.CompareTag(StringUtils.TagStrings.PlayerTag) && projOwner != DamageSource.Player
+            || otherCollider.CompareTag(StringUtils.TagStrings.EnemyTag) && projOwner != DamageSource.Enemy)
         {
             IDamageable damagedObject = otherCollider.GetComponent<IDamageable>();
             damagedObject.TakeDamage(projDMG, projOwner, critChance);
@@ -103,18 +100,10 @@ public class Projectile : MonoBehaviour
                 }
             }
         }
-        else if (otherCollider.gameObject.layer == LayerMask.NameToLayer(wallLayer) ||
-            otherCollider.gameObject.layer == LayerMask.NameToLayer(obstacleLayer))
+        else if (otherCollider.gameObject.layer == LayerMask.NameToLayer(StringUtils.TagStrings.WallTag) ||
+            otherCollider.gameObject.layer == LayerMask.NameToLayer(StringUtils.TagStrings.ObstactleTag))
         {
             ObjectPoolManager.Instance.DeactivateObjectInPool(gameObject);
         }
-
-
-
-        //detect layer collision for walls/breakables/objects etc
-        //if (otherCollider.gameObject.layer == 6)
-        //{
-        //    ObjectPoolManager.Instance.DeactivateObjectInPool(gameObject);
-        //}
     }
 }

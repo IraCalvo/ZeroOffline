@@ -1,9 +1,9 @@
 using System.Collections;
 using UnityEngine;
 
-public class PlayerEquipSystem : MonoBehaviour
+public class ActivePod : MonoBehaviour
 {
-    public static PlayerEquipSystem instance;
+    public static ActivePod instance;
     public GameObject equippedPod;
     bool canUsePod = true;
     PodSO equippedPodSO;
@@ -41,7 +41,7 @@ public class PlayerEquipSystem : MonoBehaviour
         }
         else
         { 
-            //add sfx to show that they can use it rn
+            //TODO: add sfx that they cannot use pod rn
         }
     }
 

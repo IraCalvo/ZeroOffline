@@ -15,10 +15,8 @@ public class PlayerController : MonoBehaviour
     public float playerMS;
     Vector2 playerMovement;
     Rigidbody2D rb;
-    [HideInInspector] public bool canAttack;
-    float attackCD;
+
     PlayerDash playerDash;
-    //bool isAttacking = false;
 
     private void Awake()
     {
@@ -35,18 +33,6 @@ public class PlayerController : MonoBehaviour
         playerDash = GetComponent<PlayerDash>();
     }
 
-    private void Update()
-    {
-        if (attackCD > 0)
-        {
-            attackCD -= Time.deltaTime;
-        }
-        else
-        {
-            canAttack = true;
-        }
-    }
-
     private void FixedUpdate()
     {
         MovePlayer();
@@ -59,25 +45,16 @@ public class PlayerController : MonoBehaviour
 
     public void OnFire1(InputValue value)
     {
-        if (canAttack)
+        //need a way to check for holding down
+        if (value.isPressed)
         {
-            //need a way to check for holding down
-            if (value.isPressed)
-            {
-                ActiveWeapon.Instance.Attack();
-                canAttack = false;
-            }
+            ActiveWeapon.Instance.Attack();
         }
     }
 
     public void OnFire2()
     {
-        PlayerEquipSystem.instance.UsePod();
-    }
-
-    public void SetAttackCD(float attackCD)
-    {
-        this.attackCD = attackCD;
+        ActivePod.instance.UsePod();
     }
 
     public void OnReload()

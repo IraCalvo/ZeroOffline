@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BasicPod
   m_EditorClassIdentifier: 
   podName: 
-  podBaseCD: 0
-  podBaseDMG: 0
-  podProjectileMS: 0
+  podBaseCD: 3
+  podBaseDMG: 10
+  podProjectileMS: 10
   podBaseCritChance: 0
