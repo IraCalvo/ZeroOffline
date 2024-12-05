@@ -11,6 +11,7 @@ public class InventoryItem
     public int itemMaxStackAmount;
     public Sprite itemSpriteIcon;
     public int currentAmount;
+    public int itemIndex;
 
     public InventoryItem(string itemName, string itemDesc, int itemMaxStackAmount, int currentAmount, Sprite itemSpriteIcon)
     {
