@@ -7,6 +7,7 @@ public class InventoryUIManager : MonoBehaviour
     public static InventoryUIManager instance;
     public List<InventoryUISlot> inventoryUISlots = new List<InventoryUISlot>();
     public GameObject inventoryUI;
+    public InventoryPickupItem inventoryPickupItem;
 
     private void Awake()
     {
@@ -22,14 +23,14 @@ public class InventoryUIManager : MonoBehaviour
 
     public void OpenInventory()
     {
-        //play sfx
+        //TODO: play sfx
         inventoryUI.SetActive(true);
         UpdateInventory();
     }
 
     public void CloseInventory() 
     { 
-        //play sfx
+        //TODO: play sfx
         inventoryUI.SetActive(false);
     }
 
@@ -37,15 +38,11 @@ public class InventoryUIManager : MonoBehaviour
     {
         for (int i = 0; i < inventoryUISlots.Count; i++)
         {
-            if (PlayerInventoryManager.instance.inventoryList[i] != null)
+            InventoryUISlot inventoryUISlot = inventoryUISlots[i];
+            InventoryItem inventoryItem = PlayerInventoryManager.instance.inventoryList[i];
+            if (inventoryItem != null)
             {
-                inventoryUISlots[i].itemAmount.text = PlayerInventoryManager.instance.inventoryList[i].currentAmount.ToString();
-                inventoryUISlots[i].itemSprite.sprite = PlayerInventoryManager.instance.inventoryList[i].itemSpriteIcon;
-
-                //change the alpha back to max
-                Color inventorySpriteAlpha = inventoryUISlots[i].itemSprite.color;
-                inventorySpriteAlpha.a = 1f;
-                inventoryUISlots[i].itemSprite.color = inventorySpriteAlpha;
+                inventoryUISlot.SetItem(inventoryItem);
             }
         }
     }
