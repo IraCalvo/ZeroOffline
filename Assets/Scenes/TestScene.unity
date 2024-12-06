@@ -704,6 +704,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 239483672}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &105459384
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 105459385}
+  m_Layer: 0
+  m_Name: FireBulletContainer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &105459385
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 105459384}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 239483672}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &167380710
 GameObject:
   m_ObjectHideFlags: 0
@@ -997,6 +1028,7 @@ Transform:
   - {fileID: 674936274}
   - {fileID: 443530481}
   - {fileID: 888229469}
+  - {fileID: 105459385}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &263365942
@@ -1012,6 +1044,7 @@ GameObject:
   - component: {fileID: 263365945}
   - component: {fileID: 263365944}
   - component: {fileID: 263365943}
+  - component: {fileID: 263365948}
   m_Layer: 0
   m_Name: TestDummy (1)
   m_TagString: Enemy
@@ -1159,6 +1192,22 @@ Transform:
   - {fileID: 398584513}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &263365948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263365942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d25175b6c672674b9085936031c4154, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOnFire: 0
+  isStunned: 0
+  isSlowed: 0
+  slowAmount: 0
 --- !u!1 &270153490
 GameObject:
   m_ObjectHideFlags: 0
@@ -2455,6 +2504,7 @@ GameObject:
   - component: {fileID: 406425828}
   - component: {fileID: 406425827}
   - component: {fileID: 406425831}
+  - component: {fileID: 406425832}
   m_Layer: 0
   m_Name: TestDummy
   m_TagString: Enemy
@@ -2602,6 +2652,22 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
+--- !u!114 &406425832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 406425826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d25175b6c672674b9085936031c4154, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOnFire: 0
+  isStunned: 0
+  isSlowed: 0
+  slowAmount: 0
 --- !u!1 &443530480
 GameObject:
   m_ObjectHideFlags: 0
@@ -10145,6 +10211,13 @@ MonoBehaviour:
     objectContainer: {fileID: 443530480}
     poolCanGrow: 1
     pool: []
+  - name: FireBullet
+    type: 1
+    amountToPool: 5
+    prefabToPool: {fileID: 6548111844130838770, guid: b773efc435179d043b34eee526d4f18e, type: 3}
+    objectContainer: {fileID: 443530480}
+    poolCanGrow: 1
+    pool: []
 --- !u!1 &1532439837
 GameObject:
   m_ObjectHideFlags: 0
@@ -11448,6 +11521,7 @@ GameObject:
   - component: {fileID: 2020929169}
   - component: {fileID: 2020929168}
   - component: {fileID: 2020929167}
+  - component: {fileID: 2020929171}
   m_Layer: 0
   m_Name: ore_0 (1)
   m_TagString: Enemy
@@ -11576,6 +11650,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2020929171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2020929166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d25175b6c672674b9085936031c4154, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOnFire: 0
+  isStunned: 0
+  isSlowed: 0
+  slowAmount: 0
 --- !u!1 &2035874886
 GameObject:
   m_ObjectHideFlags: 0
@@ -12088,6 +12178,7 @@ GameObject:
   - component: {fileID: 2113744758}
   - component: {fileID: 2113744757}
   - component: {fileID: 2113744760}
+  - component: {fileID: 2113744761}
   m_Layer: 0
   m_Name: ore_0
   m_TagString: Enemy
@@ -12216,6 +12307,22 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 1.03125
+--- !u!114 &2113744761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2113744756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d25175b6c672674b9085936031c4154, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOnFire: 0
+  isStunned: 0
+  isSlowed: 0
+  slowAmount: 0
 --- !u!1001 &8223061608256856633
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12312,6 +12419,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 5657959744734233842, guid: e8004a1c7dbe6194fa03e4ce72941651, type: 3}
+      propertyPath: projectileToShoot
+      value: 
+      objectReference: {fileID: 3539827465319151540, guid: b773efc435179d043b34eee526d4f18e, type: 3}
     - target: {fileID: 8872185727410855465, guid: e8004a1c7dbe6194fa03e4ce72941651, type: 3}
       propertyPath: m_Name
       value: TestPlayer
