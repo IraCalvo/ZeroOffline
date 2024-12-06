@@ -5,4 +5,5 @@ using UnityEngine;
 public class EnemyShooter : MonoBehaviour
 {
     [SerializeField] bool movesWhileShooting;
+    //[SerializeField] bool 
 }
