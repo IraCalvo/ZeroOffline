@@ -23,7 +23,11 @@ public class EnemyHealth : MonoBehaviour, IDamageable
 
     public void TakeDamage(int damageInput, DamageSource dmgSource, float critChance)
     {
-        if ((dmgSource == DamageSource.Player || dmgSource == DamageSource.Neutral) && canBeDamaged)
+        if (dmgSource == DamageSource.Neutral)
+        {
+            CalculateDamage(damageInput, critChance);
+        }
+        else if (dmgSource == DamageSource.Player && canBeDamaged)
         {
             canBeDamaged = false;
             StartCoroutine(InvulnTimerCoroutine());
