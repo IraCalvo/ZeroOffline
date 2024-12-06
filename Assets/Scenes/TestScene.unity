@@ -1761,6 +1761,7 @@ GameObject:
   - component: {fileID: 341170659}
   - component: {fileID: 341170661}
   - component: {fileID: 341170662}
+  - component: {fileID: 341170663}
   m_Layer: 0
   m_Name: TestEnemyDetection
   m_TagString: Untagged
@@ -2006,6 +2007,22 @@ MonoBehaviour:
   chargeSpeed: 5
   chargeDuration: 1.5
   windupTime: 0.75
+--- !u!114 &341170663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 341170652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d25175b6c672674b9085936031c4154, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOnFire: 0
+  isStunned: 0
+  isSlowed: 0
+  slowAmount: 1
 --- !u!1 &347984253
 GameObject:
   m_ObjectHideFlags: 0
@@ -2177,10 +2194,10 @@ RectTransform:
   m_Children:
   - {fileID: 574526039}
   - {fileID: 808456834}
-  - {fileID: 1681648220}
-  - {fileID: 275951616}
-  - {fileID: 771141488}
   - {fileID: 673270357}
+  - {fileID: 771141488}
+  - {fileID: 275951616}
+  - {fileID: 1681648220}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
