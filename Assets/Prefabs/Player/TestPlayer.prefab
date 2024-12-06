@@ -925,60 +925,65 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   equippedPod: {fileID: 8586946394443143204}
---- !u!1 &8943562933850767481
-GameObject:
+--- !u!1001 &678088876989277679
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 266599630212270667}
-  - component: {fileID: 1430988456260545313}
-  m_Layer: 6
-  m_Name: Stats
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &266599630212270667
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8943562933850767481}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 357950115904640950}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1430988456260545313
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 357950115904640950}
+    m_Modifications:
+    - target: {fileID: 781982351320903588, guid: 56bd82abfa09b854395157728848bc07, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 781982351320903588, guid: 56bd82abfa09b854395157728848bc07, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 781982351320903588, guid: 56bd82abfa09b854395157728848bc07, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 781982351320903588, guid: 56bd82abfa09b854395157728848bc07, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 781982351320903588, guid: 56bd82abfa09b854395157728848bc07, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 781982351320903588, guid: 56bd82abfa09b854395157728848bc07, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 781982351320903588, guid: 56bd82abfa09b854395157728848bc07, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 781982351320903588, guid: 56bd82abfa09b854395157728848bc07, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 781982351320903588, guid: 56bd82abfa09b854395157728848bc07, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 781982351320903588, guid: 56bd82abfa09b854395157728848bc07, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8463641559119717782, guid: 56bd82abfa09b854395157728848bc07, type: 3}
+      propertyPath: m_Name
+      value: Stats
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 56bd82abfa09b854395157728848bc07, type: 3}
+--- !u!4 &266599630212270667 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 781982351320903588, guid: 56bd82abfa09b854395157728848bc07, type: 3}
+  m_PrefabInstance: {fileID: 678088876989277679}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8943562933850767481}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0038b6f8f774d74eac198bf920c0e9d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Health:
-    statName: 
-    statValue: 0
-  Armor:
-    statName: 
-    statValue: 0
-  MovementSpeed:
-    statName: 
-    statValue: 0
-  ReloadTime:
-    statName: 
-    statValue: 0
-  statsList: []
