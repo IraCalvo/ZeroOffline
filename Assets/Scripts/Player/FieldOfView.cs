@@ -8,7 +8,7 @@ public class FieldOfView : MonoBehaviour
     private Mesh mesh;
     [SerializeField] private float fov;
     [SerializeField] float viewDistance;
-    private Vector3 origin;
+    [SerializeField] private Vector3 origin;
     private float startingAngle;
 
     private void Start()
@@ -70,6 +70,7 @@ public class FieldOfView : MonoBehaviour
     public void SetOrigin(Vector3 origin)
     {
         this.origin = origin;
+        this.transform.position = Vector3.zero;
     }
 
     public void SetAimDirection(Vector3 aimDirection)

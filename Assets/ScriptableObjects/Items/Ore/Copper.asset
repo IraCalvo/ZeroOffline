@@ -15,5 +15,5 @@ MonoBehaviour:
   resourceType: 0
   oreToDrop: {fileID: 507534166773860292, guid: 5ed25627a35c9c641a62a5178a1bba56, type: 3}
   minAmountToDrop: 5
-  maxAmountToDrop: 10
+  maxAmountToDrop: 40
   baseOreHealth: 5
