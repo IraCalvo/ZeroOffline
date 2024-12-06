@@ -44,6 +44,6 @@ public class CursorManager : MonoBehaviour
         aimDir = directionToMouse.normalized;
 
         fieldOfView.SetAimDirection(aimDir);
-        fieldOfView.SetOrigin(PlayerController.instance.transform.position);
+        fieldOfView.SetOrigin(transform.position);
     }
 }
