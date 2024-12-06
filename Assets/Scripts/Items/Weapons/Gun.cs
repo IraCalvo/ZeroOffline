@@ -17,6 +17,5 @@ public class Gun : Weapon
         bullet.GetComponent<Projectile>().UpdateProjMS(_weaponSO.projectileMS);
         bullet.GetComponent<Projectile>().UpdateCritChance(_weaponSO.weaponBaseCritChance);
         bullet.GetComponent<Projectile>().UpdateProjDamage(_weaponSO.weaponDamageBase);
-        PlayerController.instance.SetAttackCD(_weaponSO.weaponCDBase);
     }
 }

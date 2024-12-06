@@ -6,10 +6,12 @@ using UnityEngine;
 public class ActiveWeapon : Singleton<ActiveWeapon>
 {
     [SerializeField] private MonoBehaviour currentWeapon;
+    WeaponSO activeWeaponSO;
     [SerializeField] int currentAmmo;
     int maxAmmo;
     float reloadTime;
     public bool isReloading = false;
+    public bool canAttack = true;
 
     private void Start()
     {
@@ -19,25 +21,37 @@ public class ActiveWeapon : Singleton<ActiveWeapon>
     public void NewWeapon(MonoBehaviour newWeapon)
     {
         currentWeapon = newWeapon;
-        maxAmmo = currentWeapon.GetComponent<Weapon>()._weaponSO.maxAmmoAmount;
+        activeWeaponSO = newWeapon.GetComponent<IWeapon>().WeaponSO;
+        maxAmmo = activeWeaponSO.maxAmmoAmount;
         currentAmmo = maxAmmo;
-        reloadTime = currentWeapon.GetComponent<Weapon>()._weaponSO.baseReloadTime;
+        reloadTime = activeWeaponSO.baseReloadTime;
     }
 
     public void Attack()
     {
-        //TODO: type check, make sure current weapon is a weapon
-        if (currentAmmo > 0 && !isReloading)
+        if (canAttack)
         {
-            (currentWeapon as IWeapon).UseWeapon();
-            currentAmmo--;
-            PlayerUIManager.instance.UpdateAmmoCount(currentAmmo);
+            //TODO: type check, make sure current weapon is a weapon
+            if (currentAmmo > 0 && !isReloading)
+            {
+                (currentWeapon as IWeapon).UseWeapon();
+                currentAmmo--;
+                PlayerUIManager.instance.UpdateAmmoCount(currentAmmo);
+                StartCoroutine(AttackCDCoroutine(activeWeaponSO.weaponCDBase));
+            }
+            else if (!isReloading)
+            {
+                StartCoroutine(ReloadCoroutine());
+                ReloadBar.instance.ShowReloadProgress(reloadTime);
+            }
         }
-        else if(!isReloading)
-        {
-            StartCoroutine(ReloadCoroutine());
-            ReloadBar.instance.ShowReloadProgress(reloadTime);
-        }
+    }
+
+    IEnumerator AttackCDCoroutine(float cd)
+    {
+        canAttack = false;
+        yield return new WaitForSeconds(cd);
+        canAttack = true;
     }
 
     public void Reload()

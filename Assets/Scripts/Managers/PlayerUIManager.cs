@@ -21,6 +21,9 @@ public class PlayerUIManager : MonoBehaviour
     public Image levelupPickMenu;
     public TextMeshProUGUI levelNumber;
 
+    [SerializeField] Image podUIFill;
+    [SerializeField] TextMeshProUGUI podCDTimer;
+
     private void Awake()
     {
         if (instance == null)
@@ -70,5 +73,27 @@ public class PlayerUIManager : MonoBehaviour
             pauseMenu.gameObject.SetActive(false);
             Time.timeScale = 1;
         }
+    }
+
+    public void StartPodCD(float time)
+    {
+        StartCoroutine(PodCDCoroutine(time));
+    }
+
+    IEnumerator PodCDCoroutine(float totalTime)
+    {
+        podUIFill.fillAmount = 1;
+        float timePassed = 0f;
+
+        while (timePassed < totalTime)
+        {
+            float percentage = 1f -  (timePassed / totalTime);
+
+            podUIFill.fillAmount = percentage;
+            timePassed += Time.deltaTime;
+            yield return null;
+        }
+
+        podUIFill.fillAmount = 0;
     }
 }
