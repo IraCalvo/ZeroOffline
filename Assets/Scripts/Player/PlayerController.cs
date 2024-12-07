@@ -89,7 +89,7 @@ public class PlayerController : MonoBehaviour
 
     public void OnEsc()
     {
-        PlayerUIManager.instance.PauseGame();
+        UIManager.instance.PauseGame();
     }
 
     void MovePlayer()

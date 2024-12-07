@@ -16,8 +16,6 @@ public class PlayerUIManager : MonoBehaviour
     [SerializeField] Slider xpSlider;
     private float minXPSliderVal = 0.085f;
 
-    public Image pauseMenu;
-
     public Image levelupPickMenu;
     public TextMeshProUGUI levelNumber;
 
@@ -58,20 +56,6 @@ public class PlayerUIManager : MonoBehaviour
         if (xpSlider.value >= 1 || xpSlider.value < minXPSliderVal)
         {
             xpSlider.value = minXPSliderVal;
-        }
-    }
-
-    public void PauseGame()
-    {
-        if (!pauseMenu.gameObject.activeInHierarchy)
-        {
-            pauseMenu.gameObject.SetActive(true);
-            Time.timeScale = 0;
-        }
-        else
-        {
-            pauseMenu.gameObject.SetActive(false);
-            Time.timeScale = 1;
         }
     }
 
