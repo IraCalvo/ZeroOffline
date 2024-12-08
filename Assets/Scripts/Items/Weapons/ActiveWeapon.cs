@@ -21,7 +21,7 @@ public class ActiveWeapon : Singleton<ActiveWeapon>
     public void NewWeapon(MonoBehaviour newWeapon)
     {
         currentWeapon = newWeapon;
-        activeWeaponSO = newWeapon.GetComponent<IWeapon>().WeaponSO;
+        activeWeaponSO = newWeapon.GetComponent<Weapon>().WeaponSO;
         maxAmmo = activeWeaponSO.maxAmmoAmount;
         currentAmmo = maxAmmo;
         reloadTime = activeWeaponSO.baseReloadTime;
@@ -34,7 +34,7 @@ public class ActiveWeapon : Singleton<ActiveWeapon>
             //TODO: type check, make sure current weapon is a weapon
             if (currentAmmo > 0 && !isReloading)
             {
-                (currentWeapon as IWeapon).UseWeapon();
+                (currentWeapon as Weapon).UseWeapon();
                 currentAmmo--;
                 PlayerUIManager.instance.UpdateAmmoCount(currentAmmo);
                 StartCoroutine(AttackCDCoroutine(activeWeaponSO.weaponCDBase));

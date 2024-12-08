@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Weapon : MonoBehaviour, IWeapon
+public abstract class Weapon : MonoBehaviour, IItem
 {
     [SerializeField] string _itemName;
     [SerializeField] string _itemDesc;

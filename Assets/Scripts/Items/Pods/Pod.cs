@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public abstract class Pod : MonoBehaviour, IPod
+public abstract class Pod : MonoBehaviour, IItem
 {
     [SerializeField] string _itemName;
     [SerializeField] string _itemDesc;
