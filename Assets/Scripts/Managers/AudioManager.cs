@@ -2,19 +2,21 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    [SerializeField] AudioSource masterAudio;
-    [SerializeField] AudioSource sfxAudio;
-    [SerializeField] AudioSource sfxAudio;
+    public static AudioManager instance;
+    public AudioSource masterAudio;
+    public AudioSource sfxAudio;
+    public AudioSource musicAudio;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public void Awake()
     {
-        
+        if (instance == null) { instance = this; }
+        else { Destroy(this); }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        masterAudio.volume = PlayerPrefs.GetFloat("MasterVolume");
+        sfxAudio.volume = PlayerPrefs.GetFloat("SFXVolume");
+        musicAudio.volume = PlayerPrefs.GetFloat("MusicVolume");
     }
 }

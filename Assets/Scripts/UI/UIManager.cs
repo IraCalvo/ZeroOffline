@@ -40,16 +40,19 @@ public class UIManager : MonoBehaviour
 
     public void MasterVolumeSlider(float volume)
     {
-        
+        AudioManager.instance.masterAudio.volume = volume;
+        PlayerPrefs.SetFloat("MasterVolume", volume);
     }
 
-    public void SFXVolumeSlider()
+    public void SFXVolumeSlider(float volume)
     { 
-    
+        AudioManager.instance.sfxAudio.volume = volume;
+        PlayerPrefs.SetFloat("SFXVolume", volume);
     }
 
-    public void MusicVolumeSlider()
+    public void MusicVolumeSlider(float volume)
     {
-        
+        AudioManager.instance.musicAudio.volume = volume;
+        PlayerPrefs.SetFloat("MusicVolume", volume);
     }
 }
