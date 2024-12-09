@@ -9,6 +9,8 @@ public abstract class Weapon : MonoBehaviour, IItem
     [SerializeField] public WeaponSO _weaponSO;
     int _itemStackAmount = 1;
     [SerializeField] Sprite _inventoryIcon;
+    [SerializeField] List<ClockModifier> _modifiers;
+
     public string ItemName 
     {
         get { return _itemName; }
@@ -37,6 +39,12 @@ public abstract class Weapon : MonoBehaviour, IItem
     {
         get { return _weaponSO; }
         set { _weaponSO = value; }
+    }
+
+    public List<ClockModifier> Modifiers
+    {
+        get { return _modifiers; }
+        set { _modifiers = value; }
     }
 
     public abstract void UseWeapon();

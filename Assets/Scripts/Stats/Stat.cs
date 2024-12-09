@@ -5,10 +5,12 @@ public class Stat
 {
     [SerializeField] private string statName;
     [SerializeField] private float statValue;
+    [SerializeField] private StatType statType;
 
-    public Stat(string statName, float statValue)
+    public Stat(string statName, StatType statType, float statValue)
     {
         this.statName = statName;
+        this.statType = statType;
         this.statValue = statValue;
     }
 
@@ -25,6 +27,11 @@ public class Stat
     public string GetStatInfo()
     {
         return statName + ": " + statValue.ToString();
+    }
+
+    public StatType GetStatType()
+    {
+        return statType;
     }
 
     public void Add(float value)
