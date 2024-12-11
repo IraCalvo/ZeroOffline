@@ -12,10 +12,10 @@ public class Stats : MonoBehaviour
 
     private void Awake()
     {
-        Health = new Stat("Health", 10);
-        Armor = new Stat("Armor", 0);
-        MovementSpeed = new Stat("Movement Speed", 1);
-        ReloadTime = new Stat("Reload Time", 0);
+        Health = new Stat("Health", StatType.Health, 10);
+        Armor = new Stat("Armor", StatType.Armor, 0);
+        MovementSpeed = new Stat("Movement Speed", StatType.MovementSpeed, 1);
+        ReloadTime = new Stat("Reload Time", StatType.ReloadTime, 0);
 
         statsList = new List<Stat>() { Health, Armor, MovementSpeed, ReloadTime };
 

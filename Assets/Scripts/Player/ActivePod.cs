@@ -28,14 +28,14 @@ public class ActivePod : MonoBehaviour
     public void NewPod(GameObject newPod)
     { 
         equippedPod = newPod;
-        equippedPodSO = equippedPod.GetComponent<IPod>().PodSO;
+        equippedPodSO = equippedPod.GetComponent<Pod>().PodSO;
     }
 
     public void UsePod()
     {
         if (canUsePod)
         {
-            equippedPod.GetComponent<IPod>().UsePod();
+            equippedPod.GetComponent<Pod>().UsePod();
             PlayerUIManager.instance.StartPodCD(equippedPodSO.podBaseCD);
             StartCoroutine(PodCDCoroutine());
         }

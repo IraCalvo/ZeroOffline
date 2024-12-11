@@ -1,12 +1,15 @@
+using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Pod : MonoBehaviour, IPod
+public abstract class Pod : MonoBehaviour, IItem
 {
     [SerializeField] string _itemName;
     [SerializeField] string _itemDesc;
     int _itemStackAmount = 1;
     [SerializeField] public PodSO _podSO;
     [SerializeField] Sprite _inventoryIcon;
+    [SerializeField] List<ClockModifier> _modifiers;
+
 
     public string ItemName
     { 
@@ -36,6 +39,11 @@ public abstract class Pod : MonoBehaviour, IPod
     {
         get { return _inventoryIcon; }
         set { _inventoryIcon = value; }
+    }
+
+    public List<ClockModifier> Modifiers { 
+        get { return _modifiers; }
+        set { _modifiers = value; }
     }
 
     public abstract void UsePod();

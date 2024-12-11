@@ -2,13 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Weapon : MonoBehaviour, IWeapon
+public abstract class Weapon : MonoBehaviour, IItem
 {
     [SerializeField] string _itemName;
     [SerializeField] string _itemDesc;
     [SerializeField] public WeaponSO _weaponSO;
     int _itemStackAmount = 1;
     [SerializeField] Sprite _inventoryIcon;
+    [SerializeField] List<ClockModifier> _modifiers;
+
     public string ItemName 
     {
         get { return _itemName; }
@@ -37,6 +39,12 @@ public abstract class Weapon : MonoBehaviour, IWeapon
     {
         get { return _weaponSO; }
         set { _weaponSO = value; }
+    }
+
+    public List<ClockModifier> Modifiers
+    {
+        get { return _modifiers; }
+        set { _modifiers = value; }
     }
 
     public abstract void UseWeapon();
