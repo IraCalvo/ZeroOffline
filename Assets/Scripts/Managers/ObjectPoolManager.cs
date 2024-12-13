@@ -9,7 +9,8 @@ public enum PoolObjectType
     Projectile,
     Resource,
     DamagePopup,
-    XP
+    XP,
+    Item
 }
 
 [Serializable]
@@ -62,9 +63,10 @@ public class ObjectPoolManager : Singleton<ObjectPoolManager>
         {
             selected = GetPoolByProjectileSprite(proj.GetComponent<SpriteRenderer>().sprite);
         }
-        else if(obj.TryGetComponent<Ore>(out Ore ore))
+        else if (obj.TryGetComponent<IItem>(out IItem item))
         {
-            selected = GetPoolByOreSprite(ore.GetComponent<SpriteRenderer>().sprite);
+            Sprite itemSprite = (item as MonoBehaviour).GetComponent<SpriteRenderer>().sprite;
+            selected = GetPoolByItemSprite(itemSprite);
         }
 
         List<GameObject> pool = selected.pool;
@@ -155,6 +157,23 @@ public class ObjectPoolManager : Singleton<ObjectPoolManager>
                 }
             }
         }
+        return null;
+    }
+
+    private PoolInfo GetPoolByItemSprite(Sprite itemSprite)
+    {
+        foreach (PoolInfo poolInfo in listOfPools)
+        {
+            if (poolInfo.type == PoolObjectType.Item)
+            {
+                Sprite tempSprite = poolInfo.prefabToPool.GetComponent<SpriteRenderer>().sprite;
+                if (itemSprite == tempSprite)
+                {
+                    return poolInfo;
+                }
+            }
+        }
+
         return null;
     }
 

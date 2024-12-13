@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Tilemaps;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using static UnityEngine.InputSystem.InputAction;
@@ -15,6 +16,7 @@ public class PlayerController : MonoBehaviour
     public float playerMS;
     Vector2 playerMovement;
     Rigidbody2D rb;
+    SpriteRenderer sr;
 
     PlayerDash playerDash;
 
@@ -30,12 +32,14 @@ public class PlayerController : MonoBehaviour
         }
 
         rb = GetComponent<Rigidbody2D>();
+        sr = GetComponent<SpriteRenderer>();
         playerDash = GetComponent<PlayerDash>();
     }
 
     private void FixedUpdate()
     {
         MovePlayer();
+        FlipSprite();
     }
 
     public void OnMove(InputValue value)
@@ -95,5 +99,17 @@ public class PlayerController : MonoBehaviour
     void MovePlayer()
     {
         rb.linearVelocity = playerMovement * playerMS;
+    }
+
+    void FlipSprite()
+    {
+        if (CursorManager.instance.mouseWorldPos.x < transform.position.x)
+        {
+            sr.flipX = true;
+        }
+        else
+        {
+            sr.flipX = false;
+        }
     }
 }

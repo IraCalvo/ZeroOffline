@@ -16,6 +16,8 @@ public class UIManager : MonoBehaviour
     public Slider sfxVolume;
     public Slider musicVolume;
 
+    public Image exitConfirmationPanel;
+
     private void Awake()
     {
         if (instance == null) {  instance = this; }

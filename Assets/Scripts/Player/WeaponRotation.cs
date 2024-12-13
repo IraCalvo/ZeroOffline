@@ -8,12 +8,10 @@ public class WeaponRotation : MonoBehaviour
 {
     [SerializeField] Transform playerTransform;
     private SpriteRenderer sr;
-    Vector2 weaponPos;
 
     private void Awake()
     {
         sr = GetComponent<SpriteRenderer>();
-        weaponPos = gameObject.transform.position;
     }
 
     private void Update()

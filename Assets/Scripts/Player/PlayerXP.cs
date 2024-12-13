@@ -35,6 +35,6 @@ public class PlayerXP : MonoBehaviour
     public void LevelupProcedures()
     {
         PlayerUIManager.instance.levelNumber.text = currentLevel.ToString();
-        //PlayerUIManager.instance.levelupPickMenu.gameObject.SetActive(true);
+        LevelupManager.instance.ShowLevelupOptions();
     }
 }

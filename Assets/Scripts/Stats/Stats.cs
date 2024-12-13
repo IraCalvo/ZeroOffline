@@ -8,7 +8,7 @@ public class Stats : MonoBehaviour
     public Stat MovementSpeed;
     public Stat ReloadTime;
 
-    [SerializeField] private List<Stat> statsList;
+    public List<Stat> statsList;
 
     private void Awake()
     {

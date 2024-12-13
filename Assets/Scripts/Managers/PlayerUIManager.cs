@@ -16,7 +16,6 @@ public class PlayerUIManager : MonoBehaviour
     [SerializeField] Slider xpSlider;
     private float minXPSliderVal = 0.085f;
 
-    public Image levelupPickMenu;
     public TextMeshProUGUI levelNumber;
 
     [SerializeField] Image podUIFill;

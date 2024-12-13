@@ -12,4 +12,10 @@ public class FunctionUtils
 
         return new Vector2(x, y);
     }
+
+    public static int RandomChance(int floor, int ceiling)
+    {
+        int randInt = Random.Range(floor, ceiling);
+        return randInt;
+    }
 }

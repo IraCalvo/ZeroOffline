@@ -16,6 +16,7 @@ public class Chest : Interactable
 
     private void Awake()
     {
+        isInteractable = true;
        originalScale = transform.localScale;
     }
 
@@ -25,6 +26,7 @@ public class Chest : Interactable
         {
             StartCoroutine(OpenChestRoutine());
             isOpened = true;
+            isInteractable = false;
         }
     }
 
@@ -55,7 +57,6 @@ public class Chest : Interactable
 
         transform.localScale = originalScale;
         DropItems();
-        //TODO: make it so that the chest is no longer interactable with
     }
 
     void DropItems()
