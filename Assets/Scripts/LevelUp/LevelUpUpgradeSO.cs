@@ -12,4 +12,5 @@ public class LevelUpUpgradeSO : ScriptableObject
     //TODO: rarity
     public List<Stat> statsToIncrease;
     public List<Stat> statsToDecrease;
+    public List<ILevelUpEffect> specialEffects;
 }

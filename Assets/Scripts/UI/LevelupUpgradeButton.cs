@@ -3,13 +3,13 @@ using TMPro;
 
 public class LevelupUpgradeButton : MonoBehaviour
 {
-    public LevelUpUpgradeBase levelUpUpgrade;
+    public LevelUpUpgradeSO levelUpUpgradeSO;
     public TextMeshProUGUI levelupDescription;
     public TextMeshProUGUI levelupName;
 
     public void ButtonPressed()
     {
-        levelUpUpgrade.ApplyUpgrade();
+        LevelupManager.instance.ApplyUpgrade(levelUpUpgradeSO);
         LevelupManager.instance.UpgradeChosen();
     }
 }

@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using NUnit.Framework;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -9,6 +11,8 @@ public class LevelupManager : MonoBehaviour
     public static LevelupManager instance;
 
     [SerializeField] GameObject pickMenu;
+    public int rerollAmount;
+    public TextMeshProUGUI rerollsLeftText;
 
     public float commonRarityPercent;
     public float uncommonRarityPercent;
@@ -16,15 +20,15 @@ public class LevelupManager : MonoBehaviour
     public float epicRarityPercent;
     public float legendaryRarityPercent;
 
-    public List<LevelUpUpgradeBase> commonLevelup;
-    public List<LevelUpUpgradeBase> uncommonLevelup;
-    public List<LevelUpUpgradeBase> rareLevelup;
-    public List<LevelUpUpgradeBase> epicLevelup;
-    public List<LevelUpUpgradeBase> legendaryLevelup;
+    public List<LevelUpUpgradeSO> commonLevelup;
+    public List<LevelUpUpgradeSO> uncommonLevelup;
+    public List<LevelUpUpgradeSO> rareLevelup;
+    public List<LevelUpUpgradeSO> epicLevelup;
+    public List<LevelUpUpgradeSO> legendaryLevelup;
 
     public List<LevelupUpgradeButton> levelUpButtons;
 
-    List<LevelUpUpgradeBase> duplicateLvlupChoice;
+    List<LevelUpUpgradeSO> duplicateLvlupChoice;
 
     public void Awake()
     {
@@ -36,6 +40,7 @@ public class LevelupManager : MonoBehaviour
         {
             Destroy(this);
         }
+        rerollsLeftText.text = rerollAmount.ToString();
     }
 
     public void ShowLevelupOptions()
@@ -51,8 +56,8 @@ public class LevelupManager : MonoBehaviour
         {
             int randInt = FunctionUtils.RandomChance(0, 100);
             int randomUpgrade;
-            LevelUpUpgradeBase levelupChosen = null;
-            if (randInt < commonRarityPercent)
+            LevelUpUpgradeSO levelupChosen = null;
+            if (randInt > commonRarityPercent)
             {
                 do
                 {
@@ -62,7 +67,7 @@ public class LevelupManager : MonoBehaviour
 
                 levelupChosen = commonLevelup[randomUpgrade];
             }
-            else if (randInt < commonRarityPercent + uncommonRarityPercent)
+            else if (randInt > commonRarityPercent + uncommonRarityPercent)
             {
                 do 
                 {
@@ -72,7 +77,7 @@ public class LevelupManager : MonoBehaviour
 
                 levelupChosen = uncommonLevelup[randomUpgrade];
             }
-            else if (randInt < commonRarityPercent + uncommonRarityPercent + rareRarityPercent)
+            else if (randInt > commonRarityPercent + uncommonRarityPercent + rareRarityPercent)
             {
                 do
                 {
@@ -82,7 +87,7 @@ public class LevelupManager : MonoBehaviour
 
                 levelupChosen = rareLevelup[randomUpgrade];
             }
-            else if (randInt < commonRarityPercent + uncommonRarityPercent + rareRarityPercent + epicRarityPercent)
+            else if (randInt > commonRarityPercent + uncommonRarityPercent + rareRarityPercent + epicRarityPercent)
             {
                 do
                 {
@@ -104,19 +109,60 @@ public class LevelupManager : MonoBehaviour
             }
 
             duplicateLvlupChoice.Add(levelupChosen);
-            levelUpButtons[i].levelUpUpgrade.levelupUpgradeSO = levelupChosen.levelupUpgradeSO;
-            levelUpButtons[i].levelupDescription.text = levelupChosen.levelupUpgradeSO.upgradeDescription;
-            levelUpButtons[i].levelupName.text = levelupChosen.levelupUpgradeSO.upgradeName;
+            levelUpButtons[i].levelUpUpgradeSO = levelupChosen;
+            levelUpButtons[i].levelupDescription.text = levelupChosen.upgradeDescription;
+            levelUpButtons[i].levelupName.text = levelupChosen.upgradeName;
+        }
+    }
+
+    public void ApplyUpgrade(LevelUpUpgradeSO levelupSO)
+    {
+        for (int i = 0; i < levelupSO.statsToIncrease.Count; i++)
+        {
+            for (int j = 0; j < PlayerStats.instance.statsList.Count; j++)
+            {
+                if (PlayerStats.instance.statsList[j].GetStatType() ==
+                    levelupSO.statsToIncrease[i].GetStatType())
+                {
+                    PlayerStats.instance.statsList[j].Add(levelupSO.statsToIncrease[i].GetValue());
+                }
+            }
+        }
+
+        for (int i = 0; i < levelupSO.statsToDecrease.Count; i++)
+        {
+            for (int j = 0; j < PlayerStats.instance.statsList.Count; j++)
+            {
+                if (PlayerStats.instance.statsList[j].GetStatType() ==
+                    levelupSO.statsToDecrease[i].GetStatType())
+                {
+                    PlayerStats.instance.statsList[j].Subtract(levelupSO.statsToDecrease[i].GetValue());
+                }
+            }
+        }
+
+        for (int i = 0; i < levelupSO.specialEffects.Count; i++)
+        {
+            levelupSO.specialEffects[i].ApplyEffect();
         }
     }
 
     public void UpgradeChosen()
     {
+        duplicateLvlupChoice.Clear();
         pickMenu.SetActive(false);
         Time.timeScale = 1;
     }
 
-    public void RemoveUpgradeFromList(LevelUpUpgradeBase upgradeToRemove)
+    public void RerollChoices()
+    {
+        rerollAmount--;
+        rerollsLeftText.text = rerollAmount.ToString();
+        duplicateLvlupChoice.Clear();
+        ChooseUpgradeButtons();
+    }
+
+    public void RemoveUpgradeFromList(LevelUpUpgradeSO upgradeToRemove)
     {
         if (commonLevelup.Contains(upgradeToRemove))
         {
