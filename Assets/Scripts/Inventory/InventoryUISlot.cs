@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using System;
 
 public class InventoryUISlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
 {
@@ -11,6 +12,14 @@ public class InventoryUISlot : MonoBehaviour, IPointerEnterHandler, IPointerExit
     public Image itemSprite;
     public InventoryItem item;
     public int slotIndex;
+
+    public static event EventHandler<InventoryUISlotArgs> OnPointerEnterEvent;
+    public static event EventHandler OnPointerExitEvent;
+    public class InventoryUISlotArgs : EventArgs
+    {
+        public InventoryItem item;
+    }
+
 
     private void Awake()
     {
@@ -55,12 +64,20 @@ public class InventoryUISlot : MonoBehaviour, IPointerEnterHandler, IPointerExit
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        //print(message: "MouseOver");
+        InventoryPickupItem inventoryPickupItem = InventoryUIManager.instance.inventoryPickupItem;
+        
+        if (this.item != null && item.itemName != "" && !inventoryPickupItem.isActiveAndEnabled)
+        {
+            OnPointerEnterEvent?.Invoke(this, new InventoryUISlotArgs { item = item });
+        }
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        //print("MouseExit");
+        if (this.item != null && item.itemName != "")
+        {
+            OnPointerExitEvent?.Invoke(this, new EventArgs());
+        }
     }
 
     public void OnPointerClick(PointerEventData eventData)

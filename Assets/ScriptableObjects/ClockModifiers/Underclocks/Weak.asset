@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f78db2d0297620948a914d531d4d03c0, type: 3}
   m_Name: Weak
   m_EditorClassIdentifier: 
-  Name: 
-  Value: 0
+  Name: Weak
+  Value: -2
   Type: 0
