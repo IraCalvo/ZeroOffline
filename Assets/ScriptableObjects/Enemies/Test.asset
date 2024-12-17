@@ -19,3 +19,6 @@ MonoBehaviour:
   enemyAttackRange: 2.5
   enemyNeedsConstantLOS: 0
   invulnTime: 0.25
+  itemDrops:
+  - itemDrop: {fileID: 0}
+    itemDropRate: 0

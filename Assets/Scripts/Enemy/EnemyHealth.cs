@@ -67,6 +67,45 @@ public class EnemyHealth : MonoBehaviour, IDamageable
     void DeathProcedures()
     {
         ObjectPoolManager.Instance.DeactivateObjectInPool(gameObject);
+        CalculateDrops();
+        DropXP();
+    }
+
+    void CalculateDrops()
+    {
+        EnemySO enemySO = enemy.enemySO;
+        int amountToSpawn = 1;
+
+        int randNum = FunctionUtils.RandomChance(0, 100);
+        for (int i = 0; i < enemySO.itemDrops.Count; i++)
+        {
+            EnemyDrops itemDrop = enemySO.itemDrops[i];
+
+            float dropRate = itemDrop.GetDropRate();
+            if(randNum <= dropRate)
+            {
+
+                if (itemDrop.GetMaxAmountToDrop() > 1)
+                {
+                    amountToSpawn = FunctionUtils.RandomChance(itemDrop.GetMinAmountToDrop(),
+                        itemDrop.GetMaxAmountToDrop());
+                }
+
+                for (int j = 0; j < amountToSpawn; j++)
+                {
+                    GameObject itemToDrop = itemDrop.GetItem();
+                    Instantiate(itemToDrop, transform.position, Quaternion.identity);
+                    //TODO: determine item overclocks upon being spawned n such
+
+                    Vector2 spawnPos = FunctionUtils.GetRandomPositionInCircle(transform.position, 1f);
+                    itemToDrop.GetComponent<ItemBounce>().StartBounce(spawnPos);
+                }
+            }
+        }
+    }
+
+    void DropXP()
+    {
         for (int i = 0; i < xpToDrop; i++)
         {
             Vector2 spawnPos = GetRandomPosInCircle(transform.position, 1.5f);
@@ -76,6 +115,7 @@ public class EnemyHealth : MonoBehaviour, IDamageable
         }
     }
 
+   
     IEnumerator InvulnTimerCoroutine()
     {
         Material startMaterial = sr.material;

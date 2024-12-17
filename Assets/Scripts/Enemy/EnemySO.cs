@@ -12,4 +12,6 @@ public class EnemySO : ScriptableObject
     public float enemyAttackRange;
     public bool enemyNeedsConstantLOS;
     public float invulnTime;
+
+    public List<EnemyDrops> itemDrops;
 }

@@ -1872,14 +1872,13 @@ GameObject:
   - component: {fileID: 275951616}
   - component: {fileID: 275951618}
   - component: {fileID: 275951617}
-  - component: {fileID: 275951619}
   m_Layer: 5
   m_Name: LevelupMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &275951616
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1942,32 +1941,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 275951615}
   m_CullTransparentMesh: 1
---- !u!114 &275951619
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 275951615}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3d02522c1c2fee4dbf3146dc19439d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pickMenu: {fileID: 0}
-  rerollAmount: 3
-  rerollsLeftText: {fileID: 45573196}
-  commonRarityPercent: 60
-  uncommonRarityPercent: 25
-  rareRarityPercent: 10
-  epicRarityPercent: 4
-  legendaryRarityPercent: 1
-  commonLevelup: []
-  uncommonLevelup: []
-  rareLevelup: []
-  epicLevelup: []
-  legendaryLevelup: []
-  levelUpButtons: []
 --- !u!1 &278194724
 GameObject:
   m_ObjectHideFlags: 0
@@ -9910,9 +9883,9 @@ RectTransform:
   - {fileID: 1522667079}
   m_Father: {fileID: 490654259}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: -398.78326, y: -85}
   m_SizeDelta: {x: 302.4335, y: 729.2213}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &800681216
@@ -10150,13 +10123,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pickMenu: {fileID: 275951615}
-  rerollAmount: 0
-  rerollsLeftText: {fileID: 0}
-  commonRarityPercent: 0
-  uncommonRarityPercent: 0
-  rareRarityPercent: 0
-  epicRarityPercent: 0
-  legendaryRarityPercent: 0
+  rerollAmount: 3
+  rerollsLeftText: {fileID: 45573196}
+  commonRarityPercent: 60
+  uncommonRarityPercent: 25
+  rareRarityPercent: 10
+  epicRarityPercent: 4
+  legendaryRarityPercent: 1
   commonLevelup: []
   uncommonLevelup: []
   rareLevelup: []
@@ -11693,9 +11666,9 @@ RectTransform:
   - {fileID: 1316097459}
   m_Father: {fileID: 490654259}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 306.08374, y: -85}
   m_SizeDelta: {x: 302.4335, y: 729.2213}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1319194145
@@ -12471,9 +12444,9 @@ RectTransform:
   - {fileID: 536072105}
   m_Father: {fileID: 490654259}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: -46.349747, y: -85}
   m_SizeDelta: {x: 302.4335, y: 729.2213}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1496032960
