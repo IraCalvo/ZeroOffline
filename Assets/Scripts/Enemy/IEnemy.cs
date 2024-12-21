@@ -5,5 +5,4 @@ using UnityEngine;
 public interface IEnemy
 {
     void Attack();
-    void ManageEnemyState();
 }

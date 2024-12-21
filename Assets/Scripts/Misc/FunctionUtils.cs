@@ -18,4 +18,9 @@ public class FunctionUtils
         int randInt = Random.Range(floor, ceiling);
         return randInt;
     }
+
+    public static float DistanceBetween2Points(Vector2 point1, Vector2 point2)
+    {
+        return Vector2.Distance(point1, point2);
+    }
 }

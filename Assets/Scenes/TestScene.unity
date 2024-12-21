@@ -13867,6 +13867,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 4265615648324676149, guid: e8004a1c7dbe6194fa03e4ce72941651, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4386119513058532488, guid: e8004a1c7dbe6194fa03e4ce72941651, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -13887,6 +13891,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 931434470369487223, guid: b1671f508adbec3488a7d2d3c4ff0da0, type: 3}
+    - target: {fileID: 6656639486050082736, guid: e8004a1c7dbe6194fa03e4ce72941651, type: 3}
+      propertyPath: canAttack
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8872185727410855465, guid: e8004a1c7dbe6194fa03e4ce72941651, type: 3}
       propertyPath: m_Name
       value: TestPlayer

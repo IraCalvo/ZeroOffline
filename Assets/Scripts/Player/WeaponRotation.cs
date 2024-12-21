@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class WeaponRotation : MonoBehaviour
 {
+    //TODO: Make it so that it automatically fi
     [SerializeField] Transform playerTransform;
     private SpriteRenderer sr;
 

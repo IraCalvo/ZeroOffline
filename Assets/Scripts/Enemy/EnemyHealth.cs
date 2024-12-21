@@ -7,7 +7,7 @@ public class EnemyHealth : MonoBehaviour, IDamageable
 {
     Enemy enemy;
     int currentEnemyHP;
-    bool canBeDamaged = true;
+    public bool canBeDamaged = false;
     [SerializeField] GameObject dmgTakenText;
     [SerializeField] Transform positionToDisplayDamageText;
     [SerializeField] Material whiteDamageMaterial;
@@ -66,6 +66,7 @@ public class EnemyHealth : MonoBehaviour, IDamageable
 
     void DeathProcedures()
     {
+        enemy.enemyState = EnemyState.Death;
         ObjectPoolManager.Instance.DeactivateObjectInPool(gameObject);
         CalculateDrops();
         DropXP();
