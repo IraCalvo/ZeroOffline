@@ -24,7 +24,7 @@ public class EnemyAIBrain : MonoBehaviour
     Collider2D[] colliders;
 
     //variables for detection of target
-    [SerializeField] private float targetDetectionRange = 5;
+    private float targetDetectionRange;
     [SerializeField] private LayerMask obstacleLayerMask;
     [SerializeField] private LayerMask playerLayerMask;
     [SerializeField] private bool showTargetDetectionGizmos = false;
@@ -35,6 +35,7 @@ public class EnemyAIBrain : MonoBehaviour
         enemy = GetComponent<Enemy>();
         enemySO = enemy.enemySO;
         enemySteeringMovement = GetComponent<EnemySteeringMovement>();
+        targetDetectionRange = enemySO.enemyAggroRange;
     }
 
     private void Start()

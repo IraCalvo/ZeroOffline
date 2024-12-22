@@ -6,14 +6,13 @@ using UnityEngine;
 
 public class WeaponRotation : MonoBehaviour
 {
+    //TODO: Make it so that it automatically fi
     [SerializeField] Transform playerTransform;
     private SpriteRenderer sr;
-    Vector2 weaponPos;
 
     private void Awake()
     {
         sr = GetComponent<SpriteRenderer>();
-        weaponPos = gameObject.transform.position;
     }
 
     private void Update()

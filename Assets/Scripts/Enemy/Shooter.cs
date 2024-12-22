@@ -37,61 +37,21 @@ public class Shooter : MonoBehaviour, IEnemy
     { 
         enemy = GetComponent<Enemy>();
     }
-
-    public virtual void FixedUpdate()
-    {
-        ManageEnemyState();
-    }
-
-    public virtual void ManageEnemyState()
-    {
-        switch (enemy.enemyState)
-        {
-            case EnemyState.Spawning:
-                CheckIfDoneSpawning();
-                break;
-            case EnemyState.Chasing:
-                MoveToRange();
-                break;
-            case EnemyState.Attacking:
-                Attack();
-                break;
-            case EnemyState.Death:
-                break;
-        }
-    }
-
-    public virtual void CheckIfDoneSpawning()
-    {
-        enemy.enemyState = EnemyState.Chasing;
-    }
     
-    public virtual void MoveToRange()
-    {
+    //public virtual void MoveToRange()
+    //{
 
-        if (CheckIfInAttackRange())
-        {
-            enemy.enemyState = EnemyState.Attacking;
-        }
-        else
-        {
-            enemy.enemyState = EnemyState.Chasing;
+    //    if (CheckIfInAttackRange())
+    //    {
+    //        enemy.enemyState = EnemyState.Attacking;
+    //    }
+    //    else
+    //    {
+    //        enemy.enemyState = EnemyState.Chasing;
 
-            transform.position = Vector2.MoveTowards(transform.position, PlayerController.instance.transform.position, enemy.currentEnemyMS * Time.deltaTime);
-        }
-    }
-
-    public virtual bool CheckIfInAttackRange()
-    {
-        if (Vector2.Distance(transform.position, PlayerController.instance.transform.position) < enemy.currentAttackRange)
-        {
-            return true;
-        }
-        else 
-        {
-            return false;
-        }
-    }
+    //        transform.position = Vector2.MoveTowards(transform.position, PlayerController.instance.transform.position, enemy.currentEnemyMS * Time.deltaTime);
+    //    }
+    //}
 
     public virtual void Attack()
     {
@@ -102,9 +62,17 @@ public class Shooter : MonoBehaviour, IEnemy
                 StartCoroutine(ShootRoutine());
             }
         }
-        else 
+    }
+
+    public virtual bool CheckIfInAttackRange()
+    {
+        if (Vector2.Distance(transform.position, PlayerController.instance.transform.position) < enemy.currentAttackRange)
         {
-            enemy.enemyState = EnemyState.Chasing;
+            return true;
+        }
+        else
+        {
+            return false;
         }
     }
 

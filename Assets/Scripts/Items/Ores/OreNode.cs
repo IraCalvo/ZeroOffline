@@ -60,23 +60,12 @@ public class OreNode : MonoBehaviour, IDamageable
 
         for (int i = 0; i < dropAmount; i++)
         {
-            Vector2 spawnPos = GetRandomPositionInCircle(transform.position, spawnRadius);
+            Vector2 spawnPos = FunctionUtils.GetRandomPositionInCircle(transform.position, spawnRadius);
             GameObject ore = ObjectPoolManager.Instance.GetPoolObject(oreDrop);
             ore.transform.position = transform.position;
             ore.GetComponent<ItemBounce>().StartBounce(spawnPos);
         }
         Destroy(gameObject);
-    }
-
-    private Vector2 GetRandomPositionInCircle(Vector2 center, float radius)
-    {
-        float angle = Random.Range(0f, 2f * Mathf.PI);
-        float distance = Random.Range(0f, radius);
-
-        float x = center.x + Mathf.Cos(angle) * distance;
-        float y = center.y + Mathf.Sin(angle) * distance;
-
-        return new Vector2(x, y);
     }
 
     IEnumerator WhiteFlashCoroutine()

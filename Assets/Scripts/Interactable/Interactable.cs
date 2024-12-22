@@ -12,6 +12,7 @@ public abstract class Interactable : MonoBehaviour, IInteractable
     public Material _whiteHighlightMaterial;
     public SpriteRenderer sr;
     public TextMeshPro _interactionText;
+    public bool isInteractable = true;
 
     public string InteractDescription
     {
@@ -46,22 +47,30 @@ public abstract class Interactable : MonoBehaviour, IInteractable
     private void Awake()
     {
         sr = GetComponent<SpriteRenderer>();
+        _interactionText.text = _interactDescription;
     }
 
     public virtual void Interact()
     {
-        print("Description: " + _interactDescription);
+        if (isInteractable)
+        {
+            print("Description: " + _interactDescription);
+        }
     }
 
     public virtual void OnTriggerEnter2D(Collider2D otherCollider)
     {
-        if (otherCollider.CompareTag("Player"))
+        if (isInteractable)
         {
-            PlayerInteract.instance.interablesInRange.Add(this);
-            if (PlayerInteract.instance.GetClosestInteractable() == this)
+            if (otherCollider.CompareTag("Player"))
             {
-                sr.material = _whiteHighlightMaterial;
-                _interactionText.gameObject.SetActive(true);
+                PlayerInteract.instance.interablesInRange.Add(this);
+                if (PlayerInteract.instance.GetClosestInteractable() == this)
+                {
+                    sr.material = _whiteHighlightMaterial;
+                    _interactionText.gameObject.SetActive(true);
+                    _interactionText.text = _interactDescription;
+                }
             }
         }
     }
