@@ -35,6 +35,7 @@ public class EnemyMovement : MonoBehaviour
                     ChasePlayer();
                     break;
                 case EnemyState.Attacking:
+                    CheckAttackRange();
                     enemyAttackScript.Attack();
                     break;
                 case EnemyState.Death:
@@ -83,6 +84,19 @@ public class EnemyMovement : MonoBehaviour
         else if (enemyAIBrain.GetTargetsCount() > 0)
         {
             enemyAIBrain.currentTarget = enemyAIBrain.targets[0];
+        }
+    }
+
+    void CheckAttackRange()
+    {
+        float distance = Vector2.Distance(enemyAIBrain.currentTarget.position, transform.position);
+        if (distance <= enemy.enemySO.enemyAttackRange)
+        {
+            enemy.enemyState = EnemyState.Attacking;
+        }
+        else
+        {
+            enemy.enemyState = EnemyState.Chasing;
         }
     }
 }
