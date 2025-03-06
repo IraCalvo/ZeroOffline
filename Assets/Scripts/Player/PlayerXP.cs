@@ -29,12 +29,12 @@ public class PlayerXP : MonoBehaviour
             LevelupProcedures();
         }
 
-        PlayerUIManager.instance.UpdateXPBar(currentXP, xpAmountNeededPerLevel[currentLevel - 1]);
+        PlayerBattleUIManager.instance.UpdateXPBar(currentXP, xpAmountNeededPerLevel[currentLevel - 1]);
     }
 
     public void LevelupProcedures()
     {
-        PlayerUIManager.instance.levelNumber.text = currentLevel.ToString();
+        PlayerBattleUIManager.instance.levelNumber.text = currentLevel.ToString();
         LevelupManager.instance.ShowLevelupOptions();
     }
 }

@@ -8,7 +8,7 @@ public class ActiveWeapon : Singleton<ActiveWeapon>
     [SerializeField] private MonoBehaviour currentWeapon;
     WeaponSO activeWeaponSO;
     [SerializeField] int currentAmmo;
-    int maxAmmo;
+    public int maxAmmo;
     float reloadTime;
     public bool isReloading = false;
     public bool canAttack = true;
@@ -36,7 +36,7 @@ public class ActiveWeapon : Singleton<ActiveWeapon>
             {
                 (currentWeapon as Weapon).UseWeapon();
                 currentAmmo--;
-                PlayerUIManager.instance.UpdateAmmoCount(currentAmmo);
+                PlayerBattleUIManager.instance.UpdateAmmoCount(currentAmmo);
                 StartCoroutine(AttackCDCoroutine(activeWeaponSO.weaponCDBase));
             }
             else if (!isReloading)
@@ -69,6 +69,6 @@ public class ActiveWeapon : Singleton<ActiveWeapon>
         yield return new WaitForSeconds(reloadTime);
         currentAmmo = maxAmmo;
         isReloading = false;
-        PlayerUIManager.instance.UpdateAmmoCount(currentAmmo);
+        PlayerBattleUIManager.instance.UpdateAmmoCount(currentAmmo);
     }
 }

@@ -1,0 +1,210 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &82486183580019572
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 374043778415778636}
+  - component: {fileID: 541411460720660693}
+  m_Layer: 0
+  m_Name: Object Pool Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &374043778415778636
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 82486183580019572}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4012886623977422043}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &541411460720660693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 82486183580019572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eb68907490b07d48aa067334f4b4b24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  listOfPools:
+  - name: Enemy Projectile
+    type: 1
+    amountToPool: 1000
+    prefabToPool: {fileID: 3328187646786704416, guid: 90fb1c1c9ef841d469de7ab5ba95788e, type: 3}
+    objectContainer: {fileID: 0}
+    poolCanGrow: 1
+    pool: []
+  - name: Player Projectile
+    type: 1
+    amountToPool: 1000
+    prefabToPool: {fileID: 1542664500835441062, guid: 6b54284584b6ee7448f535cf0f9b3a89, type: 3}
+    objectContainer: {fileID: 0}
+    poolCanGrow: 1
+    pool: []
+  - name: Damage Pop Up
+    type: 3
+    amountToPool: 1000
+    prefabToPool: {fileID: 8539310757728743680, guid: 183eff2da9db06d4ebb83f780bfd294e, type: 3}
+    objectContainer: {fileID: 0}
+    poolCanGrow: 1
+    pool: []
+  - name: Copper
+    type: 5
+    amountToPool: 300
+    prefabToPool: {fileID: 507534166773860292, guid: 5ed25627a35c9c641a62a5178a1bba56, type: 3}
+    objectContainer: {fileID: 0}
+    poolCanGrow: 1
+    pool: []
+  - name: XP
+    type: 4
+    amountToPool: 1000
+    prefabToPool: {fileID: 3283269055190140424, guid: 82b37eea031290242a19af92c4f1608a, type: 3}
+    objectContainer: {fileID: 0}
+    poolCanGrow: 1
+    pool: []
+  - name: PlayerExplosion
+    type: 1
+    amountToPool: 100
+    prefabToPool: {fileID: 3023630789225662901, guid: f3152236c2e531e49b5b9f8533745bec, type: 3}
+    objectContainer: {fileID: 0}
+    poolCanGrow: 1
+    pool: []
+  - name: PlayerPod
+    type: 1
+    amountToPool: 5
+    prefabToPool: {fileID: 6856019437709166981, guid: 4e7bd7977e6f7e245b004ceb50d937b4, type: 3}
+    objectContainer: {fileID: 0}
+    poolCanGrow: 1
+    pool: []
+  - name: FireBullet
+    type: 1
+    amountToPool: 5
+    prefabToPool: {fileID: 6548111844130838770, guid: b773efc435179d043b34eee526d4f18e, type: 3}
+    objectContainer: {fileID: 0}
+    poolCanGrow: 1
+    pool: []
+--- !u!1 &7084509952032222201
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 454960159450951165}
+  - component: {fileID: 2945313223111240260}
+  - component: {fileID: 8873231324248600316}
+  m_Layer: 0
+  m_Name: CanvasManagers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &454960159450951165
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7084509952032222201}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4012886623977422043}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2945313223111240260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7084509952032222201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 234b15d055b0e374eb0104aab63fbb22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ammoCount: {fileID: 0}
+  hpAmountText: {fileID: 0}
+  hpBarFill: {fileID: 0}
+  hpSlider: {fileID: 0}
+  xpSlider: {fileID: 0}
+  levelNumber: {fileID: 0}
+  podUIFill: {fileID: 0}
+  podCDTimer: {fileID: 0}
+--- !u!114 &8873231324248600316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7084509952032222201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b2a93ef365542b4293aaddb23d26b9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenu: {fileID: 0}
+  pauseScrim: {fileID: 0}
+  basicPauseButtonGroup: {fileID: 0}
+  settingsButtonGroup: {fileID: 0}
+  audioButtonGroup: {fileID: 0}
+  masterVolume: {fileID: 0}
+  sfxVolume: {fileID: 0}
+  musicVolume: {fileID: 0}
+  exitConfirmationPanel: {fileID: 0}
+--- !u!1 &8573916516881176305
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4012886623977422043}
+  m_Layer: 0
+  m_Name: Managers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4012886623977422043
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8573916516881176305}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 374043778415778636}
+  - {fileID: 454960159450951165}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

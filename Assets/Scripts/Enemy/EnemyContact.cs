@@ -12,7 +12,7 @@ public class EnemyContact : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             Debug.Log("inside the if statement");
-            collision.gameObject.GetComponent<PlayerHealth>().TakeDamage(1, DamageSource.Enemy, 0);
+            collision.gameObject.GetComponent<PlayerHealth>().TakeDamage(1, DamageOwner.Enemy, 0);
         }
     }
 }

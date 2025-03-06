@@ -121,7 +121,7 @@ public class Shooter : MonoBehaviour, IEnemy
                 if (bullet.TryGetComponent(out Projectile proj))
                 {
                     proj.UpdateProjMS(projMoveSpeed);
-                    proj.UpdateProjOwner(DamageSource.Enemy);
+                    proj.UpdateProjOwner(DamageOwner.Enemy);
                 }
 
                 currentAngle += angleStep;

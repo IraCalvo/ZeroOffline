@@ -28,20 +28,20 @@ public class PlayerHealth : MonoBehaviour, IDamageable
 
     void Start()
     {
-        PlayerUIManager.instance.UpdateHPBar(currentHealth, maxHealth);
+        PlayerBattleUIManager.instance.UpdateHPBar(currentHealth, maxHealth);
     }
 
-    public void TakeDamage(int dmgToTake, DamageSource dmgSource, float critChance)
+    public void TakeDamage(int dmgToTake, DamageOwner dmgSource, float critChance)
     {
         if (playerCanBeHit)
         {
             if (currentHealth > 0)
             {
-                if (dmgSource == DamageSource.Enemy || dmgSource == DamageSource.Neutral)
+                if (dmgSource == DamageOwner.Enemy || dmgSource == DamageOwner.Neutral)
                 {
                     currentHealth -= dmgToTake;
                     StartCoroutine(InvulnCountdown());
-                    PlayerUIManager.instance.UpdateHPBar(currentHealth, maxHealth);
+                    PlayerBattleUIManager.instance.UpdateHPBar(currentHealth, maxHealth);
                     if (currentHealth < 0)
                     {
                         //TODO: Add game lose procedures in game manager

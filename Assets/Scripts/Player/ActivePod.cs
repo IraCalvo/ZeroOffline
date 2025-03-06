@@ -36,7 +36,7 @@ public class ActivePod : MonoBehaviour
         if (canUsePod)
         {
             equippedPod.GetComponent<Pod>().UsePod();
-            PlayerUIManager.instance.StartPodCD(equippedPodSO.podBaseCD);
+            PlayerBattleUIManager.instance.StartPodCD(equippedPodSO.podBaseCD);
             StartCoroutine(PodCDCoroutine());
         }
         else

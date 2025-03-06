@@ -7,6 +7,7 @@ public class Stats : MonoBehaviour
     public Stat Armor;
     public Stat MovementSpeed;
     public Stat ReloadTime;
+    public Stat Damage;
 
     public List<Stat> statsList;
 

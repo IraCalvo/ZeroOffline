@@ -66,7 +66,7 @@ public class StatusEffects : MonoBehaviour
             burnTickTimer += Time.deltaTime;
             if (burnTickTimer >= IntUtils.DefaultDebufAndBuffTimers.DefaultBurnInterval)
             {
-                healthScript.TakeDamage(burnDamage, DamageSource.Neutral, 0);
+                healthScript.TakeDamage(burnDamage, DamageOwner.Neutral, 0);
                 burnTickTimer = 0f;
             }
 

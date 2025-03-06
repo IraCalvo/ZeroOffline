@@ -70,6 +70,7 @@ public class EnemyAIBrain : MonoBehaviour
             if (hit.collider != null && (playerLayerMask & (1 << hit.collider.gameObject.layer)) != 0)
             {
                 targetColliders = new List<Transform>() { playerCollider.transform };
+                enemy.enemyState = EnemyState.Chasing;
             }
             else
             {

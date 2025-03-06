@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using System;
 
-public class PlayerUIManager : MonoBehaviour
+public class PlayerBattleUIManager : MonoBehaviour
 {
-    public static PlayerUIManager instance;
+    public static PlayerBattleUIManager instance;
     [SerializeField] TextMeshProUGUI ammoCount;
     [SerializeField] TextMeshProUGUI hpAmountText;
 
@@ -21,6 +22,10 @@ public class PlayerUIManager : MonoBehaviour
     [SerializeField] Image podUIFill;
     [SerializeField] TextMeshProUGUI podCDTimer;
 
+    [SerializeField] TextMeshProUGUI delveTime;
+
+    [SerializeField] List<GameObject> battleUIObjs;
+
     private void Awake()
     {
         if (instance == null)
@@ -33,9 +38,26 @@ public class PlayerUIManager : MonoBehaviour
         }
     }
 
-    public void SetupBatleUI()
+    public void Update()
     {
-        
+        UpdateTimer();
+    }
+
+    public void UpdateTimer()
+    {
+        if (delveTime.isActiveAndEnabled)
+        {
+            TimeSpan time = TimeSpan.FromSeconds(GameManager.Instance.DelvingTimer);
+            delveTime.text = string.Format("{0:mmm \\: ss}", time);
+        }
+    }
+
+    public void SetupBatleUI(bool state)
+    {
+        foreach (GameObject uiObj in battleUIObjs)
+        {
+            uiObj.SetActive(state);
+        }
     }
 
     public void UpdateAmmoCount(int currentAmmo)

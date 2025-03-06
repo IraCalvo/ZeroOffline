@@ -13,5 +13,8 @@ MonoBehaviour:
   m_Name: Lucky
   m_EditorClassIdentifier: 
   Name: Lucky
-  Value: 4
-  Type: 1
+  statIncrases:
+  - statName: Crit Chance
+    statValue: 4
+    statType: 1
+  statDecrases: []

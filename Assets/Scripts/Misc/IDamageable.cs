@@ -1,5 +1,5 @@
 public interface IDamageable
 {
-    void TakeDamage(int damageToTake, DamageSource dmgSource, float critChance);
+    void TakeDamage(int damageToTake, DamageOwner dmgSource, float critChance);
 
 }

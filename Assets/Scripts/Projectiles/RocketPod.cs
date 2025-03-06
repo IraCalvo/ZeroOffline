@@ -7,13 +7,13 @@ public class RocketPod : Projectile
 
     protected override void OnTriggerEnter2D(Collider2D otherCollider)
     {
-        if (otherCollider.CompareTag(StringUtils.TagStrings.PlayerTag) && projOwner != DamageSource.Player
-            || otherCollider.CompareTag(StringUtils.TagStrings.EnemyTag) && projOwner != DamageSource.Enemy)
+        if (otherCollider.CompareTag(StringUtils.TagStrings.PlayerTag) && projOwner != DamageOwner.Player
+            || otherCollider.CompareTag(StringUtils.TagStrings.EnemyTag) && projOwner != DamageOwner.Enemy)
         {
             IDamageable damagedObject = otherCollider.GetComponent<IDamageable>();
             damagedObject.TakeDamage(projDMG, projOwner, critChance);
 
-            if (projOwner == DamageSource.Player)
+            if (projOwner == DamageOwner.Player)
             {
 
                 GameObject xplosion = ObjectPoolManager.Instance.GetPoolObject(xplosionToSpawn.gameObject);

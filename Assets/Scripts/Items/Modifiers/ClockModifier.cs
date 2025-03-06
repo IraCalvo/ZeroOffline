@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
@@ -6,6 +8,6 @@ using UnityEngine;
 public class ClockModifier : ScriptableObject
 {
     public string Name;
-    public float Value;
-    public StatType Type;
+    public List<Stat> statIncrases;
+    public List<Stat> statDecrases;
 }

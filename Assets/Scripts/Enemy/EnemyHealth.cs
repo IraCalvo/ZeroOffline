@@ -21,13 +21,13 @@ public class EnemyHealth : MonoBehaviour, IDamageable
         sr = GetComponent<SpriteRenderer>();
     }
 
-    public void TakeDamage(int damageInput, DamageSource dmgSource, float critChance)
+    public void TakeDamage(int damageInput, DamageOwner dmgSource, float critChance)
     {
-        if (dmgSource == DamageSource.Neutral)
+        if (dmgSource == DamageOwner.Neutral)
         {
             CalculateDamage(damageInput, critChance);
         }
-        else if (dmgSource == DamageSource.Player && canBeDamaged)
+        else if (dmgSource == DamageOwner.Player && canBeDamaged)
         {
             canBeDamaged = false;
             StartCoroutine(InvulnTimerCoroutine());

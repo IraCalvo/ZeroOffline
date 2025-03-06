@@ -2,19 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum DamageSource
-{ 
-    Player,
-    Enemy,
-    Neutral
-}
-
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(CapsuleCollider2D))]
 public class Projectile : MonoBehaviour
 {
     [SerializeField] float projMS;
-    [SerializeField] public DamageSource projOwner;
+    [SerializeField] public DamageOwner projOwner;
     [SerializeField] public int projDMG;
     [SerializeField] public float critChance;
     [SerializeField] float projRange;
@@ -51,15 +44,15 @@ public class Projectile : MonoBehaviour
         this.critChance = critPercent;
     }
 
-    public virtual void UpdateProjOwner(DamageSource proj)
+    public virtual void UpdateProjOwner(DamageOwner proj)
     {
-        if (proj == DamageSource.Player)
+        if (proj == DamageOwner.Player)
         {
-            projOwner = DamageSource.Player;
+            projOwner = DamageOwner.Player;
         }
         else 
         {
-            projOwner = DamageSource.Enemy;
+            projOwner = DamageOwner.Enemy;
         }
     }
 
@@ -85,13 +78,13 @@ public class Projectile : MonoBehaviour
 
     protected virtual void OnTriggerEnter2D(Collider2D otherCollider)
     {
-        if (otherCollider.CompareTag(StringUtils.TagStrings.PlayerTag) && projOwner != DamageSource.Player
-            || otherCollider.CompareTag(StringUtils.TagStrings.EnemyTag) && projOwner != DamageSource.Enemy)
+        if (otherCollider.CompareTag(StringUtils.TagStrings.PlayerTag) && projOwner != DamageOwner.Player
+            || otherCollider.CompareTag(StringUtils.TagStrings.EnemyTag) && projOwner != DamageOwner.Enemy)
         {
             IDamageable damagedObject = otherCollider.GetComponent<IDamageable>();
             damagedObject.TakeDamage(projDMG, projOwner, critChance);
 
-            if (projOwner == DamageSource.Player)
+            if (projOwner == DamageOwner.Player)
             {
                 projPierceAmount--;
                 if (projPierceAmount <= 0)

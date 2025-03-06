@@ -28,9 +28,9 @@ public class OreNode : MonoBehaviour, IDamageable
         oreDrop = oreSO.oreToDrop;
     }
 
-    public void TakeDamage(int damageToTake, DamageSource dmgSource, float critChance)
+    public void TakeDamage(int damageToTake, DamageOwner dmgSource, float critChance)
     {
-        if (dmgSource == DamageSource.Player)
+        if (dmgSource == DamageOwner.Player)
         {
             bool isCrit = false;
             float roll = Random.Range(0f, 100f);
